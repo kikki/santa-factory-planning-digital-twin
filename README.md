@@ -152,10 +152,10 @@ GitHub repository. https://github.com/kikki/santa-factory-planning-digital-twin
 
 ## 🔗 Resources
 
-- [VDI 5200](https://www.vdi.de) – Factory Planning Guideline
-- [VDI 3633](https://www.vdi.de) – Simulation Guideline  
-- [Siemens Plant Simulation](https://www.plm.automation.siemens.com/plant-simulation) – Simulation Software
-- [buildingSMART](https://www.buildingsmart.org) – IFC Standards
+- [VDI 5200](https://www.vdi.de/mitgliedschaft/vdi-richtlinien/details/vdi-5200-blatt-1-fabrikplanung-planungsvorgehen) – Factory Planning Guideline
+- [VDI 3633](https://www.vdi.de/mitgliedschaft/vdi-richtlinien/details/vdi-3633-blatt-1-simulation-von-logistik-materialfluss-und-produktionssystemen-grundlagen) – Simulation Guideline  
+- [Siemens Plant Simulation](https://resources.sw.siemens.com/de-DE/download-tecnomatix-plant-simulation-student-software/) – Simulation Software Studentenversion
+- [buildingSMART](https://www.buildingsmart.org/standards/bsi-standards/industry-foundation-classes/) – IFC Standards
 
 ---
 
