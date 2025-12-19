@@ -114,6 +114,8 @@ Each process is characterized by the following parameters:
 
 ### The AI-based Toy
 
+![AI-based Toy - Programming Process](../assets/images/Product.png)
+
 The product is a **fictional AI-based toy** that is to be produced in large quantities shortly before Christmas.
 
 **Properties:**
@@ -139,6 +141,68 @@ The product is a **fictional AI-based toy** that is to be produced in large quan
 | Packing_Sack_P6 | 1.5 | 10 | 98 |
 
 **Note:** These values are exemplary and can be adjusted in the simulation model.
+
+---
+
+## 🔍 Detailed Process Descriptions
+
+### Programming_P1
+
+![Programming Process](../assets/images/process/P1.png)
+
+In **Programming_P1**, the digital foundation for each individual plush toy is created. This process captures the initial order parameters for each child, including basic personalization attributes and play concepts. Based on this input, the logical and software-related structures are prepared for later design, behavior, and AI interaction.
+
+The focus lies on structured parameterization: defining which functions the toy will have, which interaction patterns are intended, and which content boundaries apply to the AI experience. Programming_P1 serves as the digital starting point of the value chain and ensures that all subsequent processes are built on consistent and clearly defined datasets. Traceability, reusability, and error prevention are key objectives at this stage.
+
+### Pressing_P2
+
+![Pressing Process](../assets/images/process/P2.png)
+
+**Pressing_P2** represents the transition from the digital to the physical world. In this process, the basic material components of the plush toys are manufactured. Raw materials are cut, formed, and pressed into standardized base bodies.
+
+The process is designed for high repeatability, quality, and efficiency, as it creates the physical foundation for all later customization steps. At the same time, Pressing_P2 allows controlled variations in size, shape, and material properties to meet the requirements defined in Programming_P1.
+
+This step ensures that every product has a durable, safe, and reliable base before moving on to more individualized processes.
+
+### Modelling_Design_P3
+
+![Modelling Design Process](../assets/images/process/P3.png)
+
+In **Modelling_Design_P3**, the visual and aesthetic customization of the plush toys takes place. Building on the base bodies from Pressing_P2, design elements such as colors, surfaces, accessories, and characteristic details are applied.
+
+This process combines digital design data with automated and manual crafting steps. The objective is to give each toy a distinct identity that aligns with its planned functionality and future AI personality.
+
+Modelling_Design_P3 balances creative variety with production feasibility, ensuring that individuality can be achieved at scale.
+
+### Testing_P4
+
+![Testing Process](../assets/images/process/P4.png)
+
+**Testing_P4** focuses on quality assurance at both the physical and functional levels. Each plush toy is inspected for material quality, workmanship, safety, and functional integrity.
+
+In addition to mechanical checks, this process includes preliminary verification of the planned interaction and AI-related interfaces. The goal is to ensure that every product meets internal quality standards and is technically ready for AI initialization.
+
+Testing_P4 acts as a critical control point, preventing defective or unsuitable products from progressing further in the value chain.
+
+### AI_Initialisation_P5
+
+![AI Initialisation Process](../assets/images/process/P5.png)
+
+In **AI_Initialisation_P5**, each plush toy receives its individual, child-specific AI personality. Based on the parameters from Programming_P1 and the verified products from Testing_P4, learning models, dialogue patterns, and behavioral logic are initialized.
+
+This process is highly data-driven and ensures that the AI operates in a safe, age-appropriate, and contextually relevant manner. The AI is not only activated but deliberately prepared for its role as a personal companion.
+
+AI_Initialisation_P5 represents the core of individual value creation within the Santa Factory.
+
+### Packing_Sack_P6
+
+![Packing Process](../assets/images/process/P6.png)
+
+**Packing_Sack_P6** is the final and most distinctive process of the Santa Factory. Here, the completed plush toys are packed for delivery. In addition, a creative scaling step takes place: based on the individual toy and its AI personality, further thematically matching gifts are generated and added to the sack.
+
+As a result, the sack contains more gifts than were physically produced beforehand. The focus is on surprise, emotional value, and amplifying the personalized experience.
+
+Packing_Sack_P6 combines logistics, storytelling, and a touch of magic to ensure that the final delivery is not only complete, but exceptional.
 
 ---
 

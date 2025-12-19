@@ -87,6 +87,27 @@ The simulation includes six production processes:
 
 - **Produced Quantity:** Number of completed products
 - **Target Achievement:** Percentage achievement of target production quantity 
+- **Throughput Time:** Average time from process start to completion
+- **Utilization:** Utilization of individual processes
+- **Bottlenecks:** Identification of capacity constraints
 
+### Questions for Analysis
 
+- Was the target production quantity achieved?
+- Which processes are bottlenecks?
+- How high is facility utilization?
+- What measures are needed to achieve the target quantity?
 
+---
+
+## 📚 Further Information
+
+For detailed information, see:
+
+- **[User Guide](../docs/05_user-guide.md)** – Complete step-by-step guide
+- **[Product & Process](../docs/03_product-and-process.md)** – Detailed process descriptions
+- **[Model & Simulation](../docs/04_model-and-simulation.md)** – Technical model details
+
+---
+
+**Date:** December 2025

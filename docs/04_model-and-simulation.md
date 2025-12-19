@@ -99,6 +99,16 @@ The deliberately separated storage of formats enables:
 
 ---
 
+## 🎯 Interactive Guide
+
+For a step-by-step guide on how to configure and use the simulation, see:
+
+**[Configuration Options – Help Santa deliver presents!](./05_user-guide.md)**
+
+This interactive guide walks you through all necessary steps to successfully plan Santa's factory and ensure all children receive their presents.
+
+---
+
 ## ⚠️ Limitations of Executable Version
 
 The .exe version is **NOT suitable** for:
@@ -142,19 +152,7 @@ For use outside permitted areas, **consent from the model creators** is required
 **Discrete Event Simulation (DES)**
 
 The simulation models the system as a sequence of discrete events. The model state changes only at specific time points (e.g., process start, process end, disruption occurrence).
-
-### Model Components
-
-- **Processes (Machines):** Represent the six production processes
-- **Material Flow (Connectors):** Connections between processes
-- **Source:** Generation of products
-- **Drain:** Collection of completed products
-- **Control Logic (SimTalk):** Parameterization and experiment control
-
-### Visualization
-
-- **2D View:** Schematic representation of process arrangement
-- **3D View:** Visualization in IFC factory layout (optional)
+ 
 
 ---
 

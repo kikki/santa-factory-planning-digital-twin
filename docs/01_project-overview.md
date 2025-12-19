@@ -23,10 +23,6 @@ Santa Claus is planning to introduce a new AI-based toy shortly before Christmas
 
 ## 🗂️ Repository Structure
 
----
-
-## 🗂️ Repository Structure
-
 The project is modularly structured and organized into the following areas:
 
 | Area | Content |

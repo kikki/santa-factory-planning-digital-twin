@@ -1,35 +1,31 @@
-# Help Santa Clause deliver presents to the children of this world!
-
-
-<div style="background-image: url('../assets/images/introduction_slide1.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 400px; color: white; position: relative;">
+# 🎅 Help Santa Claus deliver presents to the children of this world!
 
 Santa has a factory (hidden at the north pole) where his Elves manufacture AI-enhanced dolls.
+
 You need to design the factory correctly to ensure all children receive a present!
 
-
-</div>
+📄 [Download the full guide as PDF](../assets/pdf/SantasFactory2025.pdf)
 
 ---
 
-<div style="background-image: url('../assets/images/introduction_slide2.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 600px; color: white; position: relative;">
 
 ## Step 1: Demand Planning 
 
 **How many presents are needed?** There are roughly 2 billion children on this planet.
 
+
+
 Decide how many of them were well-behaved and should receive a present.
 
-<div style="margin-top: 30px; position: relative; z-index: 10;">
+
 
 ![Step 1 Screenshot](../assets/images/Step1.png)
 
-</div>
 
-</div>
 
 ---
 
-<div style="background-image: url('../assets/images/introduction_slide2.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 600px; color: white; position: relative;">
+
 
 ## Step 2: Check the Capacity of Santa's Factory
 
@@ -37,17 +33,15 @@ Manufacturing the AI-enhanced dolls requires **6 process steps**.
 
 Run a static check to see the expected utilization based on the process time and number of stations per process.
 
-<div style="margin-top: 30px; position: relative; z-index: 10;">
+
 
 ![Step 2 Screenshot](../assets/images/Step2.png)
 
-</div>
 
-</div>
 
 ---
 
-<div style="background-image: url('../assets/images/introduction_slide5.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 700px; color: white; position: relative;">
+
 
 ## Step 3: Factory Planning 
 
@@ -57,19 +51,17 @@ Use the **Factory Builder** to insert more stations if needed and set or change 
 
 Select stations to move them around on the shop floor. Make sure all workplaces are accessible for the Elves (press **O** to see obstacles)!
 
-<div style="margin-top: 30px; position: relative; z-index: 10;">
+
 
 ![Step 3a Screenshot](../assets/images/Step3a.png)
 
 ![Step 3b Screenshot](../assets/images/Step3b.png)
 
-</div>
 
-</div>
 
 ---
 
-<div style="background-image: url('../assets/images/introduction_slide5.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 600px; color: white; position: relative;">
+
 
 ## Step 4: Go-Live of Production!
 
@@ -79,10 +71,7 @@ Watch out for Santa and his reindeers as they fly out to deliver batches of pres
 
 Under the Christmas tree, you can track your progress.
 
-<div style="margin-top: 30px; position: relative; z-index: 10;">
+
 
 ![Final Result Screenshot](../assets/images/finalResult.png)
 
-</div>
-
-</div>
