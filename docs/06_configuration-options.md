@@ -1,14 +1,11 @@
-# Configuration Options
+# Help Santa Clause deliver presents to the children of this world!
 
----
 
 <div style="background-image: url('../assets/images/introduction_slide1.png'); background-size: cover; background-position: center; width: 100%; padding: 50px; min-height: 400px; color: white; position: relative;">
 
-## Step 1: Demand Planning 
+Santa has a factory (hidden at the north pole) where his Elves manufacture AI-enhanced dolls.
+You need to design the factory correctly to ensure all children receive a present!
 
-**How many presents are needed?** There are roughly 2 billion children on this planet.
-
-Decide how many of them were well-behaved and should receive a present.
 
 </div>
 
