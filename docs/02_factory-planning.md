@@ -72,6 +72,10 @@ Santa Claus has an **existing factory layout** that is to be reused. This corres
 
 ### Use of the IFC Model
 
+![Santa's Factory](../assets/images/factory.png)
+
+![Santa's Factory Layout](../assets/images/factory_layout.png)
+
 The IFC model serves exclusively as a **spatial framework** for positioning production processes. It does not represent a complete or detailed factory plan, but enables:
 
 - Investigation of capacity and throughput questions
