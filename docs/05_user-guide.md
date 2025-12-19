@@ -126,33 +126,9 @@ Defines the targeted production quantity for the considered period.
 
 ---
 
-## 🎛️ Step 3: Adjusting Process Parameters
 
-### Available Parameters
 
-For each process, the following parameters can be adjusted:
-
-| Parameter | Description | Unit | Effect |
-|-----------|-------------|------|--------|
-| **proc_time** | Process time | Minutes | Determines throughput |
-| **MTTR** | Mean Time To Repair | Minutes | Influences downtime |
-| **Availability** | Availability | Percent | Proportion of operational readiness |
-
-### Example Adjustments
-
-**Scenario 1: Optimistic Assumptions**
-- Process time: -10%
-- MTTR: -20%
-- Availability: +5%
-
-**Scenario 2: Pessimistic Assumptions**
-- Process time: +15%
-- MTTR: +30%
-- Availability: -5%
-
----
-
-## 🚀 Step 4: Running the Simulation
+## 🚀 Step 3: Running the Simulation
 
 ### Starting the Simulation
 
@@ -177,50 +153,21 @@ For each process, the following parameters can be adjusted:
 
 ---
 
-## 📊 Step 5: Evaluation and Scenario Comparison
+## 📊 Step 4: Evaluation and Scenario Comparison
 
 ### Evaluating Results
 
 **Questions for Assessment:**
 - Was the target production quantity achieved?
 - Which processes are bottlenecks?
-- How high is facility utilization?
-- What impact do disruptions (MTTR) have?
+- How high is facility utilization? 
 
-### Scenario Comparison
-
-**Recommended Approach:**
-1. **Base scenario:** Standard parameters and moderate target quantity
-2. **Optimistic scenario:** Improved parameters and higher target quantity
-3. **Pessimistic scenario:** Degraded parameters and realistic target quantity
 
 **Comparison:**
 - Which scenario is realistic?
 - What measures are required to achieve the target quantity?
 - Where are investments in additional capacity worthwhile?
 
----
-
-## 💡 Tips and Best Practices
-
-### Systematic Approach
-
-1. **Start with base scenario:** Understand basic behavior
-2. **Vary one parameter:** Isolate effects
-3. **Document your experiments:** Record parameters and results
-4. **Use scenario comparisons:** Evaluate alternatives
-
-### Avoid Common Mistakes
-
-- **Changing too many parameters simultaneously:** Effects cannot be isolated
-- **Unrealistic parameter values:** Results lose validity
-- **No documentation:** Experiments are not reproducible
-
-### Interpreting Results
-
-- **Target achievement < 80%:** Significant capacity bottleneck
-- **Target achievement 80-95%:** Moderate bottlenecks, optimization possible
-- **Target achievement > 95%:** Target realistically achievable
 
 ---
 
@@ -228,7 +175,7 @@ For each process, the following parameters can be adjusted:
 
 The Santa Factory Simulation enables:
 
-- **Assessment of production capacity** under realistic conditions
+- **Assessment of production capacity** 
 - **Identification of bottlenecks** in the process chain
 - **Scenario comparison** for decision support
 - **Experimentation** with different configurations
