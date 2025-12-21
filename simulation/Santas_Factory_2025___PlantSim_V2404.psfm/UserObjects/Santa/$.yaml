@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: Santa
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 880e6e3a-3dac-494e-a8e3-8cfbef69c639
+$SequenceNumber: 12
+3D:
+ BackgroundColor: -1
