@@ -11,6 +11,8 @@
 
 The **Santa Factory Planning Digital Twin** is an experimental simulation project for early-stage factory planning based on a fictional "Santa Factory" scenario. The project compares static production estimations with dynamic **discrete event simulation (DES)** and examines production capacity, process structures, and system behavior under uncertainty.
 
+[![🎅🎄Santa's Factory Planning Challenge ](https://img.youtube.com/vi/XWHYWNA8Q2s/maxresdefault.jpg)](https://youtu.be/XWHYWNA8Q2s)
+
 This project demonstrates how simulation can support decision-making in the early planning phases (VDI 5200 Phases 0-1) of factory planning.
 
 ---
