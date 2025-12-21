@@ -1,0 +1,24 @@
+InternalClassType: Button
+Coordinate3D: [3.8036,-5.7662,0]
+Label: "+"
+ObjectHeight: 3
+ObjectWidth: 3
+Origin: 06b6721a-918e-4726-bc09-72989508e517
+UUID: 3a7c3141-cc83-4f84-9927-fe938e0e4b75
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: Attr_bool_isPositive
+ ID: 4006433991
+ $DataType: boolean
+ Value: true
+-
+ Name: OnClicked
+ ID: 1942582834
+ $DataType: method
+ RandomSeed: 1192
+-
+ Name: OnAttr_bool_isPositiveChanged
+ ID: 460105935
+ $DataType: method
+ RandomSeed: 1194

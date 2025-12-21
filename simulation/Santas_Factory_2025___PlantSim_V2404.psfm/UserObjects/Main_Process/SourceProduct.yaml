@@ -1,0 +1,21 @@
+InternalClassType: Source
+Coordinate3D: [-0.5,-3,0]
+EntranceCtrl: "self.OnEntrance"
+GenerateAsBatch: true
+MUSelection: "Random"
+Name: SourceProduct
+Origin: c143882d-c1c4-417a-b132-abc769433bda
+Path: "ProdPlan"
+RandomSeed: 336
+TimeOfGeneration: "Interval Adjustable"
+UUID: d0c1dfc3-f56b-439f-9377-e523805b84cf
+$SequenceNumber: 4
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1996066285
+ $DataType: method
+ RandomSeed: 1397
+ Value: |+1
+  // Activate product graphic
+  @._3D.VisibleGraphicGroups := [@.Name]

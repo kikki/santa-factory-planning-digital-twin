@@ -1,0 +1,33 @@
+InternalClassType: Station
+Coordinate3D: [0,0,0]
+ExitCtrl: "self.OnExit"
+Origin: 7a1ef0a7-8acb-48fc-bd45-af22efdb9d96
+ProcTime: [Negexp,1:00]
+RandomSeed: 105
+UUID: 8dad61ea-f35d-4e4a-9f52-72f9534999f2
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: Attr_str_nameGrafic
+ ID: 553180184
+ $DataType: string
+ Value: ""
+-
+ Name: OnExit
+ ID: 2300026890
+ $DataType: method
+ RandomSeed: 1453
+ Value: |+1
+  // Get next process
+  var rowThisProcess	: integer	:= .UserObjects.T_Process.getRowNo(DropDownList.Item)
+  var nextProcess 	: string 	:= .UserObjects.T_Process[0, rowThisProcess +1]
+  
+  // Activate present graphic?
+  if (nextProcess = "")
+  	@._3D.VisibleGraphicGroups := ["present"]
+  	@._3D.Scale := 0.3
+  end
+  
+  @.move
+$Predecessors:
+- 91e2683b-5422-45d3-b0ae-eb0041fb9b8f

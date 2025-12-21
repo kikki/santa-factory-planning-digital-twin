@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: ProductionValueTool
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 1923d6e4-dba0-464c-8c79-2ca92c617fef
+$SequenceNumber: 9
+3D:
+ BackgroundColor: -1

@@ -1,0 +1,9 @@
+InternalClassType: HtmlReport
+Content: |+1
+ <a href="https://github.com/kikki/santa-factory-planning-digital-twin/blob/main/docs/05_user-guide.md" title="Open the Santa Factory User Guide and Tutorial on GitHub" target="_blank" rel="noopener noreferrer" style="display:inline-block;padding:10px 16px;background-color:#2ea44f;color:#ffffff;text-decoration:none;font-weight:600;border-radius:6px;border:1px solid #1f7a3a;">Santa Factory – User Guide Tutorial</a>
+
+Coordinate3D: [0,0,0]
+Name: IntroductionAlternative
+Origin: c1a5181b-416e-43db-b704-595a16d0e560
+UUID: fab59183-0968-4733-9e0e-7304980e2050
+$SequenceNumber: 4

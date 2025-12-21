@@ -1,0 +1,11 @@
+InternalClassType: Comment
+BackgroundColor: 3937500
+Color: 16777215
+Coordinate3D: [1,-1,1]
+Font: 4
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: "Factory Modifications"
+UUID: 6766bc17-ee1b-4c49-a5bf-d06a1374cc32
+$SequenceNumber: 1
+3D:
+ ExcludeFromShowContentOfLocation: false

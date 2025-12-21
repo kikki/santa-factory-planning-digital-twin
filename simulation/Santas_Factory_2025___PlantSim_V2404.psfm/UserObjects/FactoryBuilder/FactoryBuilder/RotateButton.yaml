@@ -1,0 +1,12 @@
+InternalClassType: Button
+Coordinate3D: [8.5,-7.5,1]
+Label: "↩️"
+Origin: 2469ef51-ea7b-435f-bdeb-bc83034a885e
+UUID: 027b238d-ae33-4f76-a434-1b5a0a95a87d
+$SequenceNumber: 13
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3016400514
+ $DataType: method
+ RandomSeed: 543

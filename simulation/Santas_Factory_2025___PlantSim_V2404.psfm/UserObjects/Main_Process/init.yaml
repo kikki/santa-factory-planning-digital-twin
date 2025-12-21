@@ -1,0 +1,68 @@
+InternalClassType: Method
+Coordinate3D: [-16,4,0]
+Name: init
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ var _tab_Process : object := .UserObjects.T_Process
+ // Get next process
+ var rowThisProcess	: integer	:= _tab_Process.getRowNo(DropDownList.Item)
+ var nextProcess 	: string 	:= _tab_Process[0, rowThisProcess +1]
+ if (rowThisProcess = -1) then throwRuntimeError("undefined process"); end
+ 
+ // sim_object address
+ var _sm_folder : String := ".UserObjects.Sim_Objects"
+ var _sim_sourceProduct := str_to_obj(_sm_folder + ".SourceProduct")
+ var _sim_sourceSack := str_to_obj(_sm_folder + ".SourceSack")
+ var _sim_assembly := str_to_obj(_sm_folder + ".AssemblyStation")
+ 
+ var _variantsGeneration := .UserObjects.ProductionValueTool.ProductionValue.childNo(1).VariantsGenerator
+ 
+ 
+ // Hide infeed buffer at first process and connect Source instead
+ Infeed._3D.ExcludeFromShowContentOfLocation := (rowThisProcess = 1)
+ if rowThisProcess = 1
+ 	var _SourceProduct := _sim_sourceProduct.duplicate(current)  --current.createObject(_sim_sourceProduct)
+ 	.MaterialFlow.Connector.connect(_SourceProduct, Station)
+ 	--insert station into VariantsGenerator
+ 	_variantsGeneration.OnDragDrop(to_str(current, ".SourceProduct"))
+ 
+ end
+ // Show/hide assembly and outfeed
+ if nextProcess = ""
+ 	var _AssemblyStation :=   _sim_assembly.duplicate(current)        -- current.createObject(_sim_assembly)
+ 	.MaterialFlow.Connector.connect(Station, _AssemblyStation)
+ 	var _SourceSack :=    _sim_sourceSack.duplicate(current)     --current.createObject(_sim_sourceSack)
+ 	_SourceSack._3D.Position := [2,-4,0] --hard coded position, olways the same
+ 	.MaterialFlow.Connector.connect(_SourceSack, _AssemblyStation)
+ 
+ 	Outfeed._3D.ExcludeFromShowContentOfLocation := false
+ 	Outfeed.Buffer._3D.ExcludeFromShowContentOfLocation := true	-- we only need the workplace!
+ 
+ 	Infeed.Workplace.WorkerStaysHere := false
+ 
+ 	_AssemblyStation._3D.ExcludeFromShowContentOfLocation := false
+ 	_AssemblyStation._3D.Position.X := _tab_Process["Pos_Outfeed", DropDownList.Item]
+ else
+ 	.MaterialFlow.Connector.connect(Station, Outfeed.Buffer)
+ 	Outfeed._3D.ExcludeFromShowContentOfLocation := false
+ 
+ 	Infeed.Workplace.WorkerStaysHere := true
+ end
+ 
+ // Connect with all next processes
+ if nextProcess /= ""
+ 	for var i := 1 to ~.NumNodes
+ 		if ~.node(i).Class = current.Class AND ~.node(i).Dropdownlist.Item = nextProcess
+ 			.MaterialFlow.Connector.connect(Exit, ~.node(i).Entry)
+ 		end
+ 	next
+ end
+ 
+ // Set processing time
+ Station.ProcTime.beta := _tab_Process["proc_time", DropDownList.Item]
+ Station.Failures.createFailure("profile", _tab_Process["Availability [%]", DropDownList.Item], _tab_Process["MTTR [sec]", DropDownList.Item], "OperatingTime", 0, 0, true)
+RandomSeed: 103
+UUID: a9c6b99c-0117-46a3-b2f3-2e84edd2b352
+$SequenceNumber: 1
+3D:
+ VisibleGraphicGroups: ["default","init"]

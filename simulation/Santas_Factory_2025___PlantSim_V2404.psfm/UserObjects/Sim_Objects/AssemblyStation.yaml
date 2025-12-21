@@ -1,0 +1,80 @@
+InternalClassType: AssemblyStation
+AssemblyMode: "Attach MUs"
+Coordinate3D: [3,0,0]
+EntranceCtrl: "self.OnEntrance"
+ExitCtrl: "self.OnExit"
+MainMU: 2
+Origin: 04feb7b9-d0d6-4402-9f32-cd149fd1c63f
+PartListMode: "Fill-up Main MU"
+RandomSeed: 823
+UUID: 16e68a29-9649-477f-98ca-730dc077b969
+$SequenceNumber: 6
+3D:
+ GraphicGroupNames: ["default"]
+ LockedGraphicGroups: []
+ MUAnimations:
+ -
+  Name: "Default"
+  AnchorPoints:
+  - [0,0,0,0,0,0,1,~]
+ Scale: [1,2,1]
+ StatesForColoring: 0xf7f
+ StatesOrientation: "(Off)"
+ $StatesTransformations:
+  HorizontalStatesPosition: [-0.9,0.03,1.95]
+  HorizontalStatesScale: [0.9,0.5,0.15]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [-0.96,0.45,2]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: false
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1734678127
+ DataType: method
+ RandomSeed: 843
+ Value: |+1
+  // Make sack see-through
+  @._3D.getGraphic("default", [1,1,1]).MaterialTransparency := 0.6
+ ShowIn3D: false
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ DecimalPlaces: -1
+ IntegerPlaces: -1
+ Alignment: "Left"
+ ShowDataType: false
+ ShowName: true
+ ShowUnit: true
+ Transparent: false
+ ShowExternally: false
+-
+ Name: OnExit
+ ID: 1028300035
+ DataType: method
+ RandomSeed: 862
+ Value: |+1
+  // Make sack non-see-through
+  @._3D.getGraphic("default", [1,1,1]).MaterialTransparency := 0
+  @._3D.ShowContent := false
+  
+  // Move sack
+  @.move
+ ShowIn3D: false
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ DecimalPlaces: -1
+ IntegerPlaces: -1
+ Alignment: "Left"
+ ShowDataType: false
+ ShowName: true
+ ShowUnit: true
+ Transparent: false
+ ShowExternally: false

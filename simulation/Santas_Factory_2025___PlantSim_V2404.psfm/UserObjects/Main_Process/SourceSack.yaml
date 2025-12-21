@@ -1,0 +1,15 @@
+InternalClassType: Source
+Coordinate3D: [2,-4,0]
+Name: SourceSack
+Origin: e0daa02f-46bc-405b-a74f-10889b1c36f3
+Path: e605bb5d-8893-4043-8a3a-cd4743d7deb0
+RandomSeed: 833
+UUID: 8a249cf2-2fae-41ba-ba14-87471bc97896
+$SequenceNumber: 14
+$Successors:
+-
+ $Succ: 1606b3b9-0e93-4b93-af3b-b501277692e4
+ Name: Connector1
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: bfd2f47b-8cb9-4410-9d74-3e39c119eefc
+ $SequenceNumber: 15

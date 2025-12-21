@@ -1,0 +1,15 @@
+InternalClassType: Comment
+Color: 32768
+Coordinate3D: [-5.6718,-8.9984,0]
+Font: 4
+Name: Comment1
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: |+1
+ What percentage of children worldwide should
+ receive an innovative AI-enabled doll from
+ Santa Claus?
+Transparent: true
+UUID: 6719a6f8-708f-411d-91d3-e7856213d1d8
+$SequenceNumber: 10
+3D:
+ ExcludeFromShowContentOfLocation: false

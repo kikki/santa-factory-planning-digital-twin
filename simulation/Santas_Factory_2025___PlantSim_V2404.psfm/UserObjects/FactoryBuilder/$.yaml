@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: FactoryBuilder
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 2021502b-0d71-48d4-86ea-44a79dee8a28
+$SequenceNumber: 8
+3D:
+ BackgroundColor: -1

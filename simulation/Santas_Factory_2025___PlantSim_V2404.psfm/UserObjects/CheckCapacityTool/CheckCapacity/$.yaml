@@ -1,0 +1,319 @@
+InternalClassType: Frame
+ChangePathCtrl:
+CloseCtrl:
+ConnectCtrl:
+ConstructorCtrl:
+Coordinate3D: [-5,5,0]
+CreateIn3D: true
+DestructorCtrl:
+DragDropCtrl:
+FailCtrl:
+InitCtrl:
+Label: ""
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: CheckCapacity
+OpenCtrl:
+PauseCtrl:
+PermitDeleteCtrl:
+RelabelCtrl:
+RenameCtrl:
+ReplacementMode: "merge"
+ShiftcalendarObject:
+UnplannedCtrl:
+UUID: f9a07e63-ef87-4a18-a621-3ff917593ff0
+$SequenceNumber: 1
+3D:
+ AniRotationAxis: [0,0,-1]
+ AniRotationCenter: [0,0,0]
+ BackgroundColor: -1
+ CameraAnimations:
+ ExcludeFromShowContentOfLocation: false
+ GraphicGroupNames: ["default","deco","M1","M2","M3","M4","M5","M6"]
+ InternalGraphicGroups: ["deco","M1","M2","M3","M4","M5","M6"]
+ LockedGraphicGroups: []
+ MaterialActive: true
+ MaterialAmbientColor: 2828837
+ MaterialDiffuseColor: 8617841
+ MaterialEmissiveColor: 0
+ MaterialShininess: 0.11
+ MaterialSpecularColor: 8355711
+ MaterialTransparency: 0
+ Mirror: [false,false,false]
+ MovementInterruptible: false
+ NameLabelEnabled: false
+ NameLabelPosition: [-1,-1,0]
+ NameLabelRotation: [0,0,0,-1]
+ NameLabelScale: [1,1,1]
+ ObstacleForWorker: "Visible graphics"
+ PlanningView: false
+ PointCloudPath: ""
+ PointCloudPosition: [0,0,0]
+ PointCloudRotation: [0,0,0,-1]
+ Poses:
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ SelfAnimations:
+ ShowBasePlate: true
+ ShowConnections: true
+ ShowContent: true
+ ShowExternalGraphics: true
+ ShowGrid: false
+ ShowLabels: true
+ ShowNames: true
+ ShowPointClouds: false
+ ShowShadows: false
+ ShowSky: false
+ ShowUserDefinedAttributes: true
+ StatesForColoring: 0xf0f
+ StatesOrientation: "(Off)"
+ SynchronizedJoints: true
+ VisibleGraphicGroups: ["deco","M1","M2","M3","M4","M5","M6"]
+ $StatesTransformations:
+  HorizontalStatesPosition: [-1,1,2]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [-0.96,0.96,2]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: true
+$IconArray:
+-
+ Name: "Default"
+ Transparent: true
+ Size: [40,40]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/v7+/v7+/v7+AQEBiIiI7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIAPAAAPAAAPAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIAPAAAPAAAPAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsAQEB7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7OzsAA//AA//AA//AA//7Ozs7Ozs7Ozs7Ozs7Ozs/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+AA//AA//AA//AA//AQEBAQEBAQEBAQEBAQEB/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+AA//AA//AA//AA///v7+/v7+/v7+/v7+/v7+/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiI7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiI7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs/wAA/wAA/wAA/wAA7Ozs7Ozs7Ozs7Ozs7Ozs/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs/wAA/wAA/wAA/v7+/v7+/v7+/v7+/v7+/v7+/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+$CustomAttributes:
+-
+ Name: Attr_M_checkIfAllProces_exist
+ ID: 737682883
+ DataType: method
+ RandomSeed: 5745
+ Value: |+1
+  --after CapacityCheck is finish
+  -> boolean
+  var _capacityCheck : object := .userObjects.CheckCapacityTool.CapacityCheck
+  
+  var _T_Process : object := .userObjects.T_Process
+  
+  var _str : string
+  var MESSAGE_id : integer := 1
+  var _return_ok : boolean := true
+  --
+  for var i:= 1 to _T_Process.ydim
+  	_str := to_str("-> string; return "+ to_str(_capacityCheck) + "[0,\\"" + to_str(_T_Process[0,i]) + "\\"];")
+  	--print _str
+  	if  executeSilent(_str) = ""
+  		--print "Not found"
+  		messageBox(.userObjects.Localization.getText("message not all process"))
+  		root.EventController.stop
+  		_return_ok := false
+  	end
+  
+  next
+  
+  return _return_ok
+-
+ Name: Attr_M_getStaticOverview
+ ID: 3457412074
+ DataType: method
+ RandomSeed: 5748
+ Value: |+1
+  param doConsiderAvailability : boolean
+  -> boolean
+  
+  
+  RESULT := true
+  
+  if root.EventController.End = 0 then
+  	root.EventController.Date := str_to_Datetime("2025-12-01 06:00:00.0000")
+  	root.EventController.End := str_to_time("23:12:00:00.0000")
+  	--debug
+  end
+  -- get simulation duration
+  var _simulation_duration : time := root.EventController.End
+  var _CapacityCheck : object := .userObjects.CheckCapacityTool.CapacityCheck
+  ------------------------------------
+  
+  -- get productionvalue
+  if root.isnameUnique("ProductionValue")
+  	debug
+  	RESULT := false
+  	return RESULT
+  end
+  
+  var _factor : real := root.ProductionValue.V_Factor
+  var _Target_Quantity : integer := root.ProductionValue.V_good_child_percent * root.ProductionValue.Attr_int_currentWorldChildCount / 100
+  
+  -------------------------------------
+  --delete rows
+  _CapacityCheck.delete({3,1}..{7,*})
+  
+  --than calculate for each process and write into capacityCheck
+  var _process_Time: time
+  var _availability_Ratio: real
+  
+  var byref_Max_Physical_Output: real --byref
+  var byref_Max_Delivered_Output: real --byref
+  var byref_Utilization_Rate: real --byref
+  var byref_Takt : real --byref
+  var _str_message : string
+  for var i := 1 to _CapacityCheck.ydim loop
+  	_process_Time := when _CapacityCheck[2,i]> 0 then (_CapacityCheck[1,i] / _CapacityCheck[2,i]) else _CapacityCheck[1,i]
+  	if doConsiderAvailability then
+  		_availability_Ratio := .UserObjects.T_Process["Availability [%]", _CapacityCheck[0,i]] / 100
+  	else
+  		_availability_Ratio := 1.0
+  	end
+  
+  	_str_message := self.~.Attr_M_Utilization_Rate(_process_Time, _simulation_duration, _availability_Ratio, _factor, _Target_Quantity, byref_Max_Physical_Output, byref_Max_Delivered_Output, byref_Utilization_Rate, byref_Takt)
+  
+  	_CapacityCheck.writeRow(3, i, byref_Max_Physical_Output, byref_Max_Delivered_Output, byref_Utilization_Rate, byref_Takt, _str_message)
+  
+  next
+  return RESULT
+-
+ Name: Attr_M_Utilization_Rate
+ ID: 3860202216
+ DataType: method
+ RandomSeed: 5751
+ Value: |+1
+  -- process_Time: time
+  -- simulation_duration: time
+  -- availabilityRatio: real
+  -- factor: real
+  -- Target_Quantity: integer
+  -- byref Max_Physical_Output: real
+  -- byref Max_Delivered_Output: real
+  -- byref Utilization_Rate: real
+  -- byref Takt : real
+  -- -> string
+  param process_Time: time , simulation_duration: time, availabilityRatio : real, factor: real, Target_Quantity: integer, byref Max_Physical_Output: real, byref Max_Delivered_Output: real, byref Utilization_Rate: real, byref Takt : real -> string
+  
+  
+  if process_Time > 0 then
+  	Max_Physical_Output := availabilityRatio * simulation_duration / process_Time
+  	Max_Delivered_Output := Max_Physical_Output * factor
+  	Utilization_Rate := ( Target_Quantity / factor ) / Max_Physical_Output
+  	Takt := simulation_duration / (Target_Quantity / factor)
+  	return when (process_Time / availabilityRatio) <= Takt then "ok" else "bottleneck"
+  end
+  return "process time is 0!"
+-
+ Name: Attr_M_checkcapacity
+ ID: 1772997825
+ DataType: method
+ RandomSeed: 5754
+ Value: |+1
+  
+  
+  var _mainProcess : object := .UserObjects.Main_Process
+  var _tab_result : object := .UserObjects.CheckCapacityTool.CapacityCheck
+  var _T_Process : object := .UserObjects.T_Process
+  
+  --table clear
+  _tab_result.delete({0,1}..{*,*})
+  
+  --
+  var _result : object := self.~.Comment
+  
+  --check worker and station position
+  
+  --regestry all process
+  for var i:= 1 to root.NumNodes
+  	if root.node(i).Class = _mainProcess --this is a process
+  		--y is the indix of process
+  		_tab_result[0,root.node(i).Attr_id_grafic_active] := _T_Process["name",root.node(i).Attr_id_grafic_active]
+  
+  		-- than proc_time
+  		_tab_result[1,root.node(i).Attr_id_grafic_active] := 	 _T_Process["proc_time",root.node(i).Attr_id_grafic_active]
+  
+  		-- than count
+  		_tab_result[2,root.node(i).Attr_id_grafic_active] +=1
+  
+  	end
+  next
+-
+ Name: Attr_M_workflow_checkcapacity
+ ID: 2459954327
+ DataType: method
+ RandomSeed: 5757
+ Value: |+1
+  --only if root /= void and tool in root clicked
+  if current.Class = void
+  	messageBox("Use me in instances only!")
+  	RETURN
+  end
+  
+  var _CapacityCheck : object := .userObjects.CheckCapacityTool.CapacityCheck
+  
+  Attr_M_checkcapacity
+  if Attr_M_checkIfAllProces_exist
+  
+  	var doConsiderAvailability : boolean := (messageBox(.UserObjects.Localization.getText("Prompt_CapacityCheckWithFailures"), 48, 2) = 16)
+  
+  	if doConsiderAvailability then
+  		Chart.Title := .UserObjects.Localization.getText("ChartTitle_inclAvail")
+  	else
+  		Chart.Title := .UserObjects.Localization.getText("ChartTitle_exclAvail")
+  	end
+  
+  	if Attr_M_getStaticOverview(doConsiderAvailability)
+  		--debug
+  		--draf
+  		--get message text.
+  		if _CapacityCheck.max({5,1}..{5,*})< 1 then
+  			Comment.text 	:= .UserObjects.LoCalization.getText("info check message ok")
+  			Comment.Color	:= makeRGBValue(0, 128, 0)
+  		else
+  			Comment.text 	:= .UserObjects.LoCalization.getText("info check message critical")
+  			Comment.Color	:= makeRGBValue(255, 0, 0)
+  		end
+  	else
+  		--debug
+  
+  	end
+  else
+  	--debug
+  
+  
+  end

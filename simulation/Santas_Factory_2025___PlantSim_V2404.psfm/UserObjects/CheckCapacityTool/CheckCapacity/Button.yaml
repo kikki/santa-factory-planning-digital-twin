@@ -1,0 +1,17 @@
+InternalClassType: Button
+Control: "self.OnClicked"
+Coordinate3D: [-2.6018,6.1887,0]
+Label: "static check"
+Origin: 7cbbe6cc-7ecf-444a-941e-33aaff5372b8
+UUID: 87a8c298-612b-4e0c-b5fc-a46e874cf126
+$SequenceNumber: 1
+3D:
+ ExcludeFromShowContentOfLocation: false
+ Scale: [3,4,2.2]
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3003691855
+ DataType: method
+ RandomSeed: 1838
+ Value: "Attr_M_workflow_checkcapacity"

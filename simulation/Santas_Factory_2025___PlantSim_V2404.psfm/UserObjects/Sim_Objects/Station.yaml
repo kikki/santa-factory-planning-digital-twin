@@ -1,0 +1,63 @@
+InternalClassType: Station
+Coordinate3D: [0,0,0]
+ExitCtrl: "self.OnExit"
+Origin: 651f4341-32b8-4eea-b4cb-e3d1cde24f65
+ProcTime: [Negexp,1:00]
+RandomSeed: 105
+UUID: 7a1ef0a7-8acb-48fc-bd45-af22efdb9d96
+$SequenceNumber: 5
+3D:
+ ExcludeFromShowContentOfLocation: true
+$CustomAttributes:
+-
+ Name: Attr_str_nameGrafic
+ ID: 553180184
+ DataType: string
+ Value: ""
+ ShowIn3D: false
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ DecimalPlaces: -1
+ IntegerPlaces: -1
+ Alignment: "Left"
+ ShowDataType: false
+ ShowName: true
+ ShowUnit: true
+ Transparent: false
+ ShowExternally: false
+-
+ Name: OnExit
+ ID: 2300026890
+ DataType: method
+ RandomSeed: 916
+ Value: |+1
+  // Get next process
+  var rowThisProcess	: integer	:= .UserObjects.T_Process.getRowNo(DropDownList.Item)
+  var nextProcess 	: string 	:= .UserObjects.T_Process[0, rowThisProcess +1]
+  
+  // Activate present graphic?
+  if (nextProcess = "")
+  	@._3D.VisibleGraphicGroups := ["present"]
+  	@._3D.Scale := 0.3
+  end
+  
+  @.move
+ ShowIn3D: false
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ DecimalPlaces: -1
+ IntegerPlaces: -1
+ Alignment: "Left"
+ ShowDataType: false
+ ShowName: true
+ ShowUnit: true
+ Transparent: false
+ ShowExternally: false

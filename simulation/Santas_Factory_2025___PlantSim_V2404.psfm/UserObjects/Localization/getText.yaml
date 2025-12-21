@@ -1,0 +1,17 @@
+InternalClassType: Method
+Coordinate3D: [4,-4,0]
+Name: getText
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ // Returns a localized text from T_Language
+ param textID : string, targetNumCharPerLine : integer := -1
+ ->string
+ 
+ RESULT := T_Language[userInterfaceLanguage+1, textID]
+ 
+ if (targetNumCharPerLine > 0) then
+ 	RESULT := addLineBreaks(RESULT, targetNumCharPerLine)
+ end
+RandomSeed: 1
+UUID: c3c7ab90-915a-4d21-8e78-51a40824ad9c
+$SequenceNumber: 3

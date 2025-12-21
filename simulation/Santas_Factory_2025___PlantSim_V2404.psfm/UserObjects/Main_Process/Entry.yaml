@@ -1,0 +1,16 @@
+InternalClassType: Interface
+Coordinate3D: [-8,0,1]
+Name: Entry
+Origin: 3739eedf-63f7-4b4d-977a-9d7741af9582
+RandomSeed: 682
+UUID: c59b4e78-07eb-4a54-a699-280396574d6c
+$SequenceNumber: 9
+3D:
+ ExcludeFromShowContentOfLocation: true
+$Successors:
+-
+ $Succ: bd0b350f-8a3c-45b0-9d27-9eb13987edf3
+ Name: Connector2
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: 5d560246-b6b0-4426-bcfb-63a9c510b8b2
+ $SequenceNumber: 10

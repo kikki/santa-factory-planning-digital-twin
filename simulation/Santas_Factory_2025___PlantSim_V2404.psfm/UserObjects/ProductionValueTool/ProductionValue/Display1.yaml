@@ -1,0 +1,15 @@
+InternalClassType: Display
+Active: true
+Color: 32768
+Comment: ""
+Coordinate3D: [-0.7596,-5.0212,0]
+DecimalPlaces: 2
+Name: Display1
+Origin: 8b9a6c0b-3422-4195-95e5-ae25ed0aa23f
+Path: "V_good_child_percent"
+Sampler: false
+Transparent: true
+UUID: 24a7149a-3236-49a6-95a9-7254d9f6df82
+$SequenceNumber: 4
+3D:
+ Scale: [4,4,4]

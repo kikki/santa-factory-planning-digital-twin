@@ -1,0 +1,67 @@
+InternalClassType: Part
+BookPntHRelative: 0
+BookPntLRelative: 0.5
+BookPntWRelative: 0.5
+Coordinate3D: [-2,2,0]
+MUHeight: 0.7
+MULength: 0.5
+MUWidth: 0.5
+Name: Main_Product
+Origin: f145c766-8cb2-4854-b1a8-b09eff4e97eb
+UUID: 9c6511f9-ffdc-4390-bc49-b09224a86d87
+$Observers:
+- [Attr_id_grafic_active,"self.OnAttr_id_grafic_activeChanged"]
+$SequenceNumber: 2
+3D:
+ GraphicGroupNames: ["default","graphic","BO1","BO2","BO3","BO4","present"]
+ LockedGraphicGroups: []
+ ScaleAutomatically: false
+ VisibleGraphicGroups: ["BO3","BO2","BO1","BO4","present"]
+$CustomAttributes:
+-
+ Name: Attr_M_setGrafic
+ ID: 2350857479
+ DataType: method
+ RandomSeed: 106
+ Value: |+1
+  -- set T_Product
+  param  name_str_product : string   -> boolean
+  
+  var _tab_Product : object := .UserObjects.T_Product
+  
+  _tab_Product.setCursor(0,0)
+  
+  if not _tab_Product.find({0,0}..{0,*}, name_str_product)
+  	debug
+  	return false
+  end
+  
+  self.~.Attr_id_grafic_active :=   _tab_Product.CursorY
+-
+ Name: Attr_id_grafic_active
+ ID: 3802872216
+ DataType: integer
+ Value: 0
+ HasInitValue: true
+ InitValue: 1
+-
+ Name: OnAttr_id_grafic_activeChanged
+ ID: 1321024722
+ DataType: method
+ RandomSeed: 107
+ Value: |+1
+  -- param attribute: string, oldValue, newValue: integer
+  -- param attribute: string, oldValue: integer
+  param newValue: integer
+  
+  var _product_obj : object := .userObjects.T_Product
+  
+  
+  --deactivate all grafic
+  for var i := 1 to _product_obj.ydim loop
+  	self.~._3D.getGraphic(_product_obj[1,i]).Visible = false;
+  next
+  
+  
+  -- activate grafic
+  self.~._3D.getGraphic(_product_obj[1,self.~.Attr_id_grafic_active]).Visible = true;

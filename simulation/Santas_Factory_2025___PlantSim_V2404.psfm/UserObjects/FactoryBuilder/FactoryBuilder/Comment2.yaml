@@ -1,0 +1,16 @@
+InternalClassType: Comment
+Color: 255
+Coordinate3D: [-1.3931,-15.373499999999998,0]
+Font: 4
+Name: Comment2
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: |+1
+ Add and position additional production
+ units to achieve the target output. Ensure
+ that all units are accessible to the elves;
+ otherwise, the equipment cannot be operated!
+Transparent: true
+UUID: acff49df-687a-47eb-b023-19f96f0a6795
+$SequenceNumber: 15
+3D:
+ ExcludeFromShowContentOfLocation: false

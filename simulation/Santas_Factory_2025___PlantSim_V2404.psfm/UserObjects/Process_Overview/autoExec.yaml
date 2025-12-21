@@ -1,0 +1,17 @@
+InternalClassType: Method
+Coordinate3D: [3,-3,0]
+Name: autoExec
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ // Show introduction PDF
+ if NOT existsFile(.UserObjects.Process_Overview.FileLinkIntroduction.Filename) then
+ 	IntroductionAlternative.isShown := true
+ 
+ 	// Show github repository user-guide - throws weird error messages
+ 	--openHTMLWindow("https://github.com/kikki/santa-factory-planning-digital-twin/blob/main/docs/05_user-guide.md", "User Guide", 800, 100, 600, 800)
+ else
+ 	openHTMLWindow(.UserObjects.Process_Overview.FileLinkIntroduction.Filename, "Santas Factory 2025", 100, 100, 600, 839)	-- size-ratio 1.398
+ end
+RandomSeed: 1
+UUID: e2f66e95-ea3b-414d-b2a0-16178a652dbe
+$SequenceNumber: 3

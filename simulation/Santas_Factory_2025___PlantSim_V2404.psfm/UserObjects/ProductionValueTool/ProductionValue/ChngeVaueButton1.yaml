@@ -1,0 +1,25 @@
+InternalClassType: Button
+Coordinate3D: [-4.4333,-5.8688,0]
+Label: "-"
+Name: ChngeVaueButton1
+ObjectHeight: 3
+ObjectWidth: 3
+Origin: 06b6721a-918e-4726-bc09-72989508e517
+UUID: a74728d3-9e28-4e97-86d2-03cb75d35372
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: Attr_bool_isPositive
+ ID: 4006433991
+ $DataType: boolean
+ Value: false
+-
+ Name: OnClicked
+ ID: 1942582834
+ $DataType: method
+ RandomSeed: 1196
+-
+ Name: OnAttr_bool_isPositiveChanged
+ ID: 460105935
+ $DataType: method
+ RandomSeed: 1198

@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: CheckCapacityTool
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: a776d1d8-2259-41b2-8862-6733536ecf5a
+$SequenceNumber: 11
+3D:
+ BackgroundColor: -1

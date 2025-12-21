@@ -1,0 +1,13 @@
+InternalClassType: Workplace
+Capacity: 2
+Coordinate3D: [0,-1.41,0]
+Origin: 41b02943-4bcd-4bc2-8e57-4eb90ee2d173
+RandomSeed: 651
+Station: "Buffer"
+UnloadingTime: 1
+UUID: b7a653f0-4081-4db3-9b6e-0e2f6c7f7f8a
+WorkerStaysHere: true
+$SequenceNumber: 2
+3D:
+ Rotation: [270,0,0,-1]
+ VisibleGraphicGroups: ["assigned"]

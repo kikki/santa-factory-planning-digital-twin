@@ -1,0 +1,12 @@
+InternalClassType: Comment
+BackgroundColor: 3937500
+Color: 16777215
+Coordinate3D: [1,-6,1]
+Font: 2
+Name: Comment1
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: "Move all *selected* processes"
+UUID: a92b665b-dbea-4e41-b6cc-8a2c926b9a42
+$SequenceNumber: 3
+3D:
+ ExcludeFromShowContentOfLocation: false

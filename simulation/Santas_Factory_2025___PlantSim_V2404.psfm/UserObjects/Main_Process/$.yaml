@@ -1,0 +1,82 @@
+InternalClassType: Frame
+Coordinate3D: [-5,5,0]
+Name: Main_Process
+Origin: 8d955067-17bd-4a6a-892d-f7ac29a54758
+UUID: 7a3db264-66d9-4bf1-a4a9-83ad06786854
+$Observers:
+- [Attr_id_grafic_active,"self.OnAttr_id_grafic_activeChanged"]
+$SequenceNumber: 1
+3D:
+ GraphicGroupNames: ["default","deco","M1","M2","M3","M4","M5","M6"]
+ InternalGraphicGroups: ["deco","M1","M2","M3","M4","M5","M6"]
+ LockedGraphicGroups: []
+ PlanningView: false
+ ShowBasePlate: true
+ ShowConnections: true
+ ShowExternalGraphics: true
+ ShowGrid: false
+ ShowLabels: true
+ ShowNames: true
+ ShowPointClouds: false
+ ShowShadows: false
+ ShowSky: false
+ ShowUserDefinedAttributes: true
+ VisibleGraphicGroups: ["M4"]
+$CustomAttributes:
+-
+ Name: Attr_id_grafic_active
+ ID: 4058320425
+ DataType: integer
+ Value: 4
+-
+ Name: OnAttr_id_grafic_activeChanged
+ ID: 3694841407
+ DataType: method
+ RandomSeed: 341
+ Value: |+1
+  -- param attribute: string, oldValue, newValue: integer
+  -- param attribute: string, oldValue: integer
+  param newValue: integer
+  
+  var _process_obj : object := .UserObjects.T_Process
+  
+  
+  --deactivate all grafic
+  for var i := 1 to _process_obj.ydim loop
+  	self.~._3D.getGraphic(_process_obj[1,i]).Visible = false;
+  next
+  
+  
+  -- activate grafic
+  self.~._3D.getGraphic(_process_obj[1,self.~.Attr_id_grafic_active]).Visible = true;
+-
+ Name: Attr_M_setGrafic
+ ID: 2115186641
+ DataType: method
+ RandomSeed: 344
+ Value: |+1
+  -- set T_Product
+  param  name_str_product : string   -> boolean
+  
+  if name_str_product = ""
+  	name_str_product := DropDownList.Item
+  end
+  
+  
+  var _tab_Process : object := .UserObjects.T_Process
+  
+  _tab_Process.setCursor(0,0)
+  
+  if not _tab_Process.find({0,0}..{0,*}, name_str_product)
+  	debug
+  	return false
+  end
+  
+  self.~.Attr_id_grafic_active :=   _tab_Process.CursorY
+  
+  if self.~.Attr_id_grafic_active = 1
+  	Infeed._3D.Position
+  end
+  self.~.DropDownList._3D.Position:= [-2.5,0,_tab_Process["Pos_z DropDownMenu",_tab_Process.CursorY]]
+  Infeed._3D.Position.X := _tab_Process["Pos_Infeed", _tab_Process.CursorY]
+  Outfeed._3D.Position.X := _tab_Process["Pos_Outfeed", _tab_Process.CursorY]

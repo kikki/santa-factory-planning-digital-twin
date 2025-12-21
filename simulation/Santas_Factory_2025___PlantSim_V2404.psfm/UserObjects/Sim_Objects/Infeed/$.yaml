@@ -1,0 +1,10 @@
+InternalClassType: Frame
+Coordinate3D: [-3,0,0]
+Name: Infeed
+Origin: 8d955067-17bd-4a6a-892d-f7ac29a54758
+UUID: 87f1d587-e695-4010-9814-c537c934ce43
+$SequenceNumber: 3
+3D:
+ GraphicGroupNames: ["default","deco"]
+ InternalGraphicGroups: ["deco"]
+ LockedGraphicGroups: []

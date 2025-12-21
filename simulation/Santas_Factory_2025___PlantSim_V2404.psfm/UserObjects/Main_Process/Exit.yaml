@@ -1,0 +1,12 @@
+InternalClassType: Interface
+Coordinate3D: [8,0,1]
+Name: Exit
+Origin: 3739eedf-63f7-4b4d-977a-9d7741af9582
+RandomSeed: 692
+Side: "Right"
+UUID: 0a8a34ba-b024-491b-9f6c-4c5bd3489554
+$SequenceNumber: 11
+3D:
+ ExcludeFromShowContentOfLocation: true
+$Predecessors:
+- f29e9ca9-5c34-4086-bf23-5732bf235a50

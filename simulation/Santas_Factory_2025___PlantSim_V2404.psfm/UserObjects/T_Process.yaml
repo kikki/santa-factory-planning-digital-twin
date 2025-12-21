@@ -1,0 +1,64 @@
+InternalClassType: DataTable
+Coordinate3D: [-16,-1,0]
+Name: T_Process
+Origin: b7e1c8b3-0b1c-40f9-8706-06c41bb1331b
+UUID: 607e3569-f1bf-4df3-afb0-e3621d2d3f6d
+$SequenceNumber: 7
+$Data:
+ Comment: "id is the column in table"
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnIndexContents: false
+  ColumnWidth: 20
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Width: 16
+  -
+   Index: 1
+   Width: 10
+  -
+   Index: 2
+   DataType: time
+   Width: 8
+  -
+   Index: 3
+   DataType: real
+   FormatString: "-15.2"
+   Width: 9
+  -
+   Index: 4
+   DataType: length
+   Width: 8
+  -
+   Index: 5
+   DataType: length
+   Width: 10
+  -
+   Index: 6
+   DataType: length
+   Width: 16
+  -
+   Index: 7
+   DataType: real
+   FormatString: "-15.2"
+   Width: 12
+  RowFormat:
+  -
+   Index: 0
+   DataType: string
+   FastIndexAccess: true
+ ColumnIndex: [string,8,"name","name_grafic","proc_time","MTTR [sec]","Pos_Infeed","Pos_Outfeed","Pos_z DropDownMenu","Availability [%]"]
+ Columns:
+ - [0,string,6,"Programing_P1","Pressing_P2","Modelling_Design_P3","Testing_P4","AI_Inicialisation_P5","Packing_Sack_P6"]
+ - [1,string,6,"M1","M2","M3","M4","M5","M6"]
+ - [2,time,6,1:00,2:10,2:00,1:00,2:00,1:00]
+ - [3,real,6,60,90,120,200,300,10]
+ - [4,length,6,-3,-6,-7,-11,-10,-7]
+ - [5,length,6,3,5,7,11,10,7]
+ - [6,length,6,5,6,4,4,5,6]
+ - [7,real,6,98,98,90,80,70,60]

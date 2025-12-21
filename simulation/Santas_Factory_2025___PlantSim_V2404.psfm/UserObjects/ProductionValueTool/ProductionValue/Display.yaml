@@ -1,0 +1,16 @@
+InternalClassType: Display
+Active: true
+Color: 32768
+Coordinate3D: [0.9656,-3.1536,1.6999999999999997]
+DisplayType: "Pie"
+MaxVal: 100
+Name: Display
+Origin: 8b9a6c0b-3422-4195-95e5-ae25ed0aa23f
+Path: "V_good_child_percent"
+Sampler: false
+Transparent: true
+UUID: 00fca2a6-b44a-448f-9568-3b5d06f991c7
+$SequenceNumber: 8
+3D:
+ Rotation: [-93.8409657162581,-0.250562807085731,0.250562807085732,-0.935113126531029]
+ Scale: [1.5,1.5,1.5]

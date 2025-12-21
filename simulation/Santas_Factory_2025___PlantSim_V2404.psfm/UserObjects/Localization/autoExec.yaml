@@ -1,0 +1,30 @@
+InternalClassType: Method
+Coordinate3D: [3,-3,0]
+Name: autoExec
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ // Update language of comments
+ .UserObjects.ProductionValueTool.ProductionValue.Comment1.Text := getText("Label_NiceChildrenRatio", 40)
+ .Models.Santa.Display_HappyChildren.Comment := getText("Label_HappyChildren")
+ .Models.Santa.Display_ServiceLevel.Comment := getText("Label_ServiceLevel")
+ .UserObjects.Process_Overview.Overview.Comment.Text := getText("Label_ProcessOverview")
+ 
+ .UserObjects.CheckCapacityTool.CapacityCheck.initialize({5,1}..{5,*}, 1)
+ .Models.Santa.CheckCapacity.Comment.Text 	:= "-"
+ .Models.Santa.CheckCapacity.Chart.Title 	:= "-"
+ 
+ .UserObjects.FactoryBuilder.FactoryBuilder.Comment.Text := getText("Label_FactoryBuilder_Comment")
+ .UserObjects.FactoryBuilder.FactoryBuilder.Comment2.Text := getText("Label_FactoryBuilder_Comment2", 40)
+ .UserObjects.FactoryBuilder.FactoryBuilder.ButtonAdd.Label := getText("Label_FactoryBuilder_ButtonAdd")
+ .UserObjects.FactoryBuilder.FactoryBuilder.ButtonDelete.Label := getText("Label_FactoryBuilder_ButtonDelete")
+ .UserObjects.FactoryBuilder.FactoryBuilder.Comment1.Text := getText("Label_FactoryBuilder_Comment1")
+ .UserObjects.FactoryBuilder.FactoryBuilder.Comment11.Text := getText("Label_FactoryBuilder_Comment11")
+ 
+ if .Models.Santa._3D.getGraphic("e2").visible
+ 	.Models.Santa.Button1.Label := getText("Label_ButtonFactoryRoof_Closed")
+ else
+ 	.Models.Santa.Button1.Label := getText("Label_ButtonFactoryRoof_Opened")
+ end
+RandomSeed: 1
+UUID: 4c5d92e2-f8e8-46a5-93db-b4cebba0c285
+$SequenceNumber: 4

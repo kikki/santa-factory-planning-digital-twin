@@ -1,0 +1,24 @@
+InternalClassType: DropDownList
+Control: "self.OnClicked"
+Coordinate3D: [-2.5,0,4]
+Items: ["Programing_P1","Pressing_P2","Modelling_Design_P3","Testing_P4","AI_Inicialisation_P5","Packing_Sack_P6"]
+Origin: 203d5002-639d-4351-9a49-38e62c534963
+UUID: b8bf0b40-84f1-4022-b7a8-1e9d3a01c6d6
+Value: 4
+$SequenceNumber: 5
+3D:
+ ExcludeFromShowContentOfLocation: false
+ Rotation: [59.999999999999993,1,0,0]
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4032346927
+ DataType: method
+ RandomSeed: 348
+ Value: |+1
+  --set grafik of process
+  if self.~.Item = VOID then
+  	debug
+  end
+  
+  Attr_M_setGrafic(self.~.Item)

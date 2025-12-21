@@ -1,0 +1,12 @@
+InternalClassType: Comment
+BackgroundColor: 3937500
+Color: 16777215
+Coordinate3D: [1,-3,1]
+Font: 2
+Name: Comment11
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: "Add new or remove (selected) processes"
+UUID: dc7ba738-ed0f-4bb3-b4db-0e29251d0627
+$SequenceNumber: 4
+3D:
+ ExcludeFromShowContentOfLocation: false

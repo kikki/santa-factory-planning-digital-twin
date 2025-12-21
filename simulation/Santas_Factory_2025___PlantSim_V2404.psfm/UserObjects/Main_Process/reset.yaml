@@ -1,0 +1,34 @@
+InternalClassType: Method
+Coordinate3D: [-16,3,0]
+Name: reset
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ // Delete obj that get created at init
+ var _str_IntClasType : string
+ var _str_name : string
+ for var i := self.~.NumNodes downto 1 loop
+ 	_str_IntClasType  := self.~.node(i).InternalClassType
+ 	_str_name := self.~.node(i).name
+ 	if not (_str_IntClasType = "Connector" or  _str_IntClasType ="Interface" or  _str_IntClasType = "DropDownList" or _str_IntClasType = "Method" or _str_name = "Infeed" or _str_name = "Outfeed" or _str_name = "Station" )   then
+ 		--> SourceProduct, SourceSack, AssemblyStation
+ 		self.~.node(i).deleteObject
+ 	end
+ next
+ 
+ -- delete connector
+ for var s := Station.NumSucc downto 1 loop
+ 	Station.succConnector(s).deleteObject()
+ next
+ for var s := Exit.NumSucc downto 1 loop
+ 	Exit.succConnector(s).deleteObject()
+ next
+ 
+ -- delete faily in station
+ if not (Station.Failures.getFailure("profile") = VOID)
+ 	Station.Failures.deleteFailure("profile")
+ end
+RandomSeed: 104
+UUID: 52988b65-19f0-4e34-bf65-795f1aefa823
+$SequenceNumber: 2
+3D:
+ VisibleGraphicGroups: ["default","reset"]

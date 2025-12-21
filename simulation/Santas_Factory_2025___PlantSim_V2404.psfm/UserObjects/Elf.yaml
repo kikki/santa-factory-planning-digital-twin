@@ -1,0 +1,19 @@
+InternalClassType: Worker
+AutomaticMediation: true
+Coordinate3D: [4,-4,0]
+Name: Elf
+Origin: 3f5d59b7-118c-416b-b728-f51393f1b284
+RandomSeed: 111
+UUID: 85ed53d0-bb3e-4647-b2d0-19bdcaeeabbd
+ZDim: 2
+$SequenceNumber: 6
+3D:
+ GraphicGroupNames: ["default","carrying0","relaxed8","carrying8","relaxed16","carrying16","relaxed23","carrying23","relaxed31","carrying31","relaxed39","carrying39","graphic"]
+ LockedGraphicGroups: []
+ MUAnimationAreaAbsoluteCenter: [0.34,0,0.38]
+ MUAnimationAreaAbsoluteSize: [0.18,0.65]
+ MUAnimationAreaEnabled: true
+ MUAnimationAreaMURotation: [0,0,0,-1]
+ MUAnimationAreaOrientation: "XY plane"
+ MUAnimationAreaShowMUsAsCuboids: false
+ VisibleGraphicGroups: ["default"]

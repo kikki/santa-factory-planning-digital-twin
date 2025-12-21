@@ -1,0 +1,31 @@
+---
+InternalClassType: Frame
+Coordinate3D: [-11,0,0]
+Name: Infeed
+Origin: 87f1d587-e695-4010-9814-c537c934ce43
+UUID: 9e3eaff5-db6e-4c82-8313-3489abd23c59
+$SequenceNumber: 6
+---
+$ObjectName: Buffer
+InternalClassType: Buffer
+Origin: 49f6c2b0-157c-4106-bbb2-8814eb148a79
+RandomSeed: 1425
+UUID: bd0b350f-8a3c-45b0-9d27-9eb13987edf3
+$SequenceNumber: 1
+$Successors:
+-
+ $Location: 7a3db264-66d9-4bf1-a4a9-83ad06786854
+ $Succ: 8dad61ea-f35d-4e4a-9f52-72f9534999f2
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: 91e2683b-5422-45d3-b0ae-eb0041fb9b8f
+ $SequenceNumber: 7
+$Predecessors:
+- 5d560246-b6b0-4426-bcfb-63a9c510b8b2
+---
+$ObjectName: Workplace
+InternalClassType: Workplace
+Origin: b7a653f0-4081-4db3-9b6e-0e2f6c7f7f8a
+RandomSeed: 1426
+UUID: dbb50f48-be69-4cff-bfc1-bada03944dd6
+$SequenceNumber: 2
+$Capacity: 2

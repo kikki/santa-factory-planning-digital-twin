@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [0,0,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: Sim_Objects
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 290f4581-21ca-4f05-9561-9637d419fc5c
+$SequenceNumber: 10
+3D:
+ BackgroundColor: -1

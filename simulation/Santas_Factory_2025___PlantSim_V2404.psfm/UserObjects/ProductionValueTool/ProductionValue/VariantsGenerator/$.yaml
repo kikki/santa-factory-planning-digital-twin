@@ -1,0 +1,730 @@
+---
+InternalClassType: Frame
+Coordinate3D: [-5,-2,0]
+Label: ""
+LockStructure: true
+Name: VariantsGenerator
+Origin: 9835d5f5-19e1-43f4-9b06-d9f8a8bacdc6
+UUID: 0b84a8e4-dc0f-47a2-8ad0-e930b1d9fbdb
+$SequenceNumber: 7
+$CustomAttributes:
+-
+ Name: closeTabIA
+ ID: 1
+ $DataType: method
+ RandomSeed: 1204
+-
+ Name: OnDragDrop
+ ID: 3
+ $DataType: method
+ RandomSeed: 1206
+-
+ Name: resetWizard
+ ID: 4
+ $DataType: method
+ RandomSeed: 1208
+-
+ Name: state
+ ID: 5
+ $DataType: string
+ Value: "ready"
+-
+ Name: switch
+ ID: 6
+ $DataType: method
+ RandomSeed: 1210
+-
+ Name: countVariants
+ ID: 11
+ $DataType: method
+ RandomSeed: 1212
+-
+ Name: OnCreate
+ ID: 12
+ $DataType: method
+ RandomSeed: 1214
+---
+$ObjectName: genVariants
+InternalClassType: Method
+Origin: f7b9a9a4-00e1-464f-a32d-3b1d041babbb
+RandomSeed: 1216
+UUID: 940c90eb-83d6-43bc-8c6f-6dd322967417
+$SequenceNumber: 1
+---
+$ObjectName: Variants
+InternalClassType: DataTable
+Origin: 955790b8-8ba2-42e1-bc68-739206f25564
+UUID: 8d342fa4-35db-4481-9098-52c6d26ea398
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ $DataType: boolean
+ Value: false
+-
+ Name: OnPlausibility
+ ID: 2
+ $DataType: method
+ RandomSeed: 1217
+$Data:
+ Comment: |+1
+  Defines which combinations of the values of different attributes are possible.\r
+  Type in "t" in column 0 for allow or "f" exclude.
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 5
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Color: 0xdadadc
+   Alignment: "Center"
+   Hidden: false
+   DataType: boolean
+   FormatString: "AAAAA"
+   Width: 6
+  -
+   Index: 1
+   DataType: string
+  -
+   Index: 2
+   DataType: real
+   FormatString: "-15.3"
+   Width: 20
+  -
+   Index: 3
+   ReadOnly: false
+   DataType: real
+   FormatString: "-15.3"
+   Width: 20
+  -
+   Index: 4
+   ReadOnly: false
+  RowFormat:
+  -
+   Index: 0
+   Color: 0xdadadc
+   Hidden: false
+ ColumnIndex: [string,4,"active","name","Frequency independent","Frequency restricted"]
+ Columns:
+ - [0,boolean,4,1,1,1,1]
+ - [1,string,4,"BO1","BO2","BO3","BO4"]
+ - [2,real,4,0.25,0.25,0.25,0.25]
+---
+$ObjectName: Frequencies
+InternalClassType: DataTable
+Origin: 2748c019-e608-46a2-b09e-f6fa164153f0
+UUID: 4d0d1d2f-b9aa-4d8e-867e-fe8439eac5cb
+$SequenceNumber: 3
+$Data:
+ ShowComment: true
+ ColumnIndex: [string,3,"Variants","frequency independent","frequency"]
+ Columns:
+ - [0,string,4," 1*1"," 1*2"," 1*3"," 1*4"]
+ - [1,real,4,0.25,0.25,0.25,0.25]
+---
+$ObjectName: VarTab
+InternalClassType: DataTable
+Origin: fc05865d-eb55-404a-98ac-07c630aa01a3
+UUID: de358347-d9ec-46ca-a1d0-4ae35c3f3e64
+$SequenceNumber: 4
+$Data:
+ ShowComment: true
+ ColumnIndex: [string,2,~,"name"]
+ Columns:
+ - [1,integer,4,1,2,3,4]
+---
+$ObjectName: ConstraintsOK
+InternalClassType: Method
+Origin: 7c8926d1-304e-4175-a6cb-dda59f7dfc30
+RandomSeed: 1219
+UUID: 8cbc9e9a-0b1b-431a-b327-482ec63697c4
+$SequenceNumber: 5
+---
+$ObjectName: prepareLGS
+InternalClassType: Method
+Origin: 5149fbbf-d024-4e2d-a72e-0fe6d503dd2a
+RandomSeed: 1220
+UUID: a8a22112-dd5e-43d9-ba54-458f11245fbd
+$SequenceNumber: 6
+---
+$ObjectName: LS
+InternalClassType: DataTable
+Origin: ebba2a16-5f9a-4b84-9d31-f407702449b3
+UUID: 5a2b77e7-aec0-41da-b677-5e13eb68e695
+$SequenceNumber: 7
+$Data:
+ Columns:
+---
+$ObjectName: exchange
+InternalClassType: Method
+Origin: c44f50c2-206f-4b34-84ed-8f34e948dd34
+RandomSeed: 1221
+UUID: f85f3905-6bae-47d1-83de-ca1c6e43a7fa
+$SequenceNumber: 8
+---
+$ObjectName: SolveLGS
+InternalClassType: Method
+Origin: ac01169b-ed0c-4b63-808c-f2b8b739b61e
+RandomSeed: 1222
+UUID: c623027c-a675-4a2c-9208-42cba4b0cfe3
+$SequenceNumber: 9
+---
+$ObjectName: TestExchange
+InternalClassType: Method
+Origin: 1fd3827f-8bb6-46b1-a394-cca94d0621bb
+RandomSeed: 1223
+UUID: 9bd771f4-ee12-482e-b6f5-bc9325adb772
+$SequenceNumber: 10
+---
+$ObjectName: solvedLS
+InternalClassType: DataTable
+Origin: de7d9d49-e4fb-4056-9fe0-e8c3800a81bd
+UUID: e4590340-36b1-49bf-a1f5-3836f898d45b
+$SequenceNumber: 11
+$Data:
+ Columns:
+---
+$ObjectName: Validation
+InternalClassType: DataTable
+Origin: 1fc52511-fcea-4bcd-be47-759af5e5a86c
+UUID: 01e7a797-15d1-491e-9644-3de29a99bd96
+$SequenceNumber: 12
+$Data:
+ Comment: |+1
+  The sum of all frequencies for the given attribute values is a user-defined setting.\r
+  This sum is shown in the column "Expected".
+ ShowComment: true
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 21
+  -
+   Index: 1
+   Alignment: "Left"
+   DataType: real
+   FormatString: "-15.3"
+   Width: 16
+  -
+   Index: 2
+   Alignment: "Left"
+   DataType: real
+   FormatString: "-15.3"
+   Width: 12
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ ColumnIndex: [string,3,"Value","Calculated","Expected"]
+ Columns:
+---
+$ObjectName: xTable
+InternalClassType: DataTable
+Origin: 1d804ee0-8e8b-46e6-86c1-6262d9b9707d
+UUID: aab8af2c-dd08-449f-b37e-c3b3353e5add
+$SequenceNumber: 13
+$Data:
+ ShowComment: true
+ Columns:
+---
+$ObjectName: yTable
+InternalClassType: DataTable
+Origin: 0922b54e-ab3a-4e6a-ab23-a17ee7cb6bbe
+UUID: 91e1550d-d610-4f2e-8be6-1fad8a7fa98a
+$SequenceNumber: 14
+$Data:
+ ShowComment: true
+ Columns:
+---
+$ObjectName: Gradient
+InternalClassType: Method
+Origin: 7e630436-4b0f-4bd5-8f0e-696b9bd87af7
+RandomSeed: 1224
+UUID: 2a320ebd-9626-4d29-b345-e0bdcc5d5ba2
+$SequenceNumber: 15
+---
+$ObjectName: calcError
+InternalClassType: Method
+Origin: 04671625-e79e-4953-b6b8-6774af3adf48
+RandomSeed: 1225
+UUID: 80d834c2-b3b2-4626-aa66-5a5d2f6b60e8
+$SequenceNumber: 16
+---
+$ObjectName: Dialog
+InternalClassType: Dialog
+Label: "Variantsgenerator"
+Origin: a65a1426-11f9-47b0-accd-7a31a9974c08
+UUID: 8d74b5d1-e26a-4761-97c2-a942f68f7d87
+$SequenceNumber: 17
+$CustomAttributes:
+-
+ Name: callback
+ ID: 1
+ $DataType: method
+ RandomSeed: 1226
+-
+ Name: showAllDigits
+ ID: 2
+ $DataType: method
+ RandomSeed: 1228
+-
+ Name: updateAttr
+ ID: 3
+ $DataType: method
+ RandomSeed: 1230
+-
+ Name: showLanguage
+ ID: 5
+ $DataType: method
+ RandomSeed: 1232
+-
+ Name: undesiredVariants
+ ID: 6
+ $DataType: method
+ RandomSeed: 1234
+$Elements:
+-
+ Type: TabControl
+ Name: "tabs"
+ $Elements:
+ -
+  Type: TabPage
+  Name: "ObjectTab"
+  $Elements:
+  -
+   Type: EditText
+   Name: "MU_Inp"
+   Caption: ".UserObjects.Main_Product"
+ -
+  Type: TabPage
+  Name: "AttributesTab"
+  $Elements:
+  -
+   Type: Drop-Down
+   Name: "Attr_PopUp"
+   SelectionIndex: 1
+  -
+   Type: ListView
+   Name: "AttrFrequ_ListView"
+   SelectionIndex: 1
+ -
+  Type: TabPage
+  Name: "ConstraintsTab"
+---
+$ObjectName: numOfValidDigits
+InternalClassType: Variable
+Origin: cb28287d-e76e-4df9-9818-cbc9bcfd0414
+UUID: d018faf8-6c77-4304-8841-556c87fe51ee
+$SequenceNumber: 18
+$DataType: integer
+Value: 5
+---
+$ObjectName: update_f
+InternalClassType: Method
+Origin: b658f962-e7ee-44cd-b729-fa11dbef12ae
+RandomSeed: 1236
+UUID: 196b7c31-2f53-4f20-ad91-a903acf8c52d
+$SequenceNumber: 19
+---
+$ObjectName: StartWith_Rand_Frequ
+InternalClassType: Method
+Origin: 4f68ac33-76c2-4ff0-86b7-f2210ff29824
+RandomSeed: 1237
+UUID: c6f9ea95-05c5-40b8-a46b-628ffd26616f
+$SequenceNumber: 20
+---
+$ObjectName: eps
+InternalClassType: Variable
+Origin: bdf8a503-e0d9-47cc-bb92-d248800ea1a9
+UUID: e52f7d37-09ff-4efd-b3fa-b61ae782f704
+$SequenceNumber: 21
+$DataType: real
+Value: 1e-06
+---
+$ObjectName: roundResults
+InternalClassType: Variable
+Origin: 03008581-2f69-4fac-a499-87d9b94e353e
+UUID: 09b82487-eb3d-4d69-ade4-372cb1b7bc70
+$SequenceNumber: 22
+$DataType: boolean
+Value: true
+---
+$ObjectName: testSol
+InternalClassType: Method
+Origin: f61b7943-da91-4d28-850a-dd743f4ee092
+RandomSeed: 1238
+UUID: 40b1bdcb-a96f-422c-8103-402c310521ce
+$SequenceNumber: 23
+---
+$ObjectName: StartWith_Indep_Frequ
+InternalClassType: Method
+Origin: 7f135c92-e737-46ed-901a-b8ce6495e504
+RandomSeed: 1239
+UUID: 154db8fd-8049-44b1-ba86-50bfe8f937c4
+$SequenceNumber: 24
+---
+$ObjectName: Attributes
+InternalClassType: DataTable
+Origin: 01e98359-9590-4c30-9593-67c06f38209d
+UUID: ce77df3b-1640-424c-8b2e-ceba861115bb
+$SequenceNumber: 25
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ $DataType: boolean
+ Value: false
+-
+ Name: updateFrequencies
+ ID: 2
+ $DataType: method
+ RandomSeed: 1240
+$Data:
+ Comment: "The meaning of the attribute values and their frequencies."
+ ShowComment: true
+ ColumnIndex: [string,2,"Attribute Name","Attribute Values"]
+ Columns:
+ - [0,string,1,"name"]
+ -
+  Column: [1,table,1]
+  Data:
+  -
+   Name: "4 values"
+   ColumnIndex: [string,4,~,"Value","Desired frequency","Feasible frequency"]
+   Columns:
+   - [1,string,4,"BO1","BO2","BO3","BO4"]
+   - [2,real,4,0.25,0.25,0.25,0.25]
+   - [3,real,4,0.25,0.25,0.25,0.25]
+---
+$ObjectName: AttrFrequ
+InternalClassType: DataTable
+Origin: d3caa84a-e733-4d75-8cf4-82e76ffdc257
+UUID: a72f0348-a5b2-4d2c-bb78-6389dd317d18
+$SequenceNumber: 26
+$Data:
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 12
+  -
+   Index: 1
+   DataType: real
+   FormatString: "-15.3"
+   Width: 10
+  -
+   Index: 2
+   DataType: real
+   FormatString: "-15.3"
+   Width: 10
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,3,"Value","Desired","Feasible"]
+ Columns:
+ - [0,string,4,"BO1","BO2","BO3","BO4"]
+ - [1,real,4,0.25,0.25,0.25,0.25]
+ - [2,real,4,0.25,0.25,0.25,0.25]
+---
+$ObjectName: numOfShownDigits
+InternalClassType: Variable
+Origin: 415d78e8-b329-4cb8-a670-e160f0c9513d
+UUID: 438058d6-b7ee-46a7-ada1-5165b12f65e5
+$SequenceNumber: 27
+$DataType: integer
+Value: 3
+---
+$ObjectName: setAttrTable
+InternalClassType: Method
+Origin: e2291006-03c5-4251-87f5-50b7c177c3e9
+RandomSeed: 1242
+UUID: 5db19a21-fade-4049-918b-15303609e2c7
+$SequenceNumber: 28
+---
+$ObjectName: fill_DeliveryTable
+InternalClassType: Method
+Origin: 044ffdf7-9e66-445d-952e-d191ce1d4777
+RandomSeed: 1243
+UUID: d4de40d5-5a39-41f1-ad09-9bdbb1b00253
+$SequenceNumber: 29
+---
+$ObjectName: AssignedSources
+InternalClassType: DataTable
+Origin: dd6c39dc-333b-4d04-b3e7-a50abbfe847b
+UUID: c03a4695-5aaa-4a54-a495-3271bb85a1d4
+$SequenceNumber: 30
+$CustomAttributes:
+-
+ Name: prepareSource
+ ID: 2
+ $DataType: method
+ RandomSeed: 1244
+-
+ Name: CloseAssignTable
+ ID: 3
+ $DataType: method
+ RandomSeed: 1246
+$Data:
+ Comment: ~
+ ColumnIndex: [string,2,~,"Registered Objects"]
+ Columns:
+---
+$ObjectName: getFrequencies
+InternalClassType: Method
+Origin: 930ba52a-a42e-4dab-97e7-6539479fcea4
+RandomSeed: 1248
+UUID: d490366c-d468-4066-8363-c6cf80ec62f1
+$SequenceNumber: 31
+---
+$ObjectName: MUclass
+InternalClassType: Variable
+Origin: 94da3c1e-24a0-4957-8888-d986c8b78fd0
+UUID: 384b76d7-374a-43c7-b970-0194b4f227a0
+$SequenceNumber: 32
+$DataType: object
+Value: 9c6511f9-ffdc-4390-bc49-b09224a86d87
+---
+$ObjectName: SourceTable
+InternalClassType: DataTable
+Origin: 5493eec3-6291-4549-9dbf-cd0695da623f
+UUID: 9943cfdb-85f9-4d7b-b197-26f48d10ba6f
+$SequenceNumber: 33
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ $DataType: boolean
+ Value: false
+-
+ Name: prepareSource
+ ID: 2
+ $DataType: method
+ RandomSeed: 1249
+-
+ Name: CloseAssignTable
+ ID: 3
+ $DataType: method
+ RandomSeed: 1251
+$Data:
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 5
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 1
+   DataType: object
+   Width: 20
+  -
+   Index: 2
+   DataType: real
+   FormatString: "-15.3"
+   Width: 9
+  -
+   Index: 3
+   DataType: integer
+   Width: 6
+  -
+   Index: 4
+   DataType: string
+   Width: 8
+  -
+   Index: 5
+   DataType: table
+   Prototype:
+    Comment: ~
+    CommonFormat: false
+    ListFormat:
+     ColumnIndex: true
+     ColumnWidth: 20
+     DataType: string
+     MaxXDim: 18
+     ShowDataType: true
+     ColumnFormat:
+     -
+      Index: 1
+      DataType: string
+      Width: 12
+     -
+      Index: 2
+      DataType: integer
+      Width: 6
+     -
+      Index: 3
+      DataType: boolean
+      FormatString: "AAAAA"
+      Width: 6
+     -
+      Index: 4
+      DataType: string
+      Width: 8
+     -
+      Index: 5
+      DataType: real
+      FormatString: "-15.2"
+      Width: 8
+     -
+      Index: 6
+      DataType: time
+      Width: 12
+     -
+      Index: 7
+      DataType: date
+      Width: 8
+     -
+      Index: 8
+      DataType: datetime
+      Width: 16
+     -
+      Index: 9
+      DataType: object
+      Width: 8
+     -
+      Index: 10
+      DataType: length
+      Width: 8
+     -
+      Index: 11
+      DataType: weight
+      Width: 8
+     -
+      Index: 12
+      DataType: speed
+      Width: 8
+     -
+      Index: 13
+      DataType: acceleration
+      Width: 8
+     -
+      Index: 14
+      DataType: money
+      FormatString: "-15.2"
+      Width: 8
+     -
+      Index: 15
+      DataType: table
+      Prototype:
+       Comment: ~
+       CommonFormat: false
+       ListFormat:
+        ColumnWidth: 20
+        DataType: string
+        ShowDataType: true
+       Columns:
+      Width: 6
+     -
+      Index: 16
+      DataType: list
+      Prototype:
+       Comment: ~
+       CommonFormat: false
+       ListFormat:
+        ColumnWidth: 20
+        DataType: string
+        MaxXDim: 1
+        ShowDataType: true
+       Column:
+      Width: 6
+     -
+      Index: 17
+      DataType: stack
+      Prototype:
+       Comment: ~
+       CommonFormat: false
+       ListFormat:
+        ColumnWidth: 20
+        DataType: string
+        MaxXDim: 1
+        ShowDataType: true
+       Column:
+      Width: 6
+     -
+      Index: 18
+      DataType: queue
+      Prototype:
+       Comment: ~
+       CommonFormat: false
+       ListFormat:
+        ColumnWidth: 20
+        DataType: string
+        MaxXDim: 1
+        ShowDataType: true
+       Column:
+      Width: 6
+    ColumnIndex: [string,2,~,"Name of Attribute"]
+    Columns:
+   Width: 8
+ ColumnIndex: [string,6,~,"MU","Frequencies","Name","Attributes","Attributes"]
+ Columns:
+---
+$ObjectName: Evaluation
+InternalClassType: Method
+Origin: 293beba1-c31f-40b6-a001-4f04d9199c52
+RandomSeed: 1253
+UUID: e9abbdc1-0d57-46f7-9f01-c6f62f17d5b0
+$SequenceNumber: 34
+---
+$ObjectName: debug_Mode
+InternalClassType: Variable
+Origin: 298fedc0-66b2-446a-a436-08808551d8ce
+UUID: b9b6af66-e03f-47dd-81c5-24129eecf9bd
+$SequenceNumber: 35
+---
+$ObjectName: numOfConstraints
+InternalClassType: Variable
+Origin: 523cb8f0-c96a-4b2e-bfe2-a5c787dd440e
+UUID: cf563019-e3db-4820-84a7-7e0fdbd0dbd0
+$SequenceNumber: 36
+$DataType: integer
+Value: 0
+---
+$ObjectName: setConstraint
+InternalClassType: Method
+Origin: 592c6e22-9998-4ee6-bbd6-109c20ca458b
+RandomSeed: 1254
+UUID: 46e54af4-671c-444e-b875-41c23920d41c
+$SequenceNumber: 37
+---
+$ObjectName: numRestart
+InternalClassType: Variable
+Origin: fedbba0e-810e-42e8-bf52-ef453a8a7a2a
+UUID: b9b08452-d966-4d09-90ea-0af938386f6a
+$SequenceNumber: 38
+---
+$ObjectName: fill_DeliveryTable_NoConstraint
+InternalClassType: Method
+Origin: ed5070ee-e324-4056-b3a2-980e5013f76f
+RandomSeed: 1255
+UUID: 4259b95d-b31b-45ed-8aba-05ec3a7f16db
+$SequenceNumber: 39
+---
+$ObjectName: Apply
+InternalClassType: Method
+Origin: 9ded82b9-8717-45c6-8fc0-b3fa75787afc
+RandomSeed: 1256
+UUID: dfd8cdb8-2a04-4560-b7a4-8b9e306a859d
+$SequenceNumber: 40

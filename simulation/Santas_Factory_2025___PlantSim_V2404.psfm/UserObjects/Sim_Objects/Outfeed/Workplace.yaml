@@ -1,0 +1,62 @@
+InternalClassType: Workplace
+Coordinate3D: [0,-1.41,0]
+EntranceCtrl: "self.OnEntrance"
+LoadingTime: 1
+Origin: 41b02943-4bcd-4bc2-8e57-4eb90ee2d173
+RandomSeed: 662
+Station: "Buffer"
+UUID: b37aa9db-6744-4805-aa41-facb113f34a3
+WorkerStaysHere: false
+$SequenceNumber: 2
+3D:
+ Rotation: [270,0,0,-1]
+ VisibleGraphicGroups: ["assigned"]
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 3677491536
+ DataType: method
+ RandomSeed: 4419
+ Value: |+1
+  -- is santa?
+  if @.class = .UserObjects.Santa.Santa_char
+  	wait 10
+  	@.&Attr_M_Animation_Wait.executein(0)
+  	--now sack
+  	if not (?.~.~.AssemblyStation.MU = VOID)
+  		if ?.~.~.AssemblyStation.MU.numMU > 0 then --not empty sack peack
+  			var _sack : object := ?.~.~.AssemblyStation.MU
+  
+  			// Make sack non-see-through
+  			_sack._3D.getGraphic("default", [1,1,1]).MaterialTransparency := 0
+  			_sack._3D.ShowContent := false
+  
+  			if @.Full then
+  				@.ZDim += 1
+  			end
+  			if NOT _sack.move(@) then throwRuntimeError("Santa is full?"); end
+  		end
+  	end
+  
+  	@.Attr_T_target.cursor += 1
+  	if @.Attr_T_target.cursor > @.Attr_T_target.dim
+  		--last position
+  		--go back
+  
+  		@.goToPool
+  		root.FootPath_toor211.&_mObserveSantaLocation.executeNewCallchain(@)
+  
+  		var myPool := @.Workerpool
+  
+  		waituntil @.~ = myPool
+  		for var i := @.NumMU downto 1 loop
+  			_sack := @.MU(i)
+  			_sack.move(@.Workerpool.location.store)
+  			waituntil _sack.location = @.Workerpool.location.store
+  		next
+  
+  	else
+  		@.goto(@.Attr_T_target[@.Attr_T_target.Cursor].Outfeed.Workplace)
+  	end
+  
+  end

@@ -1,0 +1,24 @@
+InternalClassType: DropDownList
+Control: "self.OnClicked"
+Coordinate3D: [8.0186,1.6238,0]
+Items: ["Programing_P1","Pressing_P2","Modelling_Design_P3","Testing_P4","AI_Inicialisation_P5","Packing_Sack_P6"]
+Origin: 203d5002-639d-4351-9a49-38e62c534963
+UUID: c47d86b5-e775-46ad-b2f5-9be26e159599
+Value: 1
+$SequenceNumber: 2
+3D:
+ ExcludeFromShowContentOfLocation: false
+ Scale: [2,2,2]
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4030425857
+ DataType: method
+ RandomSeed: 5780
+ Value: |+1
+  .userObjects.T_Process.setCursor(0,0)
+  .userObjects.T_Process.find({0,0}..{0,*},self.~.Item)
+  if .userObjects.T_Process.cursorY > 0
+  	self.~.~.Attr_Process_ID := .userObjects.T_Process.cursorY
+  	self.~.~.OnOpen()
+  end

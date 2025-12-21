@@ -1,0 +1,10 @@
+InternalClassType: Source
+Coordinate3D: [2,-4,0]
+Name: SourceSack
+Origin: c62a4dde-62fd-44d8-8e6c-b383bcade442
+Path: e605bb5d-8893-4043-8a3a-cd4743d7deb0
+RandomSeed: 833
+UUID: e0daa02f-46bc-405b-a74f-10889b1c36f3
+$SequenceNumber: 2
+3D:
+ ExcludeFromShowContentOfLocation: true

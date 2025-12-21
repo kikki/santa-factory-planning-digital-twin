@@ -1,0 +1,10 @@
+InternalClassType: Frame
+Coordinate3D: [3,0,0]
+Name: Outfeed
+Origin: 8d955067-17bd-4a6a-892d-f7ac29a54758
+UUID: 88955b94-4da3-46c4-9bf9-742c486d1cd3
+$SequenceNumber: 4
+3D:
+ GraphicGroupNames: ["default","deco"]
+ InternalGraphicGroups: ["deco"]
+ LockedGraphicGroups: []

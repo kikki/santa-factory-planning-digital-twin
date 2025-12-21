@@ -1,0 +1,29 @@
+InternalClassType: Method
+Coordinate3D: [3,-3,0]
+Name: addLineBreaks
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ // Adds line breaks every X characters
+ param inputString : string, targetNumCharPerLine : integer
+ ->string
+ 
+ var singleWords : string[] := splitString(inputString, " ")
+ var charCount : integer
+ charCount := 0
+ for var i := 1 to singleWords.Dim loop
+ 	if (charCount +0.5*strLen(singleWords[i]) > targetNumCharPerLine) then
+ 		RESULT += strChr(10)
+ 		charCount := 0
+ 	end
+ 
+ 	if (RESULT = "") or (charCount = 0) then
+ 		charCount 	+= strLen(singleWords[i])
+ 		RESULT 		+= singleWords[i]
+ 	else
+ 		charCount 	+= 1 +strLen(singleWords[i])
+ 		RESULT 		+= " " +singleWords[i]
+ 	end
+ next
+RandomSeed: 1
+UUID: 1ef9d2f1-4407-499c-9a0d-2a9f2c2d6b4b
+$SequenceNumber: 2

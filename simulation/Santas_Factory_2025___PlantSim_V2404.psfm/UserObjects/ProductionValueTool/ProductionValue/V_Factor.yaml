@@ -1,0 +1,8 @@
+InternalClassType: Variable
+Coordinate3D: [4.2984999999999989,-2.8342,0]
+Name: V_Factor
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: 70d76f75-83ed-4570-af35-ad7bf84e173c
+$SequenceNumber: 9
+$DataType: integer
+Value: 12000000

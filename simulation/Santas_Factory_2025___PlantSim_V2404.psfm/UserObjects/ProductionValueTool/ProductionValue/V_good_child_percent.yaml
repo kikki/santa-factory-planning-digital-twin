@@ -1,0 +1,15 @@
+InternalClassType: Variable
+Coordinate3D: [-2,0,0]
+Name: V_good_child_percent
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+ShowDataType: true
+ShowUnit: false
+StatisticsActive: false
+Transparent: false
+UUID: bda46242-634c-412e-b05e-543bdd484ea8
+$SequenceNumber: 1
+3D:
+ ExcludeFromShowContentOfLocation: true
+ VisibleGraphicGroups: []
+$DataType: integer
+Value: 75

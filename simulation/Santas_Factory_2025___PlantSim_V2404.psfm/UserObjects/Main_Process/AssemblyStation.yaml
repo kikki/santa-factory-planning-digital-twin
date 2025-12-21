@@ -1,0 +1,33 @@
+InternalClassType: AssemblyStation
+AssemblyMode: "Attach MUs"
+Coordinate3D: [3,0,0]
+EntranceCtrl: "self.OnEntrance"
+ExitCtrl: "self.OnExit"
+Origin: 16e68a29-9649-477f-98ca-730dc077b969
+PartListMode: "Fill-up Main MU"
+RandomSeed: 823
+UUID: 1606b3b9-0e93-4b93-af3b-b501277692e4
+$SequenceNumber: 13
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1734678127
+ $DataType: method
+ RandomSeed: 1474
+ Value: |+1
+  // Make sack see-through
+  @._3D.getGraphic("default", [1,1,1]).MaterialTransparency := 0.6
+-
+ Name: OnExit
+ ID: 1028300035
+ $DataType: method
+ RandomSeed: 1476
+ Value: |+1
+  // Make sack non-see-through
+  @._3D.getGraphic("default", [1,1,1]).MaterialTransparency := 0
+  @._3D.ShowContent := false
+  
+  // Move sack
+  @.move
+$Predecessors:
+- bfd2f47b-8cb9-4410-9d74-3e39c119eefc

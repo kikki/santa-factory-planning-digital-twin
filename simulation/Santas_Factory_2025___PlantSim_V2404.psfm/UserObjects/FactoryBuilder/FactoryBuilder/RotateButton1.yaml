@@ -1,0 +1,13 @@
+InternalClassType: Button
+Coordinate3D: [1.5,-7.5000000000000009,1]
+Label: "↪️"
+Name: RotateButton1
+Origin: 2469ef51-ea7b-435f-bdeb-bc83034a885e
+UUID: ed9b3b1f-a165-404e-b554-459f9366f1e3
+$SequenceNumber: 14
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3016400514
+ $DataType: method
+ RandomSeed: 549

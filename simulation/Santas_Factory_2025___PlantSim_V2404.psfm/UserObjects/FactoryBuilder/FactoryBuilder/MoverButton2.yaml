@@ -1,0 +1,13 @@
+InternalClassType: Button
+Coordinate3D: [3.5,-10.5,1]
+Label: "X-1m"
+Name: MoverButton2
+Origin: e2c5d48a-b412-4f63-9a56-b693589ed97d
+UUID: f90572de-311c-46dd-bfca-55146b59e155
+$SequenceNumber: 8
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 509

@@ -1,0 +1,39 @@
+InternalClassType: Source
+Coordinate3D: [-0.5,-3,0]
+EntranceCtrl: "self.OnEntrance"
+GenerateAsBatch: true
+MUSelection: "Constant"
+Name: SourceProduct
+Number: 0
+Origin: c62a4dde-62fd-44d8-8e6c-b383bcade442
+Path: ".UserObjects.Main_Product"
+RandomSeed: 336
+TimeOfGeneration: "Interval Adjustable"
+UUID: c143882d-c1c4-417a-b132-abc769433bda
+$SequenceNumber: 1
+3D:
+ ExcludeFromShowContentOfLocation: true
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1996066285
+ DataType: method
+ RandomSeed: 935
+ Value: |+1
+  // Activate product graphic
+  @._3D.VisibleGraphicGroups := [@.Name]
+ ShowIn3D: false
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ DecimalPlaces: -1
+ IntegerPlaces: -1
+ Alignment: "Left"
+ ShowDataType: false
+ ShowName: true
+ ShowUnit: true
+ Transparent: false
+ ShowExternally: false

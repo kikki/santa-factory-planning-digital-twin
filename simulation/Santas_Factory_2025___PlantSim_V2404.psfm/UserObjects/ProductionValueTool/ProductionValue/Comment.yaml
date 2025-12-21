@@ -1,0 +1,12 @@
+InternalClassType: Comment
+BackgroundColor: 32768
+Color: 32768
+Coordinate3D: [1.5,-5,0]
+Font: 1
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: "%"
+Transparent: true
+UUID: 9d59400b-ebda-433e-af09-840dafd3ea71
+$SequenceNumber: 5
+3D:
+ Scale: [4,4,4]

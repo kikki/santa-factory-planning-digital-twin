@@ -1,0 +1,12 @@
+InternalClassType: Comment
+Color: 0
+Coordinate3D: [-1.2077,-9.6884,0]
+Font: 1
+Origin: 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+Text: "gets set automatically after check was executed"
+Transparent: true
+UUID: 50b459cd-14c2-48e7-9c0f-e94439b694ef
+$SequenceNumber: 2
+3D:
+ ExcludeFromShowContentOfLocation: false
+ Scale: [2.9,2.9,2.9]

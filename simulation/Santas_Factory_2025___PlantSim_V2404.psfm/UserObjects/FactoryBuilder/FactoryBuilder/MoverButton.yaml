@@ -1,0 +1,11 @@
+InternalClassType: Button
+Coordinate3D: [6.5000000000000009,-10.5,1]
+Origin: e2c5d48a-b412-4f63-9a56-b693589ed97d
+UUID: d2643e4d-54c1-4563-a976-ca4a076c9661
+$SequenceNumber: 5
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 495

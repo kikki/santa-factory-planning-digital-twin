@@ -1,0 +1,23 @@
+InternalClassType: Buffer
+Coordinate3D: [0,0,0]
+Origin: f23ae343-2ff6-412f-8f06-edc7d0a63e36
+RandomSeed: 641
+UUID: 49f6c2b0-157c-4106-bbb2-8814eb148a79
+$SequenceNumber: 1
+3D:
+ MUAnimations:
+ -
+  Name: "Default"
+  AnchorPoints:
+  - [0,0,0.1,0,0,0,-1,~]
+  - [0,0,2,0,0,0,-1,~]
+ StatesForColoring: 0xd7f
+ StatesOrientation: "(Off)"
+ VisibleGraphicGroups: []
+ $StatesTransformations:
+  HorizontalStatesPosition: [-1,1,1]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [-0.96,0.96,1]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: false
