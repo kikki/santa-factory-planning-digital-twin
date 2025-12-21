@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "dialog checkbox: showAllDigits_CB"
+Coordinate3D: [3.1500000000000004,6.45,0]
+DataType: integer
+HasInitValue: false
+Name: numRestart
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: fedbba0e-810e-42e8-bf52-ef453a8a7a2a
+$SequenceNumber: 38
+Value: 0

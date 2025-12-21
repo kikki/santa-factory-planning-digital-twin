@@ -1,0 +1,27 @@
+InternalClassType: DataTable
+Coordinate3D: [14.100000000000001,2.95,0]
+Name: solvedLS
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: de7d9d49-e4fb-4056-9fe0-e8c3800a81bd
+$SequenceNumber: 11
+$Data:
+ Comment: ~
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+   Width: 15
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ Columns:

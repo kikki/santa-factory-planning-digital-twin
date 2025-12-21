@@ -1,0 +1,23 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,11.600000000000001,0]
+Name: setAttrTable
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- called by: external
+ param AttrName:string, AttrValues:table[string,real]
+ 
+ var n:integer := Attributes.getRowNo(AttrName)
+ if n<1 
+ 	n := Attributes.yDim + 1
+ 	Attributes[0,n] := AttrName
+ 	Attributes.createNestedList(1,n)
+ end
+ var tab:table := Attributes[1,n]
+ tab.delete
+ tab.insertList(1,1, AttrValues.copy)-- value and frequency
+ Attributes[1,n].setName(to_str(AttrValues.ydim," ",rootfolder.localization.getText(5)))-- values
+ 
+ Apply
+RandomSeed: 41
+UUID: e2291006-03c5-4251-87f5-50b7c177c3e9
+$SequenceNumber: 28

@@ -1,0 +1,173 @@
+InternalClassType: DataTable
+ChangePathCtrl:
+CloseCtrl:
+ConstructorCtrl:
+Coordinate3D: [0,0,0]
+CreateIn3D: false
+DestructorCtrl:
+DragDropCtrl:
+InitCtrl:
+Label: ""
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: MessageTab
+OpenCtrl:
+PlausibilityCtrl:
+RelabelCtrl:
+RenameCtrl:
+UUID: bb9826d0-3fe5-438f-b3c6-6fe5e3e03642
+$SequenceNumber: 1
+$IconArray:
+-
+ Name: "Default"
+ Transparent: true
+ Size: [40,40]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+gIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA/v7+iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+-
+ Name: "Icon1"
+ Transparent: true
+ Size: [40,40]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+vr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6+gr6AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+/v7++gr6/v7+AQEBAQEBAQEBAQEB/v7+/v7+AQEBAQEBAQEBAQEB/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7++gr6/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+/v7+iIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIvr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7Ozsvr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+vr6+QEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAA7OzsQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 1
+   DataType: string
+   Width: 25
+  -
+   Index: 2
+   DataType: string
+   Width: 25
+  -
+   Index: 3
+   DataType: string
+   Width: 25
+  -
+   Index: 4
+   DataType: string
+   Width: 25
+  -
+   Index: 5
+   DataType: string
+   Width: 25
+  -
+   Index: 6
+   DataType: string
+   Width: 6
+  -
+   Index: 7
+   DataType: string
+   Width: 5
+  -
+   Index: 8
+   DataType: string
+   Width: 6
+  -
+   Index: 9
+   DataType: string
+   Width: 25
+  -
+   Index: 10
+   DataType: string
+   Width: 20
+  -
+   Index: 11
+   Width: 20
+  RowFormat:
+  -
+   Index: 0
+   DataType: string
+ ColumnIndex: [string,11,~,"DEU","ENU","JPN","CHS","RUS","ESN","PLK","TRK","HUN","HUN"]
+ Columns:
+ - [1,string,136,"Dieses Tool steht in Ihrer Lizenz nicht zur Verfügung.","Alle gewünschten und unerwünschten Varianten","Alle $1 gewünschten und unerwünschten Varianten","Der Wert \"$1\" des Attributs \"$2\" ist unmöglich.","Werte","Wert","Gewünschte Häufigkeit","Realisierbare Häufigkeit","Schließen","Unabhängige Häufigkeiten","Häufigkeiten mit Einschränkungen","Warten","Stoppen","Bitte warten Sie bis die Berechnungen abgeschlossen sind.","Starten","Bitte geben Sie den Namen des neuen Attributes ein.","Sie haben einen ungültigen Namen eingegeben.","Vergleich der eingestellten und realisierbaren Häufigkeit für die Attributwerte eines Attributs.","Keine unerwünschten Varianten","$1 unerwünschte Variante","$1 unerwünschte Varianten","Die Berechnungen sind beendet,","die maximale Differenz zwischen den berechneten und erwarteten Häufigkeiten ist $1 und kommt bei dem $2 vor.","Attribut ",~,"Konfiguriert eine Quelle mit\n\"BE Auswahl > Zufall\" und berechnet die Häufigkeiten.","Variantengenerator","Gewünscht","Realisierbar","Definieren Sie, welche Kombinationen der Werte von verschiedenen Attributen möglich sind.","Die Summe aller Häufigkeiten eines gegebenen Attributwerts ist eine Vorgabe.","Berechnet","Erwartet","Die Bedeutung der Attributwerte und deren Häufigkeiten.","Attributname","Attributwerte","Registrierte Objekte","Attribute","Name","Häufigkeiten","BE","Anzeigen","die maximale Differenz zwischen den berechneten und erwarteten Häufigkeiten ist $1.","Möchten Sie dieses Attribut wirklich löschen?","Tippen Sie \"t\" für Zulassen oder \"f\" für Ausschließen ein.","Diese Summe wird in der Spalte \"Erwartet\" angezeigt.","Es wurden keine gültigen Lösungen für die Häufigkeiten gefunden.",~,"Das Attribut \"$1\" hat nicht den Typ String.",~,"Da es keine Einschränkungen gibt, sind die erwarteten Häufigkeiten realisierbar.",~,"Die Sequenzabelle wird im Arbeitsspeicher $1 belegen.","Möchten Sie fortfahren?",~,"Index","Hilfe für das Objekt",~43,"Inhalt","Hilfe für das Objekt","Info über Variantengenerator","?","Standort öffnen","Navigieren","Attribute","Attribute und deren Häufigkeiten definieren","Attribute verwalten:","Erzeugen","Löschen","Attribut auswählen:","Häufigkeiten der Attribute bzgl. der Einschränkungen:","Alle Attributvarianten:","Anzeigen","Einschränkungen","Alle gewünschten und unerwünschten Varianten","und deren Häufigkeiten"," Ausgeschlossene Varianten festlegen:","Anzeigen","Keine ausgeschlossenen Varianten","Rechengenauigkeit festlegen:"," Beschränkte Ziffernanzahl anzeigen:","Berechnung:","Starten","Gewünschte Häufigkeiten validieren:","Anzeigen","Objekte","Konfiguration eines Quellen-Objekts mit der","Einstellung \"BE-Auswahl > Zufall\".","Ziehen Sie die Quellen-Objekte auf den Assistenten.","Bewegliches Element:","Häufigkeitstabelle der Quellen:","Anzeigen","Quellen-Objekte:","Etikett:"]
+ - [2,string,136,"This tool is not available in your license.","All desired and unrequested variants","All $1 desired and unrequested variants","The value \"$1\" of the attribute \"$2\" is impossible.","values","Value","Desired frequency","Feasible frequency","Close","Independent frequency","Frequency with constraints","Wait","Stop","Please wait until the calculation is finished.","Start","Please enter the name of the new attribute.","You have entered an invalid name.","Comparison of the desired and feasible frequency for the attribute values of an atrribute.","No unrequested variants","$1 unrequested variant","$1 unrequested variants","The calculation is finished,","the maximal difference between calculated and expected frequencies is $1 and occurs at $2.","Attribute ",~,"Configures a Source object with\n\"MU selection > Random\" and calculates frequencies.","Variantsgenerator","Desired","Feasible","Defines which combinations of the values of different attributes are possible.","The sum of all frequencies for the given attribute values is a user-defined setting.","Calculated","Expected","The meaning of the attribute values and their frequencies.","Attribute Name","Attribute Values","Registered Objects","Attributes","Name","Frequencies","MU","Show","the maximal difference between calculated and expected frequencies is $1.","Do you really want to delete this attribute?","Type in \"t\" in column 0 for allow or \"f\" exclude.","This sum is shown in the column \"Expected\".","No valid solutions for the frequencies were found.",~,"The attribute \"$1\" has not the type String.",~,"Since there are no restrictions, the expected frequecies are realizable.",~,"The sequence table will occupy $1 in the main memory.","Would you like to continue?",~,"Index","Help on Object",~43,"Contents","Help on Object","About Variants Generator","Help","Open Location","Navigate","Attributes","Define attributes and their frequencies","Manage attributes:","Create","Delete","Select attribute:","Frequencies of the attributes subject to constraints:","All attribute variants:","Show","Constraints","All desired and unrequested variants","and their frequencies"," Define excluding variants:","Show","No unrequested variants","Define the precision of calculation:"," Show restricted number of digits:","Calculation:","Start","Validation of desired frequencies:","Show","Objects","Configure a Source object","with the setting \"MU selection > Random\".","Drag the Source objects onto the wizard.","Moving objects:","Frequency table of the Sources:","Show","Source objects:","Label:"]
+ - [3,string,136,"このライセンスではこのツールは利用できません。","望ましいバリアントと要求されていないバリアントすべて","$1望ましいバリアントと要求されていないバリアントすべて","属性\"$2\"の値\"$1\"は不可能です。","値","値","望ましい頻度","適した頻度","閉じる","独立頻度","制約のある頻度","待機","停止","計算が完了するまでお待ちください。","開始","新しい属性の名前を入力してください。","無効な名前を入力しました。","属性の属性値に対する望ましい頻度と適した頻度の比較","要求されていないバリアントはありません","$1要求されていないバリアント","$1要求されていないバリアント","計算は完了しました。","計算された頻度と予期された頻度との最大の差は$1で、$2で発生します。","属性 ",~,"\"MU選択 → ランダム\"を用いてソースオブジェクトを\n構成し、周波数を計算します。","Variantsgenerator","望ましい","適した","異なる属性の値の、どの組合せが可能かを定義します。","指定された属性に対するすべての頻度の合計はカスタム設定です。","計算済み","予期された","属性値およびその頻度の意味","属性名","属性値","登録済みオブジェクト","属性","名前","頻度","MU","表示","計算された頻度と予期された頻度との最大の差は$1です。","この属性を本当に削除しますか?","許可するには列0に\"t\"と入力し、除外するには\"f\"と入力します。","この合計は列\"予期された\"に表示されます。","頻度に対して有効な解は見つかりませんでした。",~,"属性\"$1\"にタイプ'文字列'がありません。",~,"制約がないので、予期された頻度は実現可能です。",~,"シーケンステーブルはメインメモリの$1を使用します。","続行しますか?",~,"索引","オブジェクトのヘルプ",~43,"項目","オブジェクトのヘルプ","Variants Generatorについて","ヘルプ","上層を開く","ナビゲート","属性","属性およびそれらの周波数を定義","属性の管理:","作成","削除","属性を選択:","拘束する属性サブジェクトの周波数:","すべての属性バリアント:","表示","拘束","望ましいバリアントと要求されていないバリアントすべて","およびそれらの周波数"," 除外するバリアントを定義:","表示","要求されていないバリアントはありません","計算の精度を定義:"," 制限する桁数を表示:","計算:","開始","必要な周波数の検証:","表示","オブジェクト","ソースオブジェクトを構成します","\"MU選択 → ランダム\"を選択することにより","ソースオブジェクトをウィザード上にドラッグします。","移動オブジェクト:","ソースの周波数テーブル:","表示","ソースオブジェクト:","ラベル:"]
+ - [4,string,136,"您的许可证中不包含该工具。","所有需要的和未请求的变量","所有 $1 需要的和未请求的变量","值 \"$1\" 不可用于属性 \"$2\"。","值","值","所需频率","可行频率","关闭","独立频率","约束频率","等待","停止","请等待计算完成。","开始","请输入新属性名。","您输入了无效名称。","对属性的属性值比较所需频率和可行频率。","无未请求的变量","$1 个未请求变量","$1 个未请求变量","计算已经完成，","计算频率和预期频率之间的最大差是 $1，发生于 $2。","属性 ",~,"通过“MU 选择 > 随机”来配置源对象，\n并计算频率。","变量生成器","所需的","可行的","定义不同属性值的可能组合。","给定属性值的所有频率之和为用户定义设置。","计算的","预期的","属性值及其频率的含义。","属性名","属性值","注册对象","属性","名称","频率","MU","显示","计算频率和预期频率之间的最大差为 $1。","您真的要删除该属性吗？","在 0 列中输入 \"t\" 以许用或输入 \"f\" 以排除。","此和显示在“预期的”列中。","找不到频率的有效解。",~,"属性 \"$1\" 没有字符串类型。",~,"因为没有限制，预期频率可以实现。",~,"序列表将在主内存中占用 $1。","要继续吗？",~,"索引","对象帮助",~43,"内容","对象帮助","关于变量生成器","帮助","打开位置","导航","属性","定义属性及其频率","管理属性:","创建","删除","选择属性:","属性的频率服从以下约束:","所有属性变量:","显示","约束","所有需要的和未请求的变量","及其频率"," 定义排斥变量:","显示","无未请求的变量","定义计算精度:"," 显示限定位数:","计算:","开始","验证所需频率:","显示","对象","配置源对象","方法是设置“MU 选择 > 随机”。","将源对象拖到向导中。","移动对象:","源的频率表:","显示","源对象:","标签:"]
+ - [5,string,136,"В рамках данной лицензии этот инструмент недоступен.","Все желаемые и незапрошенные варианты","Все $1 желаемых и незапрошенных вариантов","Значение \"$1\" атрибута \"$2\" недопустимо.","значения","Значение","Желаемая частота","Реалистичная частота","Закрыть","Независимая частота","Частота с ограничениями","Ожидать","Стоп","Необходимо дождаться окончания расчета.","Пуск","Необходимо ввести имя нового атрибута.","Введенное имя недопустимо.","Сравнение желаемой и реалистичной частоты для значений атрибута.","Нет незапрошенных вариантов","$1 незапрошенный вариант","$1 незапрошенных вариантов","Расчет завершен,","максимальная разница между расчетной и ожидаемой частотой составляет $1 и достигается при $2.","Атрибут ",~,"Конфигурирование исходного объекта, выбрав\n\"Выбор ПО: > В случайном порядке\" и вычисляет частоты.","Генератор вариантов","Желаемая","Реалистичная","Определение допустимых сочетаний значений различных атрибутов.","Сумма всех частот для выбранных значений атрибута является пользовательским параметром.","Расчетная","Ожидаемая","Содержание значений атрибута и их частоты.","Имя атрибута","Значения атрибута","Зарегистрированные объекты","Атрибуты","Имя","Частоты","ПО","Показать","максимальная разница между расчетной и ожидаемой частотой составляет $1.","Удалить этот атрибут?","В столбце 0 необходимо ввести \"t\", чтобы разрешить, или \"f\", чтобы исключить.","Сумма показана в столбце \"Ожидаемая\".","Для частот не найдено возможных решений.",~,"Атрибут \"$1\" не относится к типу String.",~,"Так как ограничений не существует, ожидаемые частоты достижимы.",~,"В основной памяти таблица последовательностей будет занимать $1.","Продолжить?",~,"Индекс","Справка по объекту",~43,"Содержимое","Справка по объекту","Сведения о Генераторе вариантов","Справка","Открыть расположение","Перейти","Атрибуты","Задать атрибуты и их частоты","Управление атрибутами:","Создать","Удалить","Выбрать атрибут:","Частоты атрибутов, к которым применены ограничения:","Все варианта атрибута:","Показать","Ограничения","Все требуемые и незапрошенные варианты","и их частоты"," Определить исключающие варианты:","Показать","Нет незапрошенных вариантов","Задает точность расчета:"," Показать ограниченное число цифр:","Вычисление:","Начать","Проверка частот:","Показать","Объекты","Настроить исходные объект","с помощью  \"Выбор ПО: > В случайном порядке\".","Переместите исходные объекты в мастер.","Перемещение объектов:","Таблица частот источников:","Показать","Исходные объекты:","Метка:"]
+ - [9,string,136,"Ez az eszköz nem érhető el az Ön licencében.","Minden kívánt és nem igényelt variáns","Minden $1 kívánt és nem igényelt variáns","Nem lehet \"$1\" az \"$2\" attribútum értéke.","érték(ek)","Érték","Kívánt gyakoriság","Lehetséges gyakoriság","Bezárás","Független gyakoriság","Gyakoriság korlátokkal","Vár","Leállítás","Várja meg, amíg a számítás befejeződik.","Elindítás","Adjon meg új nevet az attribútumra.","Érvénytelen nevet adott meg.","A kívánt és a lehetséges gyakoriság összehasonlítása az attribútum értékekre.","Nincs nem igényelt variáns","$1 nem igényelt variáns","$1 nem igényelt variáns","Számítás befejezve,","a maximális különbség a számított és az elvárt gyakoriság között $1 ami $2 történik.","Attribútum ",~,"Configures a Source object with\n\"MU selection > Random\" and calculates frequencies.","Variancia generátor","Kívánt","Lehetséges","Megadja, hogy a különböző attribútumok milyen érték kombinációja lehetséges.","A gyakoriságok összege az attribútum értékekre egy felhasználói beállítás.","Számított","Elvárt","Az attribútum értékek és a gyakoriságuk jelentése.","Attribútum név","Attribútum érték","Regisztrált objektumok","Attribútumok","Név","Gyakoriság","MU","Mutat","a maximális különbség a számított és az elvárt gyakoriság között $1.","Valóban törölni szeretné ezt az attribútumot?","Adjon meg \"t\" értéket a nulladik oszlopban a használathoz, \"f\" értéket a kihagyáshoz.","Az összeg az \"Elvárt\" oszlopban szerepel.","Nem található valós megoldás a gyakoriságra.",~,"A(z) \"$1\" attribútum nem String típusú.",~,"Mivel nincsenek korlátok, az elvárt gyakoriság megvalósítható.",~,"A sorrend táblázat $1 memóriát használ.","Kívánja folytatni?",~,"Tárgymutató","Objektum súgó",~43,"Tartalom","Súgó az objektumról","About Variants Generator","Súgó","Hely megnyitása","Navigálás","Attribútumok","Define attributes and their frequencies","Attribútumok kezelése:","Készítés","Törlés","Select attribute:","Frequencies of the attributes subject to constraints:","All attribute variants:","Mutat","Kényszerek","Minden kívánt és nem igényelt variáns","and their frequencies"," Define excluding variants:","Mutat","Nincs nem igényelt variáns","Define the precision of calculation:"," Show restricted number of digits:","Számítás:","Start","Validation of desired frequencies:","Mutat","Objektumok","Configure a Source object","with the setting \"MU selection > Random\".","Drag the Source objects onto the wizard.","Moving objects:","Frequency table of the Sources:","Mutat","Bemenet objektum:","Címke:"]

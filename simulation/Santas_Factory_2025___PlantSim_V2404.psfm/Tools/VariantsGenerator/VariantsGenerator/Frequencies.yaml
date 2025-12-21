@@ -1,0 +1,43 @@
+InternalClassType: DataTable
+Coordinate3D: [-4,14.700000000000001,0]
+Name: Frequencies
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: 2748c019-e608-46a2-b09e-f6fa164153f0
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ DataType: boolean
+ Value: false
+$Data:
+ Comment: |+1
+  The user can compare the frequencies with (column 2)\r
+  and without excludings (column 1).\r
+
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+  -
+   Index: 1
+   DataType: real
+   Width: 16
+  -
+   Index: 2
+   DataType: real
+   FormatString: "-15.3"
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,3,"Variants","frequency independent","frequency"]
+ Columns:

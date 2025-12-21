@@ -1,0 +1,59 @@
+InternalClassType: Method
+Coordinate3D: [14.100000000000001,-4.5,0]
+Name: update_f
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- build a new solution "sol_new" and update the scaling factor "f"
+ -- parameter "sol" is not changed
+ param sol,sol_new,delta:table,byref f:real
+ 
+ var k,xk,n,m,col,reNo:integer;var d,s,r,f_eps,lowBound:real;var debugging:boolean;var ApplObj:object
+ 
+ ApplObj := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ debugging := ApplObj.debug_Mode
+ lowBound := -1e-15
+ f_eps := eps * eps-- minimal scaling factor f > 0 of the gradient vector
+ n := sol.yDim
+ for k := 1 to n  -- n = number of independent x
+ 	s := sol[1,k]-- ensure that: sol - f * gradient is in [0,1]
+ 	d := delta[1,k] -- gradient
+ 	if d>0 
+ 		f := min(f,s/d)
+ 	elseif d<0 
+ 		f := min(f,(s-1)/d)
+ 	end
+ next
+ f := f * 0.999999999999
+ 	
+ -- ensure: all dependent x_k = sol[1,k] - f * delta[1,k] are in [0,1]
+ m := xTable.yDim
+ xk := 1
+ while (xk <= m) AND (f >= f_eps) AND (reNo < 100) 
+ 	-- new dependent xk is in sol_new
+ 	repeat
+ 		for k := 1 to n  -- n = number of independent x
+ 			r := sol[1,k] - f * delta[1,k] -- sol_new = new independent x
+ 			sol_new[1,k] := r
+ 		next
+ 		r := 0	-- k-th new dependent x
+ 		for col := 1 to n 
+ 			r := r + sol_new[1,col] * xTable[col,xk]
+ 		next
+ 		r := r + xTable[n+1,xk]
+ 		if (r<0 OR r>1) 
+ 			f := f * 0.8
+ 			xk := 1; reNo := reNo + 1
+ 		end
+ 	until (r > lowBound AND r<1) OR (f < f_eps)
+ 	xk := xk + 1
+ end
+ 
+ for k := 1 to n  -- n = number of independent x
+ 	r := sol[1,k] - f * delta[1,k] -- sol_new = new independent x
+ 	sol_new[1,k] := r
+ next
+ 						
+ if debugging then testSol(sol_new);end
+RandomSeed: 46
+UUID: b658f962-e7ee-44cd-b729-fa11dbef12ae
+$SequenceNumber: 19

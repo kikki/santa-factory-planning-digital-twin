@@ -1,0 +1,50 @@
+InternalClassType: DataTable
+CloseCtrl: "closeTabIA"
+Coordinate3D: [-0.55,11.600000000000001,0]
+Name: Validation
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: 1fc52511-fcea-4bcd-be47-759af5e5a86c
+$SequenceNumber: 12
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ DataType: boolean
+ Value: false
+$Data:
+ Comment: |+1
+  The sum of all frequencies for the given attribute values is a user-defined setting.\r
+  This sum is shown in the column "Expected".
+ ShowComment: true
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 21
+  -
+   Index: 1
+   Alignment: "Left"
+   DataType: real
+   FormatString: "-15.3"
+   Width: 16
+  -
+   Index: 2
+   Alignment: "Left"
+   DataType: real
+   FormatString: "-15.3"
+   Width: 12
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ ColumnIndex: [string,3,"Value","Calculated","Expected"]
+ Columns:

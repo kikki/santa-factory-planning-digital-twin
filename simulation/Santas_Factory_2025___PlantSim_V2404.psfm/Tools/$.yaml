@@ -1,0 +1,12 @@
+InternalClassType: Folder
+ChangePathCtrl:
+Coordinate3D: [2,-3,0]
+DestructorCtrl:
+MoveToFolderCtrl:
+Name: Tools
+PermitDeleteCtrl:
+RenameCtrl:
+UUID: 3e0970b8-64ec-4d62-961c-7a80544fc1a4
+$SequenceNumber: 8
+3D:
+ BackgroundColor: -1

@@ -1,0 +1,86 @@
+InternalClassType: DataTable
+CloseCtrl: "closeTabIA"
+Coordinate3D: [-11,14.700000000000001,0]
+Name: Attributes
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: 01e98359-9590-4c30-9593-67c06f38209d
+$SequenceNumber: 25
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ DataType: boolean
+ Value: false
+-
+ Name: updateFrequencies
+ ID: 2
+ DataType: method
+ RandomSeed: 42
+ Value: |+1
+  -- called by: Apply
+  for var j := 1 to Attributes.yDim 
+  	var tab:table := Attributes[1,j]
+  	var s:real := tab.sum({2,1}..{2,*})
+  	if abs(s) < 1e-100 
+  		if strLen(tab[1,1]) < 1 
+  			tab.writeRow(1,1, "Default",1)
+  		else
+  			tab[2,1] := 1
+  		end
+  		tab.delete({3,1}..{3,*})
+  	elseif abs(s-1) > 1e-100 
+  		for var k := 1 to tab.yDim 
+  			tab[2,k] := abs(tab[2,k]/s)
+  		next
+  		tab.delete({3,1}..{3,*})
+  	end
+  next
+$Data:
+ Comment: "The meaning of the attribute values and their frequencies."
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 1
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+  -
+   Index: 1
+   DataType: table
+   Prototype:
+    EditorPermissions: 12
+    ListFormat:
+     ColumnIndex: true
+     ColumnWidth: 20
+     DataType: string
+     MaxXDim: 3
+     ShowDataType: true
+     ColumnFormat:
+     -
+      Index: 1
+      Width: 14
+     -
+      Index: 2
+      DataType: real
+      FormatString: "-15.5"
+     -
+      Index: 3
+      DataType: real
+      FormatString: "-15.5"
+     RowFormat:
+     -
+      Index: 0
+      Hidden: false
+    ColumnIndex: [string,4,~,"Value","Desired frequency","Feasible frequency"]
+    Columns:
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,2,"Attribute Name","Attribute Values"]
+ Columns:

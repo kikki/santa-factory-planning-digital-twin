@@ -1,0 +1,33 @@
+InternalClassType: Method
+Coordinate3D: [-14.100000000000001,11.600000000000001,0]
+Name: Apply
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ Attributes.updateFrequencies -- treatment of the table "Attribute"
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode	
+ var numVariants: integer := countVariants -- Each row in the sequence table requires 3 KByte.
+ if StartedBy = "User" AND numVariants > MaxVariants  -- The sequence table will occupy x MByte in the main memory. (> 10 MByte)
+ 	var calcDesired : boolean
+ 	if debugging 
+ 		print numVariants," variants"
+ 	end
+ 	CalcDesired := (16 = messageBox(rootFolder.Localization.getMessage(53,to_str(round(numVariants * 0.003)," MByte"),"","")+strChr(10)+rootFolder.Localization.getText(54),48,2) )
+ else
+ 	CalcDesired := true
+ end
+ 
+ if Constraints_CB AND CalcDesired 
+ 	genVariants  -- This method is only needed with constraints.
+ end
+ 
+ for var j := 1 to Attributes.yDim 
+ 	if Attributes[1,j]/=void 
+ 		Attributes[1,j].setName(to_str(Attributes[1,j].yDim," ",rootfolder.localization.getText(5)))-- values
+ 		-- "Value","Desired frequency","Feasible frequency"
+ 		Attributes[1,j].writeRow(1,0, rootfolder.localization.getText(6),rootfolder.localization.getText(7),rootfolder.localization.getText(8))
+ 	end
+ next
+RandomSeed: 31
+UUID: 9ded82b9-8717-45c6-8fc0-b3fa75787afc
+$SequenceNumber: 40

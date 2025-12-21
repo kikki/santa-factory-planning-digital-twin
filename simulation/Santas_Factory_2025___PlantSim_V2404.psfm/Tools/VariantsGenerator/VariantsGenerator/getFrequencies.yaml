@@ -1,0 +1,15 @@
+InternalClassType: Method
+Coordinate3D: [15,14.700000000000001,0]
+Name: getFrequencies
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- called by: extern
+ param  t : any 
+ 
+ if isTable( t ) OR(isObject( t ) and t.internalClassname = "NwList2D") 
+ 	sourceTable.copyFormatTo(t)
+ 	sourceTable.copyContentTo(t)
+ end
+RandomSeed: 37
+UUID: 930ba52a-a42e-4dab-97e7-6539479fcea4
+$SequenceNumber: 31

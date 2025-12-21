@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "defined by the dialog element precision_Inp"
+Coordinate3D: [3.1500000000000004,9.8,0]
+DataType: real
+HasInitValue: false
+Name: eps
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: bdf8a503-e0d9-47cc-bb92-d248800ea1a9
+$SequenceNumber: 21
+Value: 1e-06

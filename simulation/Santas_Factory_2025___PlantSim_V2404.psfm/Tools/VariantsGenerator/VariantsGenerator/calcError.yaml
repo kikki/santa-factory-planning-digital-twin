@@ -1,0 +1,40 @@
+InternalClassType: Method
+Coordinate3D: [14.100000000000001,-0.30000000000000004,0]
+Name: calcError
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- gradient and error function
+ -- parameter: t = solution, dx = gradient, max squared error = errMax
+ -- called by: Gradient
+ param t,dx:table, byref errMax:real->real
+ 
+ var j,i,n,m,k:integer
+ var y,eMax:real
+ var Y_vec:table[real]
+ 
+ n := t.yDim      -- number of independent variables
+ m := yTable.yDim -- number of equations for dependent variables
+ Y_vec.create
+ errMax := 0
+ for j := 1 to m  -- all y
+ 	y := 0
+ 	for i := 1 to n 
+ 		y := y + t[1,i] * yTable[i,j]
+ 	next
+ 	y := y + yTable[n + 1,j]
+ 	Y_vec[1,j] := y
+ 	result := result + y * y-- error function
+ 	eMax := max(eMax, abs(y))
+ next
+ errMax := eMax
+ 
+ for k := 1 to n 
+ 	y := 0
+ 	for j := 1 to m 
+ 		y := y + Y_vec[1,j] * yTable[k,j]
+ 	next
+ 	dx[1,k] := y
+ next
+RandomSeed: 52
+UUID: 04671625-e79e-4953-b6b8-6774af3adf48
+$SequenceNumber: 16

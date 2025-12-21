@@ -1,0 +1,81 @@
+InternalClassType: DataTable
+CloseCtrl: "self.CloseAssignTable"
+Coordinate3D: [6.3500000000000005,14.700000000000001,0]
+Name: AssignedSources
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: dd6c39dc-333b-4d04-b3e7-a50abbfe847b
+$SequenceNumber: 30
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ DataType: boolean
+ Value: false
+-
+ Name: prepareSource
+ ID: 2
+ DataType: method
+ RandomSeed: 39
+ Value: |+1
+  ->boolean
+  var sourceObj:object;var j:integer
+  
+  j := 1
+  while j <= AssignedSources.yDim 
+  	sourceObj := AssignedSources[1,j]-- "Source"
+  	if sourceObj=void OR sourceObj.internalClassName /= "NwSource"
+  		AssignedSources.cutRow(j)
+  	else
+  		j := j + 1
+  		sourceObj.path := to_str(makePathRelative(current, sourceObj),".SourceTable")
+  		sourceObj.MUselection := "Random"
+  	end
+  end
+  return (AssignedSources.yDim > 0)
+-
+ Name: CloseAssignTable
+ ID: 3
+ DataType: method
+ RandomSeed: 38
+ Value: |+1
+  -- close AssignedSources
+  param bb:boolean
+  
+  var j:integer;var obj:object
+  
+  j:=1
+  while j <= assignedSources.yDim 
+  	obj := assignedSources[1,j]
+  	if obj=void 
+  		assignedSources.cutRow(j)
+  	else
+  		assignedSources[1,j] := makePathRelative(obj,current)
+  		j := j + 1
+  	end
+  
+  end
+  dialog.setTable("SourceList",assignedSources)
+
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 1
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 7
+  -
+   Index: 1
+   DataType: object
+   Width: 22
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,2,~,"Registered Objects"]
+ Columns:

@@ -1,0 +1,61 @@
+InternalClassType: DataTable
+CloseCtrl: "closeTabIA"
+Coordinate3D: [-0.2,14.700000000000001,0]
+Name: Variants
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+PlausibilityCtrl: "self.OnPlausibility"
+UUID: 955790b8-8ba2-42e1-bc68-739206f25564
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: isOpen
+ ID: 1
+ DataType: boolean
+ Value: false
+-
+ Name: OnPlausibility
+ ID: 2
+ DataType: method
+ RandomSeed: 59
+ Value: |+1
+  dialog.&callback.execute("Apply",dialog,dialog)
+
+$Data:
+ Comment: |+1
+  Defines which combinations of the values of different attributes are possible.\r
+  Type in "t" in column 0 for allow or "f" exclude.
+ ShowComment: true
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 5
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Color: 0xdadadc
+   Alignment: "Center"
+   Hidden: false
+   DataType: boolean
+   FormatString: "AAAAA"
+   Width: 6
+  -
+   Index: 1
+   DataType: string
+  -
+   Index: 2
+   DataType: string
+  -
+   Index: 3
+   ReadOnly: false
+  -
+   Index: 4
+   ReadOnly: false
+  RowFormat:
+  -
+   Index: 0
+   Color: 0xdadadc
+   Hidden: false
+ ColumnIndex: [string,1,"active"]
+ Columns:

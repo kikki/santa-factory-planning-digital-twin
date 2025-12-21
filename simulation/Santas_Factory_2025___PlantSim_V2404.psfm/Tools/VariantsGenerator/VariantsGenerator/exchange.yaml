@@ -1,0 +1,47 @@
+InternalClassType: Method
+Coordinate3D: [6.5,2.95,0]
+Name: exchange
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ param col,row:integer
+ 
+ var k,j:integer;var str:string; var LS:object
+ var t:table;var p:real
+ 	
+ --	_print "Exchange column ",col," and row ",row;
+ LS := solvedLS
+ str := LS[col,0]
+ LS[col,0] := LS[0,row]
+ LS[0,row] := str
+ t.create
+ t.dataType := "real"
+ p := LS[col,row]
+ 
+ t[col,row] := 1/p
+ 
+ for k := 1 to LS.xDim 
+ 	if k /= col 
+ 		t[k,row] := -LS[k,row]/p
+ 	end
+ next
+ 
+ for j := 1 to LS.yDim 
+ 	if j /= row 
+ 		t[col,j] := LS[col,j]/p
+ 	end
+ next
+ 
+ for k := 1 to LS.xDim 
+ 	if k /= col 
+ 		for j := 1 to LS.yDim 
+ 			if j /= row 
+ 				t[k,j] := LS[k,j] - LS[col,j] * LS[k,row] /p
+ 			end
+ 		next
+ 	end
+ next
+ 
+ LS.insertList(1,1, t.copy({1,1}..{*,*}))
+RandomSeed: 56
+UUID: c44f50c2-206f-4b34-84ed-8f34e948dd34
+$SequenceNumber: 8

@@ -1,0 +1,36 @@
+InternalClassType: DataTable
+Coordinate3D: [-8.1,14.700000000000001,0]
+Name: AttrFrequ
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: d3caa84a-e733-4d75-8cf4-82e76ffdc257
+$SequenceNumber: 26
+$Data:
+ Comment: ~
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  MaxXDim: 2
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Hidden: false
+   Width: 12
+  -
+   Index: 1
+   DataType: real
+   FormatString: "-15.3"
+   Width: 10
+  -
+   Index: 2
+   DataType: real
+   FormatString: "-15.3"
+   Width: 10
+  RowFormat:
+  -
+   Index: 0
+   Hidden: false
+ ColumnIndex: [string,3,"Value","Desired","Feasible"]
+ Columns:

@@ -1,0 +1,35 @@
+InternalClassType: Method
+Coordinate3D: [19.400000000000002,14.700000000000001,0]
+Name: setConstraint
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- called by: external
+ param AttrValueSet:table[string]
+ 
+ var str:string
+ var VariantsTab:object := Variants
+ 
+ for var varNo := 1 to VariantsTab.yDim 
+ 	var found:boolean := true 
+ 	
+ 	for var n := 1 to Attributes.yDim 
+ 		found := found AND (AttrValueSet[1,n] = VariantsTab[n,varNo])
+ 	next
+ 	
+ 	if found 
+ 		VariantsTab[0,varNo] := false
+ 		dialog.&callback.execute("Apply",dialog,dialog) -- @ and ? are set.
+ 		return
+ 	end
+ next
+ 
+ -- not found
+ for var n := 1 to AttrValueSet.yDim-1 
+ 	str := to_str(str," \\"",AttrValueSet[1,n],"\\",")
+ next
+ str := to_str(str," \\"",AttrValueSet[1,AttrValueSet.yDim],"\\"")
+ str := to_str("The variant (",str,") did not found.")
+ print str
+RandomSeed: 33
+UUID: 592c6e22-9998-4ee6-bbd6-109c20ca458b
+$SequenceNumber: 37

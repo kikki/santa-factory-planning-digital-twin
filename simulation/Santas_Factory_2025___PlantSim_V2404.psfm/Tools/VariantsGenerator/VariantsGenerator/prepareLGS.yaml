@@ -1,0 +1,74 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,4.6000000000000005,0]
+Name: prepareLGS
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- prepare the table 'LS'
+ -- Prepare the linear equation system,
+ -- fill table 'LS'.
+ -- called by: method _genVariants
+ -> boolean
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode
+ if Variants.yDim = 0 
+ 	if debugging then print"No variants are generated, check the table 'Attributes'.";end
+ 	return false
+ else
+ 	result := true
+ end
+ Frequencies.delete({2,1}..{2,*})
+ for var n := 1 to Variants.yDim 
+ 	if NOT Variants[0,n] 
+ 		Frequencies[2,n] := 0.0
+ 	end
+ next
+ LS.delete({0,0}..{*,*})
+ var n:integer := 0
+ var str:string := "Vanishing frequency:"
+ for var j := 1 to Frequencies.yDim 
+ 	if Frequencies[2,j] = void 
+ 		n := n+1
+ 		LS[n,0] := Frequencies[0,j]
+ 	else
+ 		if debugging 
+ 			str := to_str( str, "   ",Frequencies[0,j],"   ")
+ 		end
+ 	end
+ next
+ if debugging 
+ 	print str
+ end
+ var attrStr:string  := rootfolder.Localization.getText(24) -- Attribute
+ var valueStr:string := to_str("\\" ",rootfolder.Localization.getText(6)," \\"") -- Value
+ 
+ LS[n+1,0] := "1"
+ 
+ validation.delete({0,1}..{*,*})-- show the error of the sums of frequencies.
+ var lst:table
+ var attrName,valName:string
+ var eqNo:integer
+ for var AttrNo := 1 to Attributes.yDim 
+ 	lst := Attributes[1,AttrNo]
+ 	attrName := Attributes[0,AttrNo]
+ 	for var frequNo := 1 to lst.yDim 
+ 		eqNo := eqNo + 1 --print "Attr ",AttrNo," value ",frequNo;
+ 		str := to_str(AttrNo,"*",frequNo)
+ 		LS[0,eqNo] := to_str("y ",str)
+ 		LS[n+1,eqNo] := -lst[2,frequNo] -- frequency: y1 = x1 + x3 - f1
+ 		valName := lst[1,frequNo]
+ 		validation[0,eqNo] := to_str(attrStr,"\\"",attrName,valueStr,valName,"\\"")
+ 		--validation[0,eqNo] := to_str("y ",str);-- like table 'LS'
+ 		for var k := 1 to n 
+ 			if strLPos(str,LS[k,0])>0 
+ 				LS[k,eqNo] := 1
+ 			end
+ 		next-- k
+ 	next-- frequNo
+ next-- AttrNo
+ 
+ if debugging
+ 	print "Prepare ",eqNo," equations of ",n," variables."
+ end
+RandomSeed: 57
+UUID: 5149fbbf-d024-4e2d-a72e-0fe6d503dd2a
+$SequenceNumber: 6

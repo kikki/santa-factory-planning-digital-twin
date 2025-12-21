@@ -1,0 +1,51 @@
+InternalClassType: Method
+Coordinate3D: [19.400000000000002,-4.5,0]
+Name: Evaluation
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- prepare a messageBox at the end of calculation
+ -- called by: dialog after the method gradient
+ var nMax:integer
+ var errMax:real
+ 
+ var varTab:object := Validation
+ var str:string := varTab[0,1]
+ nMax := 1
+ for var k := 1 to varTab.yDim 
+ 	var err:real := abs(varTab[1,k]-varTab[2,k])
+ 	if err > errMax 
+ 		errMax := err
+ 		str := varTab[0,k]
+ 		nMax := k
+ 	end
+ next
+ 
+ var errorOccurred:boolean := abs(errMax)>pow(10,-numOfShownDigits)
+ 
+ if errorOccurred 
+ 	errMax := str_to_num(num_to_str(errMax,numOfShownDigits))
+ 	
+ 	if StartedBy ~= "User" 
+ 		messageBox(to_str(rootfolder.Localization.getText(22),strChr(10), -- The calculation is finished,
+ 			-- The maximal difference between calculated and expected frequencies is errMax
+ 			-- and occurs at 'str'
+ 			rootfolder.Localization.getMessage(23,errMax,str,"")),1,3)
+ 	else --StartedBy == "SimTalk"
+ 		--print messageBox(rootfolder.Localization.getText(22),1,3)
+ 		print rootfolder.Localization.getMessage(23,errMax,str,""),"    "
+ 	end
+ else
+ 	errMax := 0
+ 	
+ 	if StartedBy ~= "User" 
+ 		messageBox( to_str(rootfolder.Localization.getText(22),strChr(10), -- The calculation is finished,
+ 			-- The maximal difference between calculated and expected frequencies is errMax
+ 			rootfolder.Localization.getMessage(43,errMax,"","")),1,3)
+ 	else --StartedBy == "SimTalk"
+ 		print rootfolder.Localization.getText(22)
+ 		print rootfolder.Localization.getMessage(43,errMax,"",""),"    "
+ 	end
+ end
+RandomSeed: 34
+UUID: 293beba1-c31f-40b6-a001-4f04d9199c52
+$SequenceNumber: 34

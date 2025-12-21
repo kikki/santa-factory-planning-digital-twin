@@ -1,0 +1,43 @@
+InternalClassType: Method
+Coordinate3D: [6.5,-4.5,0]
+Name: StartWith_Rand_Frequ
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- first valid solution
+ -- called by: gradient
+ param sol:table->boolean
+ 
+ var k,tryNo,row,n:integer;var h,r,lowBound:real;var ok,debugging:boolean
+ 
+ h := 1; n := xTable.xDim-1-- number of independent x
+ lowBound := -1e-15
+ if debugging AND numRestart > 0 
+ 	print "Restart ",numRestart," with random frequencies as a start value"
+ end
+ repeat
+ 	for k := 1 to n 
+ 		sol[1,k] := z_uniform(1, 0, h) -- frequency
+ 	next-- k
+ 	
+ 	row := 0; ok := true
+ 	while row < xTable.yDim AND ok 
+ 		row := row + 1 -- row in 'xTable'
+ 		r := 0
+ 		for k := 1 to n 
+ 			r := r + sol[1,k] * xTable[k,row]
+ 		next -- k
+ 		r := r + xTable[n+1,row]-- dependent x
+ 		ok := ok AND (r >= lowBound) AND (r<=1)
+ 	end-- row of xTable
+ 		
+ 	if h>0.3 then h := h - 0.001
+ 	else	
+ 		h := h * 0.9
+ 	end
+ 	tryNo := tryNo + 1
+ until ok OR tryNo > 1000
+ return ok
+ -- of method
+RandomSeed: 45
+UUID: 4f68ac33-76c2-4ff0-86b7-f2210ff29824
+$SequenceNumber: 20

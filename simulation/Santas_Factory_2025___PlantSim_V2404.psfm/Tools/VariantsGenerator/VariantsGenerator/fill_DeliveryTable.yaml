@@ -1,0 +1,53 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,-5.0500000000000007,0]
+Name: fill_DeliveryTable
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- fill the table 'SourceTable' with frequencies of table 'Variants'
+ var r:real
+ var w:integer
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode
+ 
+ var deliveryTab:object := SourceTable
+ var variantsTab:object := Variants
+ var numAttr:integer := Attributes.yDim
+ var colFrequ:integer := numAttr + 2
+ 
+ if NOT AssignedSources.prepareSource  -- check and clean the table 'AssignedSources'
+ 	if debugging then print "No source specified.";end
+ end
+ if MUclass = void 
+ 	if debugging then print "No movable unit specified.";end
+ end
+ 
+ var MU:object := MUclass
+ deliveryTab.inheritContents := true-- delete
+ for var varNo := 1 to variantsTab.ydim 
+ 	if variantsTab[0,varNo]  -- if selected
+ 		w := w + 1 -- frequencies in the table 'Variants'
+ 		-- (also visible by the button 'Variants_But' on the Constraint tab)
+ 		r := variantsTab[colFrequ,varNo]
+ 		r := round(abs(r),numOfShownDigits)
+ 		deliveryTab[2,w] := r-- frequency (real)
+ 		deliveryTab[3,w] := 1 -- column Number
+ 		deliveryTab.createNestedList(5,w)
+ 		deliveryTab[5,w].setName(to_str("Var ",varNo))
+ 		deliveryTab[4,w] := to_str("Var_",varNo) -- column Name
+ 
+ 		var Attr:table := deliveryTab[5,w] 		
+ 		Attr.insertList(1,1, Attributes.copy({0,1}..{0,*}))
+ 		for var attrNo := 1 to numAttr 
+ 			Attr[4,attrNo] := variantsTab[attrNo,varNo]
+ 		next-- attrNo
+ 	end
+ next-- varNo
+ if MU /= void 
+ 	deliveryTab.initialize({1,1}..{1,*},  MU)
+ end
+ if debugging 
+ 	print "Check the total sum of frequencies: ",deliveryTab.sum({2,1}..{2,*})
+ end
+RandomSeed: 40
+UUID: 044ffdf7-9e66-445d-952e-d191ce1d4777
+$SequenceNumber: 29

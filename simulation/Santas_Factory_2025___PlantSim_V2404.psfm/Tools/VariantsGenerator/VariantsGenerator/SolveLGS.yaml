@@ -1,0 +1,110 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,1.55,0]
+Name: SolveLGS
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ var col,row,j,n,m,k:integer
+ var r,pivot,h,b:real
+ var str:string
+ var testBool,debugging:boolean
+ var noExchange:list[integer]
+ frequencies.delete({2,1}..{2,*})
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ debugging := ApplObj.debug_Mode
+ noExchange.create
+ Validation.delete
+ solvedLS.delete({0,0}..{*,*})
+ solvedLS.insertList(0,0, LS.copy({0,0}..{*,*}))
+ n := solvedLS.xDim - 1-- number of variables
+ m := solvedLS.yDim-- number of constaints (sum of frequencies)
+ for row := 1 to m  -- exchange y a*b
+ 	col := 0
+ 	j := 1-- scan the row
+ 	while j<=n AND col = 0 
+ 		pivot := solvedLS[j,row]
+ 		if pivot /= 0 AND strLPos("y",solvedLS[j,0]) = 0 
+ 			b := solvedLS[n+1,row]/pivot
+ 			if b <=0 -->=
+ 				testBool := true;k := 1
+ 				while k<= row-1 AND testBool 
+ 					h := solvedLS[n+1,k] - solvedLS[n+1,row]*solvedLS[j,k]/pivot
+ 					testBool := (h >= 0)
+ 					k := k+1
+ 				end
+ 				if testBool 
+ 					col := j
+ 				end
+ 			end
+ 		end
+ 		j := j+1
+ 	end
+ 	if col > 0 
+ 		exchange(col,row)
+ 	else
+ 		noExchange.append(row)
+ 	end
+ next-- exchange y a*b
+ 
+ j := 1
+ while j < solvedLS.xDim 
+ 	str := solvedLS[j,0]
+ 	if strLPos("y",str) > 0 
+ 		solvedLS.cutColumn(j)
+ 	else
+ 		j := j+1
+ 	end
+ end
+ if debugging 
+ 	str := "No exchange for rows "
+ 	for j := 1 to noExchange.dim 
+ 		str := to_str(str,noExchange[j]," ")
+ 	next
+ 	print str
+ end
+ 
+ xTable.delete({0,0}..{*,*});yTable.delete({0,0}..{*,*})
+ xTable.insertList(0,0, solvedLS.copy({0,0}..{*,0}))
+ yTable.insertList(0,0, solvedLS.copy({0,0}..{*,0}))
+ for j := 1 to solvedLS.yDim 
+ 	if strLPos("y",solvedLS[0,j]) > 0 
+ 		yTable.insertList(0,yTable.yDim + 1, solvedLS.copy({0,j}..{*,j}))
+ 	else
+ 		xTable.insertList(0,xTable.yDim + 1, solvedLS.copy({0,j}..{*,j}))
+ 	end
+ next
+ -- delete 0-rows from xTable
+ j := 1
+ while j <  xTable.yDim 
+ 	k := 1;testBool := true
+ 	while k < xTable.xDim AND testBool 
+ 		testBool := (xTable[k,j]=0)
+ 		k := k+1
+ 	end
+ 	if testBool 
+ 		row := frequencies.getRowNo(xTable[0,j])
+ 		frequencies[2,row] := xTable[xTable.xDim,j]
+ 		xTable.cutRow(j)
+ 	else
+ 		j:= j+1
+ 	end
+ end-- j
+ updateGUI
+ return
+ --
+ for j := 1 to frequencies.yDim 
+ 	str := frequencies[0,j]
+ 	n := solvedLS.getRowNo(str)
+ 	if n > 0 
+ 		frequencies[2,j] := solvedLS["1",n]
+ 	else
+ 		n := solvedLS.getColumnNo(str)
+ 		if n>0 
+ 			frequencies[2,j] := solvedLS[n,n]
+ 		else
+ 			if debugging then debug;end
+ 		end
+ 	end
+ next
+RandomSeed: 55
+UUID: ac01169b-ed0c-4b63-808c-f2b8b739b61e
+$SequenceNumber: 9

@@ -1,0 +1,28 @@
+InternalClassType: DataTable
+Coordinate3D: [19.400000000000002,2.95,0]
+Name: yTable
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: 0922b54e-ab3a-4e6a-ab23-a17ee7cb6bbe
+$SequenceNumber: 14
+$Data:
+ Comment: "Residuals of the y-variables should be as small as possible"
+ ShowComment: true
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+   Width: 15
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ Columns:

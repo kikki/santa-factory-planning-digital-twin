@@ -1,0 +1,28 @@
+InternalClassType: DataTable
+Coordinate3D: [16.85,2.95,0]
+Name: xTable
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: 1d804ee0-8e8b-46e6-86c1-6262d9b9707d
+$SequenceNumber: 13
+$Data:
+ Comment: "all x-variables must be in [0,1]"
+ ShowComment: true
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+   Width: 15
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ Columns:

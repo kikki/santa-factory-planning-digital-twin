@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "dialog element precision_Inp (needed for the esp)"
+Coordinate3D: [3.1500000000000004,10.700000000000001,0]
+DataType: integer
+HasInitValue: false
+Name: numOfValidDigits
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: cb28287d-e76e-4df9-9818-cbc9bcfd0414
+$SequenceNumber: 18
+Value: 5

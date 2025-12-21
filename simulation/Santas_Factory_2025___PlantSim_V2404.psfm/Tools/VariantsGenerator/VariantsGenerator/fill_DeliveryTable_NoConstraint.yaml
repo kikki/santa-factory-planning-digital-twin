@@ -1,0 +1,75 @@
+InternalClassType: Method
+Coordinate3D: [-5.2,-4.8000000000000007,0]
+Name: fill_DeliveryTable_NoConstraint
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- fill the table 'SourceTable' with independent frequencies
+ var Attr,tab:table;var vTab:table[integer,integer];var deliveryTab,MU,AttrTab,ApplObj:object;var r:real
+ var w,j,k,varNo,numAttr,colFrequ,numVar:integer;var debugging:boolean
+ 
+ ApplObj := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ debugging := ApplObj.debug_Mode
+ 
+ deliveryTab := SourceTable
+ AttrTab := Attributes
+ numAttr := AttrTab.yDim
+ numVar := 1;vTab.create
+ for j := 1 to numAttr 
+ 	w := Attributes[1,j].yDim
+ 	numVar := numVar * w
+ 	vTab.writeRow(1,j, 1,w)
+ next
+ 
+ colFrequ := numAttr + 2
+ 
+ if NOT AssignedSources.prepareSource  -- check and clean the table 'AssignedSources'
+ 	if debugging then print "No source specified.";end
+ end
+ if MUclass = void 
+ 	if debugging then print "No movable unit specified.";end
+ end
+ MU := MUclass
+ deliveryTab.inheritContents := true
+ --
+ 
+ varNo := 1
+ deliveryTab.createNestedList(5,varNo)
+ Attr := deliveryTab[5,varNo]
+ Attr.insertList(1,1, AttrTab.copy({0,1}..{0,*}))
+ while varNo <= numVar 
+ 	r := 1
+ 	for j := 1 to numAttr 
+ 		tab := AttrTab[1,j]
+ 		k := vTab[1,j]
+ 		r := r * tab[2,k]-- attribute frequency
+ 		Attr[4,j] := tab[1,k] -- attribute value
+ 	next
+ 	deliveryTab[2,varNo] := r
+ 	deliveryTab[3,varNo] := 1 -- column Number (new in 10.0)
+ 	deliveryTab[5,varNo] := Attr.copy
+ 	deliveryTab[5,varNo].setName(to_str("Var ",varNo))
+ 	deliveryTab[4,varNo] := to_str("Var_",varNo)-- column Name		
+ 	
+ 	j := 1
+ 	repeat
+ 		k := vTab[1,j] + 1
+ 		vTab[1,j] := k
+ 		
+ 		if k <= vTab[2,j] 
+ 			j := numAttr + 1
+ 		else
+ 			vTab[1,j] := 1
+ 			j := j + 1
+ 		end
+ 	until j > numAttr
+ 	varNo := varNo + 1
+ end
+ 
+ 
+ if MU /= void 
+ 	deliveryTab.initialize({1,1}..{1,*},MU)
+ end
+ if debugging then print "Check the total sum of frequencies: ",deliveryTab.sum({2,1}..{2,*});end
+RandomSeed: 32
+UUID: ed5070ee-e324-4056-b3a2-980e5013f76f
+$SequenceNumber: 39

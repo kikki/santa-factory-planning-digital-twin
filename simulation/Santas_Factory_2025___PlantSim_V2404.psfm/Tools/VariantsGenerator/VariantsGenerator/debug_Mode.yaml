@@ -1,0 +1,8 @@
+InternalClassType: Variable
+Coordinate3D: [3.2,4.6000000000000005,0]
+Name: debug_Mode
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: 298fedc0-66b2-446a-a436-08808551d8ce
+$SequenceNumber: 35
+$DataType: boolean
+Value: false

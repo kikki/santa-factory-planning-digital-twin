@@ -1,0 +1,31 @@
+InternalClassType: DataTable
+Coordinate3D: [3.1500000000000004,2.95,0]
+Name: LS
+Origin: d1c5cff5-7757-4ee1-9a62-5f06c621830c
+UUID: ebba2a16-5f9a-4b84-9d31-f407702449b3
+$SequenceNumber: 7
+$Data:
+ Comment: ~
+ ListFormat:
+  Alignment: "Center"
+  ColumnIndex: true
+  ColumnWidth: 12
+  DataType: real
+  RowIndex: true
+  ShowDataType: true
+  ColumnFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+   Width: 15
+  -
+   Index: 1
+  -
+   Index: 2
+  RowFormat:
+  -
+   Index: 0
+   Alignment: "Center"
+   Hidden: false
+ Columns:

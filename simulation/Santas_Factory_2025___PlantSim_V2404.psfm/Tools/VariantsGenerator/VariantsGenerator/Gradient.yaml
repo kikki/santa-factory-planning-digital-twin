@@ -1,0 +1,160 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,-1.6,0]
+Name: Gradient
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ ->boolean
+ var sol,sol_new,sol_best,delta,delta_new:table[real];var ok:boolean;var tab:table
+ var k,n,stepNo,col,row,numSteps,numImprove,partialImprove:integer
+ var r,s,d,h,err,err_new,err_best,errMax,bestErrMax,desiredErr,f:real;var str:string
+ 
+ numSteps := 20; numRestart := 0
+ n := xTable.xDim - 1; desiredErr := eps
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode
+ sol.create; sol_new.create; delta.create; delta_new.create; sol_best.create
+ repeat
+ 	ok := StartWith_Indep_Frequ(sol)
+ 	k += 1
+ until ok OR k > 20
+ if ok 
+ 	if debugging then print "Using independent frequencies as start solution";end
+ else
+ 	k := 0
+ 	repeat
+ 		ok := StartWith_Rand_Frequ(sol)
+ 		k += 1
+ 	until ok OR k > 20
+ 	if ok 
+ 		if debugging then print "Using random frequencies as start solution.";end
+ 	else
+ 		-- No valid solutions for the frequencies were found.
+ 		infobox("",false)
+ 		if startedBy ~= "User" 
+ 			messageBox(rootfolder.Localization.getText(47),1,3)
+ 		else
+ 			print rootfolder.Localization.getText(47)
+ 		end
+ 		return false
+ 	end
+ end
+ 
+ sol.copyRangeTo({1,1}..{1,*}, sol_new, 1,1)
+ sol.copyRangeTo({1,1}..{1,*}, sol_best, 1,1)
+ -- err is the function to minimize: sum y*y
+ err:= calcError(sol,delta,errMax)-- errMax is set (call by ref), needed to terminated the MAIN LOOP
+ err_new  := err
+ err_best := err -- best so far
+ f := realMax-- 1e300
+ repeat -- start of the MAIN LOOP
+ 	f := f * 0.8; if debugging then testSol(sol);end
+ 	update_f(sol,sol_new,delta,f)-- decrease f and ensure all x are in [0,1]
+ 	-- tables 'sol' and 'delta' were not changed.
+ 	err_new := calcError(sol_new,delta_new,errMax)
+ 	if err > err_new  -- change to the improved solution and forget 'sol'
+ 		sol_new.copyRangeTo({1,1}..{1,*}, sol, 1,1)
+ 		delta_new.copyRangeTo({1,1}..{1,*}, delta, 1,1)
+ 		err := err_new
+ 		partialImprove += 1
+ 		if err_best > err 
+ 			numImprove += 1
+ 			sol.copyRangeTo({1,1}..{1,*}, sol_best, 1,1)
+ 			err_best := err
+ 			bestErrMax := errMax
+ 			if debugging then print"Improvement in step ", stepNo," maximal error: ",errMax," quadratic error ",err;end
+ 		end
+ 		update_f(sol,sol_new,delta,f) -- find sol_new
+ 		err_new := calcError(sol_new,delta_new,errMax)
+ 	end
+ 	if debugging 
+ 		testSol(sol)
+ 		print partialImprove," Improvements of intermediate solution"
+ 	end
+ 	partialImprove := 0
+ 	
+ 	-- Is a restart necessary?
+ 	if abs(err - err_new) < 0.001 * err OR f < 1e-10 
+ 		numRestart := numRestart + 1
+ 		if numRestart mod 2 = 0 
+ 			ok := StartWith_Rand_Frequ(sol)
+ 		else
+ 			ok := StartWith_Indep_Frequ(sol)
+ 		end
+ 		if NOT ok 
+ 			-- No valid solutions for the frequencies were found.
+ 			messageBox(rootfolder.Localization.getText(47),1,3)
+ 			stepNo := numSteps + 1
+ 		end
+ 		
+ 		sol.copyRangeTo({1,1}..{1,*}, sol_new, 1,1)
+ 		err:= calcError(sol,delta,errMax)
+ 		err_new := err-- best so far
+ 		f := realMax
+ 	end
+ 	stepNo:= stepNo + 1
+ 	if stepNo mod 10 = 0 then updateGUI;end
+ 	if state = "stopped" then stepNo := numSteps + 1; state := "ready";end
+ until (errMax < desiredErr) OR (stepNo > numSteps)
+ -- end of the MAIN LOOP
+ 
+ -- showing the solution sol_new in the table 'frequencies'
+ for k := 1 to n  -- all independent x
+ 	str := xTable[k,0] -- like "1*1 2*1"
+ 	r := sol_best[1,k]
+ 	frequencies[2,str] := r; if debugging AND (r<0 OR r>1) then debug;end
+ next
+ for k := 1 to xTable.yDim  -- all depending x
+ 	r := 0
+ 	for col := 1 to n 
+ 		r := r + sol_best[1,col] * xTable[col,k]
+ 	next
+ 	r := r + xTable[n+1,k]
+ 	str := xTable[0,k] -- like  "1*1 2*1"
+ 	frequencies[2,str] := r; if debugging AND (r<-1e-14 OR r>1) then debug;end
+ next
+ -- plausibility check in the table 'Validation'
+ n := LS.xDim-1-- all x (both kinds)
+ for row := 1 to LS.yDim 
+ 	r := 0
+ 	for col := 1 to n 
+ 		str := LS[col,0]
+ 		r := r + frequencies[2,str] * LS[col,row]
+ 	next
+ 	Validation[1,row] := r-- calculated
+ 	Validation[2,row] := -LS[n + 1,row]-- given expected frequency
+ next
+ --
+ row := 0
+ for k := 1 to Attributes.yDim 
+ 	tab := Attributes[1,k]
+ 	for n := 1 to tab.yDim 
+ 		row := row + 1 -- AttrNo k value n
+ 		tab[3,n] := Validation[1,row]
+ 	next-- value n
+ next-- AttrNo k
+ 
+ if debugging then print;print "----------- Results ----------"
+ 	err_new := calcError(sol_best,delta_new,errMax)
+ 	print "Maximal error between desired and calculated frequencies is ",errMax,"."
+ 
+ 	if stepNo > numSteps then
+ 		print "Desired precision ",desiredErr," was not achieved."
+ 	else
+ 		print "Desired precision ",desiredErr," was achieved"
+ 	end
+ 
+ 	r := frequencies.sum({1,1}..{1,*})
+ 	if abs(1-r)>1e-15 
+ 		print "Sum of calculated frequencies: ",r
+ 	end
+ 	r := frequencies.sum({2,1}..{2,*})
+ 	if abs(1-r)>1e-15 
+ 		print "Sum of given expected frequencies: ",r
+ 	end
+ 	print numRestart," Restarts"
+ 	print numImprove," times the currently best solution was improved."
+ end
+ return true
+RandomSeed: 53
+UUID: 7e630436-4b0f-4bd5-8f0e-696b9bd87af7
+$SequenceNumber: 15

@@ -1,0 +1,79 @@
+InternalClassType: Method
+Coordinate3D: [-10.850000000000001,8.35,0]
+Name: genVariants
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- fill tables 'VarTab', 'Frequencies' and 'Variants'
+ -- called by: Apply and Start
+ var NumVariants:integer := countVariants
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode
+ var numAttr: integer := Attributes.ydim
+ 
+ if Attributes.yDim > 0 AND NumVariants > 0 
+ 	if debugging
+ 		print NumVariants," variants of combination of attribute values."
+ 	end
+ else
+ 	if debugging 
+ 		print"No variants are defined."
+ 	end
+ 	return
+ end
+ resetWizard
+ 
+ Frequencies.delete
+ var tab:table
+ var str:string
+ var n:integer
+ for var k := 1 to numAttr 
+ 	tab := Attributes[1,k]
+ 	str := Attributes[0,k] -- Attr Name
+ 	Variants[k,0] := str; VarTab[k,0] := str-- column index
+ 	var numValues: integer := tab.yDim
+ 	
+ 	n := 0
+ 	for var i := 1 to NumVariants/numValues  
+ 		for var AttrNo := 1 to numValues 
+ 			n := n + 1
+ 			VarTab[k,n]:= AttrNo
+ 		next
+ 	next
+ 	VarTab.sort(k,"up")
+ next -- k
+ VarTab.sort(1,"up")--	VarTab.openDialog;
+ --------------
+ for var AttrNo := 1 to numAttr 
+ 	Variants.setDataType(AttrNo,"string")
+ next
+ Variants.setDataType(numAttr + 1,"real")-- Independent frequency
+ Variants.setColumnWidth(numAttr + 1, 20)
+ Variants.setDataType(numAttr + 2,"real")-- Frequency with constraints
+ Variants.setColumnWidth(numAttr + 2, 20)
+ Variants.writeRow(numAttr + 1,0, "Frequency independent","Frequency restricted")
+ 
+ var noConstraints:boolean := (numOfConstraints = 0)
+ var Frequ,r:real
+ for var varNo := 1 to NumVariants 
+ 	if Variants[0,varNo]=void then Variants[0,varNo] := true; end
+ 	
+ 	Frequ := 1
+ 	str := ""
+ 	for var AttrNo := 1 to numAttr 
+ 		n := VarTab[AttrNo,varNo]
+ 		tab := Attributes[1,AttrNo]
+ 		r := tab[2,n]
+ 		if noConstraints 
+ 			tab[3,n] := r
+ 		end
+ 		Frequ *= r -- frequency
+ 		str := to_str(str," ",AttrNo,"*",n)
+ 		Variants[AttrNo,varNo]:= tab[1,n] -- value
+ 	next
+ 	Frequencies.writeRow(0,varNo, str, Frequ)
+ 	Variants[numAttr + 1,varNo] := Frequ
+ next
+ Variants.delete({0,NumVariants+1}..{0,*})
+RandomSeed: 60
+UUID: f7b9a9a4-00e1-464f-a32d-3b1d041babbb
+$SequenceNumber: 1

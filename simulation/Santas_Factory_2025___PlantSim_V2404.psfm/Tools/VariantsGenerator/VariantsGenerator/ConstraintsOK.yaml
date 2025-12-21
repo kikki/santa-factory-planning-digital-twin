@@ -1,0 +1,33 @@
+InternalClassType: Method
+Coordinate3D: [-5.95,11.600000000000001,0]
+Name: ConstraintsOK
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- detect imstrChrsible values of attributes_
+ -- called by: dialog: Start the calculation first time
+ -> boolean
+ var ApplObj:object := rootfolder.BasicObjects.&Meth.WizardObj -- object link
+ var debugging:boolean := ApplObj.debug_Mode
+ genVariants
+ 
+ for var AttrNo := 1 to Attributes.ydim 
+ 	var AttrTab:table := Attributes[1,AttrNo]
+ 	for var j := 1 to AttrTab.ydim 
+ 		var AttrValue:string := AttrTab[1,j]
+ 		var bb:boolean := false
+ 		for var varNo := 1 to Variants.ydim 
+ 			if Variants[AttrNo,varNo] = AttrValue 
+ 				bb := bb OR Variants[0,varNo]-- at least one "TRUE" is needed for each attribute value
+ 			end
+ 		next -- varNo
+ 		if NOT bb  -- that is, all items of the attribute value were "FALSE"
+ 			-- "The value \\"",AttrValue,"\\" of the attribute \\"",Attributes[0,AttrNo],"\\" is imstrChrsible."
+ 			messageBox(rootfolder.Localization.getMessage(4,AttrValue,Attributes[0,AttrNo],""),1,3)
+ 			return false
+ 		end
+ 	next -- j: AttrValue
+ next -- AttrNo 
+ return true
+RandomSeed: 58
+UUID: 7c8926d1-304e-4175-a6cb-dda59f7dfc30
+$SequenceNumber: 5

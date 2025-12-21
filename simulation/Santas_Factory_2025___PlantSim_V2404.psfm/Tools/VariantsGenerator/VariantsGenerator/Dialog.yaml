@@ -1,0 +1,692 @@
+InternalClassType: Dialog
+Coordinate3D: [-13.8,14.700000000000001,0]
+Label: "Variantsgenerator"
+Origin: 38d04301-6387-4cf1-8a7b-2359152ca172
+UUID: a65a1426-11f9-47b0-accd-7a31a9974c08
+$SequenceNumber: 17
+$CustomAttributes:
+-
+ Name: callback
+ ID: 1
+ $DataType: method
+ RandomSeed: 51
+ Value: |+1
+  param action : string
+  
+  var obj:object
+  var s,str,AttrName:string
+  var n,j:integer
+  var validAttr:boolean
+  
+  var ApplObj:object := @.~
+  var debugging:boolean := rootfolder.BasicObjects.&Meth.WizardObj.debug_Mode -- object link
+  if debugging then print "Debug mode dialog action: ",action;end
+  
+  switch action
+  case "Open"
+  	if LicenseName ~= "EMPLANT_STD"
+  		-- "The statistical tools are not available in your license."
+  		@.setSensitive("Start_But",false)
+  		messageBox(rootfolder.Localization.getText(1),1,3)
+  	else
+  		@.setSensitive("Start_But",true)
+  	end
+  
+  	@.setCaption("Name_Inp",ApplObj.name)
+  	@.setCaption("Label_Inp",ApplObj.label)
+  	@.setCaption("MU_Inp",to_str(ApplObj.MUclass))
+  	@.setCheckBox("Constraints_CB",Constraints_CB)
+  	@.setSensitive("Variants_But",Constraints_CB)
+  	@.setSensitive("numExcluding_Txt",Constraints_CB)
+  
+  	@.setCaption("Name_Inp",ApplObj.name)
+  	n := ApplObj.numOfValidDigits
+  	eps := pow(10,-numOfValidDigits-1)
+  
+  	@.setCaption("precision_Inp",to_str(n))
+  	@.setCaption("NumShownDigits_Inp",to_str(ApplObj.numOfShownDigits))
+  	@.setCheckBox("showAllDigits_CB", roundResults)
+  	n := Variants.yDim
+  	if n>0
+  		-- All n desired and unrequested variants
+  		@.setCaption("Constraints_Txt", rootfolder.Localization.getMessage(3,n,"",""))
+  	else   	-- All desired and unrequested variants
+  		@.setCaption("Constraints_Txt", rootfolder.Localization.getText(2))
+  	end
+  	self.~.undesiredVariants  -- calculate and show the number of unrequested variants in the dialog
+  	self.~.updateAttr
+  
+  case "Apply"
+  	infobox("",false)
+  	ApplObj.name  := @.getValue("Name_Inp")
+  	ApplObj.label := @.getValue("Label_Inp")
+  
+  	n := str_to_num(@.getValue("precision_Inp"))
+  	ApplObj.numOfValidDigits := n
+  	eps := pow(10,-numOfValidDigits-1)
+  
+  	j := 	str_to_num(@.getValue("NumShownDigits_Inp"))
+  	if j>12 then j := 12; end
+  
+  	ApplObj.numOfShownDigits := j
+  	@.setCaption("NumShownDigits_Inp",to_str(j))
+  
+  	roundResults := @.getCheckBox("showAllDigits_CB")
+  
+  	Attributes.updateFrequencies-- treatment of the table "Attribute"
+  
+  	var numVariants:integer := countVariants-- Each row in the sequence table requires 3 KByte. Variants.memUsage 60 MB
+  	var CalcDesired:boolean
+  	if StartedBy = "User" AND numVariants > MaxVariants  -- The sequence table will occupy x MByte in the main memory. (> 10 MByte)
+  		if debugging then print numVariants," variants";end
+  		CalcDesired := (16 = messageBox(rootFolder.Localization.getMessage(53,to_str(round(numVariants * 0.003)," MByte"),"","")+strChr(10)+rootFolder.Localization.getText(54),48,2))
+  	else
+  		CalcDesired := true
+  	end
+  
+  	if Constraints_CB AND CalcDesired
+  		genVariants  -- This method is only needed with constraints.
+  	end
+  	
+  	self.~.showAllDigits
+  	if constraints_CB AND CalcDesired
+  		self.~.undesiredVariants -- calculate and show the number of unrequested variants in the dialog
+  	end
+  	for j := 1 to Attributes.yDim
+  		if Attributes[1,j]/=void
+  			Attributes[1,j].setName(to_str(Attributes[1,j].yDim," ",rootfolder.localization.getText(5)))-- values
+  			-- "Value","Desired frequency","Feasible frequency"
+  			Attributes[1,j].writeRow(1,0, rootfolder.localization.getText(6),rootfolder.localization.getText(7),rootfolder.localization.getText(8))
+  		end
+  	next
+  	str := @.getValue("MU_Inp")
+  	obj := str
+  	if obj/=void
+  		switch obj.internalClassName
+  		case "Piece","Goods","Vehicle"
+  			MUclass := obj
+  			str:=to_str(obj)
+  			sourceTable.setColumnWidth(1,0.8*strLen(str))
+  			for j := 1 to sourceTable.yDim
+  				sourceTable[1,j] := MUclass
+  			next
+  		else
+  			--@.setCaption("MU_Inp",""); MUclass := void
+  			sourceTable.delete({1,1}..{1,*})
+  		end
+  	else
+  		--@.setCaption("MU_Inp","");MUclass := void
+  		sourceTable.delete({1,1}..{1,*})
+  	end
+  	AssignedSources.prepareSource
+  	self.~.updateAttr
+  	--_genVariants;
+  	@.setCaption("Start_But",rootfolder.Localization.getText(15))-- Start
+  	state := "ready"
+  	-- end of Apply
+  	
+  case "Attributes","Variants",
+  		"Validation","Frequencies","SourceTable"
+  		obj := action
+  		if obj.isOpen
+  			obj.closeDialog
+  			obj.isOpen := false
+  		else
+  			@.setCaption(to_str(action,"_But"),rootfolder.Localization.getText(9)) -- Close
+  			-- "Independent frequency ","Frequency with constraints"
+  			Variants.writeRow(1+Attributes.yDim,0,  rootfolder.Localization.getText(10),rootfolder.Localization.getText(11))
+  			obj.openDialog
+  			obj.isOpen := true
+  		end
+  case "showAllDigits_CB"
+  	roundResults := @.getCheckBox("showAllDigits_CB")
+  	self.~.showAllDigits
+  	self.~.updateAttr
+  
+  case "Start"
+  	if Attributes.yDim = 0 then return end
+  	if state = "running"
+  		state := "stopped"
+  		@.setCaption("Start_But",rootfolder.Localization.getText(12)) -- Wait
+  		return
+  	end
+  
+  	state := "running"
+  	--self.~.callback("Apply");
+  	@.setCaption("Start_But",rootfolder.Localization.getText(13)) -- Stop
+  	str := rootfolder.Localization.getText(14)--Please wait until the calculation is finished.
+  
+  	if Constraints_CB AND (NOT ConstraintsOK)  -- calls genVariants_
+  		@.setCaption("Start_But",rootfolder.Localization.getText(15))--Start
+  		state := "ready"
+  		return
+  	end
+  	if (numOfConstraints = 0) OR (NOT Constraints_CB)
+  		self.~.updateAttr
+  		fill_DeliveryTable_NoConstraint
+  		@.setCaption("Start_But",rootfolder.Localization.getText(15)) -- Start
+  		-- Since there are no restrictions, the expected frequecies are realizable.
+  		str := rootfolder.Localization.getText(51)
+  		if StartedBy ~= "SimTalk"
+  			print str
+  		else
+  			messageBox(str,1,3)
+  		end
+  		state := "ready"
+  		return
+  	end
+  
+  	if NOT debugging then infoBox(str,false); end
+  	if Constraints_CB AND prepareLGS
+  		solveLGS
+  		if Gradient
+  			Variants.insertList(Attributes.ydim + 2,1, frequencies.copy({2,1}..{2,*}))
+  			self.~.updateAttr
+  			fill_DeliveryTable
+  			infobox("",false)
+  			Evaluation -- prepare a messageBox at the end of calculation
+  		end
+  	end
+  	@.setCaption("Start_But",rootfolder.Localization.getText(15))-- Start
+  	state := "ready"
+  	-- end of "Start"
+  case "createattr"
+  	str := rootfolder.Localization.getText(16)-- Please enter the name of the new attribute.
+  	AttrName := Prompt(str); if strLen(str) <1 then return end
+  	obj := MUclass
+  	if obj=void then obj := rootfolder.BasicObjects.Default_MU;end
+  	var AttrExists:boolean := executeSilent("param obj:object, attr:string -> boolean obj.getAttribute(attr); return true; ", obj, AttrName)
+  	if AttrExists
+  		validAttr := executeSilent(to_str("param obj:object -> boolean var s:string := obj.",AttrName,"; return true"),obj)
+  		if NOT validAttr
+  			s := rootfolder.Localization.getMessage(49,AttrName,"","")-- The attribute "$1" has not the type String.
+  			messageBox(s,1,1)
+  			return
+  		end
+  	else
+  		validAttr := executeSilent(to_str("param obj:object -> boolean obj.createAttr(\\"",AttrName,"\\",\\"string\\"); obj.deleteAttr(\\"",AttrName,"\\"); return true"), obj)
+  		if NOT validAttr
+  			s := rootfolder.Localization.getText(17)-- You have entered an invalid name.
+  			messageBox(s,1,1)
+  			return
+  		end
+  	end
+  
+  	resetWizard
+  	n := Attributes.ydim + 1
+  	Attributes[0,n] := AttrName
+  
+  	Attributes.createNestedList(1,n)
+  	Attributes[1,n].setName("Attr.")
+  	self.~.updateAttr
+  	@.setIndex("Attr_PopUp",Attributes.getRowNo(AttrName))
+  	self.~.updateAttr
+  	-- end of "createattr"
+  case "delAttr"
+  	-- Do you really want to delete this attribute?
+  	if messagebox(rootfolder.localization.getText(44),48,12) = 16
+  		self.~.~.resetWizard
+  		AttrName := @.getValue("Attr_PopUp")
+  		Attributes.cutRow(AttrName)
+  		if LS.getAttrNo(AttrName)>0
+  			LS.deleteAttr(AttrName)
+  		end
+  		self.~.updateAttr
+  	end
+  
+  case "Attr_PopUp"
+  	self.~.updateAttr
+  case "AttrFrequ_ListView"
+  	AttrName := @.getValue("Attr_PopUp"); Attributes[1,AttrName].showcomment := true
+  	-- "Value","Desired frequency","Feasible frequency"
+  	Attributes[1,AttrName].writeRow(1,0, rootfolder.localization.getText(6),rootfolder.localization.getText(7),rootfolder.localization.getText(8))
+  	-- Comparison of the desired and feasible frequency for the attribute values of an atrribute.
+  	Attributes[1,AttrName].comment := rootfolder.localization.getText(18)
+  	Attributes[1,AttrName].opendialog
+  case "openLocation"
+  	~.opendialog
+  	-- "?"-menu:
+  case "Contents_Menu"
+  	HTMLHelp("")
+  case "Index_Menu"
+  	HTMLHelp("","")
+  case "HelpObject_Menu"
+  	HTMLHelp(HelpOnObjectENU)
+  case "OpenLoc_Menu"
+  	APPObj.~.openDialog
+  
+  case "OpenAssignedObjects"
+  	for j := 1 to AssignedSources.yDim
+  		obj := AssignedSources[1,j]
+  		if obj/=void
+  			AssignedSources[1,j] := makepathrelative(obj,current)
+  		else
+  			AssignedSources[1,j] := void
+  		end
+  	next
+  	AssignedSources.openDialogBox
+  case "SourceList"
+  	AssignedSources.openDialogBox
+  case "Close"
+  	Attributes.closeDialog
+  	Validation.closeDialog
+  	Variants.closeDialog
+  case "Constraints_CB"
+  	Constraints_CB := @.getCheckBox("Constraints_CB")
+  	@.setSensitive("Variants_But",Constraints_CB)
+  	@.setSensitive("numExcluding_Txt",Constraints_CB)
+  end
+  if debugging then print "End of action: ",action;end
+-
+ Name: showAllDigits
+ ID: 2
+ DataType: method
+ RandomSeed: 50
+ Value: |+1
+  var Formstr:string;var numAttr:integer
+  
+  numAttr := Attributes.yDim
+  if roundResults 
+  	Formstr := to_str("-15.",numOfShownDigits)
+  else
+  	Formstr := ""
+  end
+  Validation.setFormatString(1,Formstr)
+  Validation.setFormatString(2,Formstr)
+  
+  AttrFrequ.setFormatString(1,Formstr)
+  AttrFrequ.setFormatString(2,Formstr)
+  SourceTable.setFormatString(2,Formstr)-- as object
+  if Variants.getDataType(numAttr + 1) ~= "real" 
+  	Variants.setFormatString(numAttr + 1,Formstr)
+  end
+  if Variants.getDataType(numAttr + 2)~="real" 
+  	Variants.setFormatString(numAttr + 2,Formstr)
+  end
+  --frequencies.setFormatString(1,Formstr);
+  --frequencies.setFormatString(2,Formstr);
+  Dialog.setsensitive("NumShownDigits_Inp",roundResults)
+  -- of method
+-
+ Name: updateAttr
+ ID: 3
+ DataType: method
+ RandomSeed: 49
+ Value: |+1
+  -- called by: dialog Apply, create attribute
+  var lst:list[string]
+  lst.create
+  
+  var bb:boolean := (Attributes.ydim > 0)
+  Dialog.setSensitive("Attr_PopUp",bb)
+  Dialog.setSensitive("AttrFrequ_ListView",bb)
+  AttrFrequ.delete({0,1}..{*,*})
+  if bb
+  	lst.insertList(1, Attributes.copy({0,1}..{0,*}))
+  	Dialog.setList("Attr_PopUp",lst)
+  	var j:integer := Dialog.getIndex("Attr_PopUp")
+  	if j>0
+  		if Attributes[1,j]/=void
+  			AttrFrequ.insertList(0,1,Attributes[1,j].copy({1,1}..{3,*}))
+  			if roundResults
+  				for j := 1 to AttrFrequ.ydim
+  					var r:real := AttrFrequ[2,j] -- realized frequencies
+  					if r>0
+  						AttrFrequ[2,j] := round(r,numOfShownDigits)
+  					end
+  				next
+  			end
+  		end
+  	end-- if j>0
+  else -- no attribute:
+  	lst.insert(1,"")
+  	Dialog.setList("Attr_PopUp",lst) -- empty list
+  end
+  Dialog.setTable("AttrFrequ_ListView",AttrFrequ)
+-
+ Name: Translation
+ ID: 4
+ DataType: table
+ Value:
+  Comment: "Translation of Index_Menu row 56"
+  ShowComment: true
+  CommonFormat: false
+  ListFormat:
+   ColumnIndex: true
+   ColumnWidth: 20
+   DataType: string
+   MaxXDim: 2
+   RowIndex: true
+   ShowDataType: true
+   ColumnFormat:
+   -
+    Index: 1
+    DataType: integer
+    Width: 12
+   -
+    Index: 2
+    Width: 38
+  ColumnIndex: [string,3,"dialogelement",~,"Comments about dialog elements"]
+  Columns:
+  - [0,string,36,"Contents_Menu","HelpObject_Menu","Help_Menu","OpenLoc_Menu","Navigate_Menu","AttributesTab","ExplanationAttributes_Txt","AttributesPopUp_Txt","createattr_But","delAttr_But","SelectedAttr_Txt","frequenciesAttr_Txt","AttributeVariants_Txt","Attributes_But","ConstraintsTab","Constraints_Txt","itsFrequ","Constraints_CB","Variants_But","numExcluding_Txt","precision_txt","showAllDigits_CB","Start_Txt","Start_But","ValidationFrequency_Txt","Validation_But","ObjectTab","Explanation1_Txt","Explanation2_Txt","Source_Txt","MU_Txt","FrequencyTable_Txt","SourceTable_But","SourceList_Txt","Label_Txt","HelpObject_Menu"]
+  - [1,integer,36,101,102,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,57]
+  - [2,string,36,"Contents","Help on VariantsGenerator","Help","Open Location","Navigate","Attributes","Define attributes and their frequencies","Manage attributes:","Create","Delete","Select attribute:","Frequencies of the attributes subject to constraints:","All attribute variants:","Show","Constraints","All desired and unrequested variants","and their frequencies","Define excluding variants:","Show","No unrequested variants","Define the precision of calculation:","Show restricted number of digits:","Calculation:","Start","Validation of desired frequencies:","Show","Objects","Configure a Source object","with the setting \"MU selection > Random\".","Drag the Source objects onto the wizard.","Moving objects:","Frequency table of the Sources:","Show","Source objects:","Label:","Help on  Object"]
+-
+ Name: showLanguage
+ ID: 5
+ DataType: method
+ RandomSeed: 48
+ Value: |+1
+  /* show the dialog box in the current language_
+  called by: the dialog element dialogbox
+  encrypted
+  */
+  var Dialog_elem,newRowInComment: string; var n,k,messageTabNo: integer
+  var TransTab:table;var ApplObj,DLGobj,msgTab:object
+  
+  ApplObj := self.~.~; DLGobj := dialog
+  newRowInComment := to_str(strChr(13),strChr(10))
+  DLGobj.label := rootfolder.localization.getText(27)--"Variantsgenerator";
+  attrFrequ.writeRow(0,0,rootfolder.localization.getText(6),rootfolder.localization.getText(28),rootfolder.localization.getText(29))-- "Value","Desired","Feasible"
+  Variants.comment := to_str(rootfolder.localization.getText(30),strChr(13),strChr(10),rootfolder.localization.getText(45))
+  Validation.comment := to_str(rootfolder.localization.getText(31),strChr(13),strChr(10),rootfolder.localization.getText(46))
+  Validation.writeRow(0,0,rootfolder.localization.getText(6),rootfolder.localization.getText(32),rootfolder.localization.getText(33)) -- "Value","Calculated","Expected"
+  Attributes.comment := rootfolder.localization.getText(34)
+  Attributes.writeRow(0,0, rootfolder.localization.getText(35),rootfolder.localization.getText(36)) -- "Attribute Name","Attribute Values"
+  AssignedSources[1,0] := rootfolder.localization.getText(37) -- "Registered Objects"
+  SourceTable.writeRow(1,0,rootfolder.localization.getText(41),rootfolder.localization.getText(40),rootfolder.localization.getText(39),rootfolder.localization.getText(38))-- "MU","Frequencies","Name","Attributes"
+  
+  TransTab := self.~.Translation
+  msgTab := rootfolder.localization.MessageTab
+  for n := 1 to TransTab.yDim	
+  	messageTabNo := TransTab[1,n]
+  	Dialog_elem := TransTab[0,n]
+  	k := TransTab.getRowNo(Dialog_elem)
+  	DLGobj.setCaption(Dialog_elem, rootfolder.localization.getText(messageTabNo))
+  next
+  DLGobj.setTable("SourceList",AssignedSources)
+  
+  DLGobj.open
+  
+
+-
+ Name: undesiredVariants
+ ID: 6
+ DataType: method
+ RandomSeed: 47
+ Value: |+1
+  -- called by: Apply, open
+  var n:integer
+  
+  for var j := 1 to Variants.yDim
+  	if NOT Variants[0,j]
+  		n += 1
+  	end
+  next
+  numOfConstraints := n
+  @.setSensitive("Validation_But",n>0)
+  
+  switch n -- = number of unrequested variants
+  case 0
+  	-- No unrequested variants
+  	@.setCaption("numExcluding_Txt",rootfolder.Localization.getText(19))
+  case 1  -- 1 unrequested variant
+  	@.setCaption("numExcluding_Txt",rootfolder.Localization.getMessage(20,n,"",""))
+  else -- n unrequested variants
+  	@.setCaption("numExcluding_Txt",rootfolder.Localization.getMessage(21,n,"",""))
+  end
+  
+  var numVar:integer := Variants.yDim
+  if numVar>0
+  	 -- All numVar desired and unrequested variants
+  	@.setCaption("Constraints_Txt", rootfolder.Localization.getMessage(3,numVar,"",""))
+  else -- All desired and unrequested variants
+  	@.setCaption("Constraints_Txt", rootfolder.Localization.getText(2))
+  end
+$Elements:
+-
+ Type: Menu
+ Name: "Navigate_Menu"
+ Caption: "Navigate"
+ $Elements:
+ -
+  Type: Menu
+  Name: "OpenLoc_Menu"
+  Caption: "Open Location"
+  CallbackArgument: "openLocation"
+-
+ Type: Menu
+ Name: "Help_Menu"
+ Caption: "Help"
+ $Elements:
+ -
+  Type: Menu
+  Name: "Contents_Menu"
+  Caption: "Contents"
+  CallbackArgument: "Contents_Menu"
+ -
+  Type: Menu
+  Name: "HelpObject_Menu"
+  Caption: "Help on Object"
+  CallbackArgument: "HelpObject_Menu"
+-
+ Type: StaticText
+ Name: "Name_Txt"
+ Caption: "Name:"
+-
+ Type: EditText
+ Name: "Name_Inp"
+ Caption: "VariantsGenerator"
+ Rect: [8,0,30,0]
+ DataType: 1
+ Password: false
+-
+ Type: StaticText
+ Name: "Label_Txt"
+ Caption: "Label:"
+ Rect: [0,1,0,0]
+-
+ Type: EditText
+ Name: "Label_Inp"
+ Rect: [8,1,30,0]
+ DataType: 1
+ Password: false
+-
+ Type: TabControl
+ Name: "tabs"
+ Rect: [0,3,50,12]
+ $Elements:
+ -
+  Type: TabPage
+  Name: "ObjectTab"
+  Caption: "Objects"
+  $Elements:
+  -
+   Type: StaticText
+   Name: "Explanation1_Txt"
+   Caption: "Configure a Source object"
+  -
+   Type: StaticText
+   Name: "Explanation2_Txt"
+   Caption: "with the setting \"MU selection > Random\"."
+   Rect: [0,1,0,0]
+  -
+   Type: StaticText
+   Name: "Source_Txt"
+   Caption: "Drag the Source objects onto the wizard."
+   Rect: [0,2,0,0]
+  -
+   Type: StaticText
+   Name: "SourceList_Txt"
+   Caption: "Source objects:"
+   Rect: [0,3,0,0]
+  -
+   Type: ListView
+   Name: "SourceList"
+   Rect: [18,3,28,3]
+   CallbackArgument: "SourceList"
+   Table: dd6c39dc-333b-4d04-b3e7-a50abbfe847b
+  -
+   Type: StaticText
+   Name: "MU_Txt"
+   Caption: "Moving objects:"
+   Rect: [0,7,0,0]
+  -
+   Type: EditText
+   Name: "MU_Inp"
+   Rect: [18,7,28,0]
+   DataType: 1
+   Password: false
+  -
+   Type: StaticText
+   Name: "FrequencyTable_Txt"
+   Caption: "Frequency table of the Sources:"
+   Rect: [0,9,0,0]
+  -
+   Type: Button
+   Name: "SourceTable_But"
+   Caption: "Show"
+   Rect: [35,9,11,0]
+   CallbackArgument: "SourceTable"
+ -
+  Type: TabPage
+  Name: "AttributesTab"
+  Caption: "Attributes"
+  $Elements:
+  -
+   Type: StaticText
+   Name: "ExplanationAttributes_Txt"
+   Caption: "Define attributes and their frequencies"
+  -
+   Type: StaticText
+   Name: "AttributesPopUp_Txt"
+   Caption: "Manage attributes:"
+   Rect: [0,1,0,0]
+  -
+   Type: Button
+   Name: "createattr_But"
+   Caption: "Create"
+   Rect: [20,1,11,0]
+   CallbackArgument: "createattr"
+  -
+   Type: Button
+   Name: "delAttr_But"
+   Caption: "Delete"
+   Rect: [35,1,11,0]
+   CallbackArgument: "delAttr"
+  -
+   Type: StaticText
+   Name: "SelectedAttr_Txt"
+   Caption: "Select attribute:"
+   Rect: [0,2,0,0]
+  -
+   Type: Drop-Down
+   Name: "Attr_PopUp"
+   Caption: [""]
+   Rect: [20,2,26,0]
+   CallbackArgument: "Attr_PopUp"
+   Enable: false
+   SelectionIndex: 1
+  -
+   Type: StaticText
+   Name: "frequenciesAttr_Txt"
+   Caption: "Frequencies of the attributes subject to constraints:"
+   Rect: [0,4,0,0]
+  -
+   Type: ListView
+   Name: "AttrFrequ_ListView"
+   Rect: [0,5,46,3]
+   CallbackArgument: "AttrFrequ_ListView"
+   Enable: false
+  -
+   Type: StaticText
+   Name: "AttributeVariants_Txt"
+   Caption: "All attribute variants:"
+   Rect: [0,9,0,0]
+  -
+   Type: Button
+   Name: "Attributes_But"
+   Caption: "Show"
+   Rect: [35,9,11,0]
+   CallbackArgument: "Attributes"
+ -
+  Type: TabPage
+  Name: "ConstraintsTab"
+  Caption: "Constraints"
+  $Elements:
+  -
+   Type: StaticText
+   Name: "Constraints_Txt"
+   Caption: "All desired and unrequested variants"
+  -
+   Type: StaticText
+   Name: "itsFrequ"
+   Caption: "and their frequencies"
+   Rect: [0,1,0,0]
+  -
+   Type: CheckBox
+   Name: "Constraints_CB"
+   Caption: " Define excluding variants:"
+   Rect: [0,2,0,0]
+   CallbackArgument: "Constraints_CB"
+   IsChecked: true
+  -
+   Type: Button
+   Name: "Variants_But"
+   Caption: "Show"
+   Rect: [35,2,11,0]
+   CallbackArgument: "Variants"
+  -
+   Type: StaticText
+   Name: "numExcluding_Txt"
+   Caption: "No unrequested variants"
+   Rect: [0,3,0,0]
+  -
+   Type: StaticText
+   Name: "precision_txt"
+   Caption: "Define the precision of calculation:"
+   Rect: [0,5,0,0]
+  -
+   Type: EditText
+   Name: "precision_Inp"
+   Caption: "5"
+   Rect: [34,5,12,0]
+   DataType: 4
+   Password: false
+  -
+   Type: CheckBox
+   Name: "showAllDigits_CB"
+   Caption: " Show restricted number of digits:"
+   Rect: [0,6,0,0]
+   CallbackArgument: "showAllDigits_CB"
+   IsChecked: true
+  -
+   Type: EditText
+   Name: "NumShownDigits_Inp"
+   Caption: "3"
+   Rect: [34,6,12,0]
+   DataType: 4
+   Password: false
+  -
+   Type: StaticText
+   Name: "Start_Txt"
+   Caption: "Calculation:"
+   Rect: [0,7,0,0]
+  -
+   Type: Button
+   Name: "Start_But"
+   Caption: "Start"
+   Rect: [35,7,11,0]
+   CallbackArgument: "Start"
+  -
+   Type: StaticText
+   Name: "ValidationFrequency_Txt"
+   Caption: "Validation of desired frequencies:"
+   Rect: [0,9,0,0]
+  -
+   Type: Button
+   Name: "Validation_But"
+   Caption: "Show"
+   Rect: [35,9,11,0]
+   CallbackArgument: "Validation"
+   Enable: false

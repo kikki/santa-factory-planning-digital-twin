@@ -1,0 +1,21 @@
+InternalClassType: Toolbar
+ChangePathCtrl:
+ConstructorCtrl:
+DestructorCtrl:
+Label: "User Interface"
+MoveToFolderCtrl:
+Name: Toolbar
+UUID: 677777d9-4766-4d34-b17f-b1db234b96e0
+Visible: true
+$SequenceNumber: 4294967295
+$Objects:
+- 4cdbd95f-ab92-4a9f-84ae-c415aed40c12
+- 8b9a6c0b-3422-4195-95e5-ae25ed0aa23f
+- 1d934749-5220-4bc5-a25b-f8ff27244007
+- 99f6bfda-df92-4ce5-b6db-06f6072aae43
+- 8edff8e3-71a5-4414-9e67-03111d589b68
+- c1a5181b-416e-43db-b704-595a16d0e560
+- 09dc8dea-f905-430f-b92a-91f69f6f4c35
+- 912e458f-8717-4745-b60b-5f86fc7f8c9a
+- 7cbbe6cc-7ecf-444a-941e-33aaff5372b8
+- 203d5002-639d-4351-9a49-38e62c534963

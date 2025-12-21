@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "dialog element NumShownDigits_Inp"
+Coordinate3D: [3.1500000000000004,9,0]
+DataType: integer
+HasInitValue: false
+Name: numOfShownDigits
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: 415d78e8-b329-4cb8-a670-e160f0c9513d
+$SequenceNumber: 27
+Value: 3

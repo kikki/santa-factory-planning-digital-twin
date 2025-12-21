@@ -1,0 +1,30 @@
+InternalClassType: Method
+Coordinate3D: [16.85,-4.5,0]
+Name: testSol
+Origin: 37f8d1a4-be02-4cb6-9d28-54bb247ac89e
+Program: |+1
+ -- test a solution (only for debugging)
+ -- called by: gradient (before and at the end of the MAIN LOOP)
+ -- update_f (find a new solution)
+ param sol:table->boolean
+ 
+ var k,tryNo,col,n:integer;var r,eps:real
+ 
+ eps := -1e-6
+ n := sol.yDim
+ for k := 1 to n 
+ 	r := sol[1,k]
+ 	if (r < eps OR r>1) then debug;end
+ next
+ 
+ for k := 1 to xTable.yDim  -- all depending x
+ 	r := 0
+ 	for col := 1 to n 
+ 		r := r + sol[1,col] * xTable[col,k]
+ 	next
+ 	r := r + xTable[n+1,k]
+ 	if (r < eps OR r > 1) then debug;end
+ next
+RandomSeed: 44
+UUID: f61b7943-da91-4d28-850a-dd743f4ee092
+$SequenceNumber: 23

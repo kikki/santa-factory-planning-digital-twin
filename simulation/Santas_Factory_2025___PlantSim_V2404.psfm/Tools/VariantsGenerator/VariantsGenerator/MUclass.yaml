@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "Verweis auf die Lieferliste, die gefüllt werden soll"
+Coordinate3D: [3.2,5.5500000000000007,0]
+DataType: object
+HasInitValue: false
+Name: MUclass
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: 94da3c1e-24a0-4957-8888-d986c8b78fd0
+$SequenceNumber: 32
+Value: ""

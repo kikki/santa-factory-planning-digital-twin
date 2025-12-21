@@ -1,0 +1,31 @@
+InternalClassType: Variable
+Alignment: "Left"
+BackgroundColor: 16777215
+ChangePathCtrl:
+Color: 0
+Comment: ""
+ConstructorCtrl:
+Coordinate3D: [0,0,0]
+CreateIn3D: false
+DataType: boolean
+DecimalPlaces: -1
+DestructorCtrl:
+DragDropCtrl:
+Font: 1
+HasInitValue: false
+InitCtrl:
+IntegerPlaces: -1
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: Variable
+OpenCtrl:
+PlausibilityCtrl:
+RenameCtrl:
+ShowDataType: false
+ShowUnit: true
+StatisticsActive: false
+SupportDDEhotlinks: false
+Transparent: false
+UUID: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+$SequenceNumber: 4
+Value: true

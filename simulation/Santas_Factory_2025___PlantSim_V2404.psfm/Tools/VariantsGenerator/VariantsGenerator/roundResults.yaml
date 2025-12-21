@@ -1,0 +1,12 @@
+InternalClassType: Variable
+BackgroundColor: 16777215
+Color: 0
+Comment: "dialog checkbox: showAllDigits_CB"
+Coordinate3D: [3.1500000000000004,8.2000000000000011,0]
+DataType: boolean
+HasInitValue: false
+Name: roundResults
+Origin: 80fe0c7e-6809-41f3-9187-a6e23d7bacf5
+UUID: 03008581-2f69-4fac-a499-87d9b94e353e
+$SequenceNumber: 22
+Value: true
