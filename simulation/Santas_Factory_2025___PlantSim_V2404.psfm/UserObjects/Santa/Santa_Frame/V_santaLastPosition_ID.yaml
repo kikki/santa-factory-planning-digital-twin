@@ -1,0 +1,10 @@
+InternalClassType: Variable
+Coordinate3D: [9.6867,-5.8494,0]
+HasInitValue: true
+InitValue: 1
+Name: V_santaLastPosition_ID
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: 618e36d4-eeb6-4b69-85cf-068c187b3bf9
+$SequenceNumber: 10
+$DataType: integer
+Value: 1

@@ -1,0 +1,10 @@
+InternalClassType: Variable
+Coordinate3D: [9.7147,-6.6726,0]
+DataType: object
+HasInitValue: true
+InitValue: "void"
+Name: V_AGV
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: 6c908605-a86d-4583-b12e-aeed082faf0f
+$SequenceNumber: 12
+Value: ""

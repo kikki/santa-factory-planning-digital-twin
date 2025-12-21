@@ -1,0 +1,9 @@
+InternalClassType: Variable
+Coordinate3D: [2.7019,-8.7531,0]
+HasInitValue: true
+InitValue: 0
+Name: V_Gift_Count
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: a8f40ba1-88ad-439b-bdd9-8ad58a081fe0
+$SequenceNumber: 17
+$DataType: integer

@@ -1,0 +1,16 @@
+InternalClassType: Method
+Coordinate3D: [13.2265,-12.600799999999998,0]
+Name: M_door_open_OUT
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ 	self.~.&M_FlyAnimation_activate
+ 	if .models.Santa.Attr_M_Animation_Door("toor22") = true
+ 
+ 		self.~.&M_nextDestination.executein(0)
+ 		self.~.&M_FlyAnimation_activate
+ 	else
+ 		debug
+ 	end
+RandomSeed: 12004
+UUID: cd654478-00c6-4115-beb8-e1f06c1ef6a0
+$SequenceNumber: 25

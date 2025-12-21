@@ -1,0 +1,18 @@
+InternalClassType: Method
+Coordinate3D: [-1.6807,-6.8809,0]
+Name: init
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ 
+ 
+ self.~.M_delete_all_AGVmarker()
+ 
+ 
+ print ("finish marker delete")
+ 
+ self.~.&M_workflow_santa.executein(0)
+RandomSeed: 3002
+UUID: 3028a0e5-d982-4735-8862-c129545ab0da
+$SequenceNumber: 4
+3D:
+ VisibleGraphicGroups: ["default","init"]

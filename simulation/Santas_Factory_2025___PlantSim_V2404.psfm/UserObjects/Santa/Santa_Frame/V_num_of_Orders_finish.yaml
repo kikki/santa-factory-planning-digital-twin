@@ -1,0 +1,9 @@
+InternalClassType: Variable
+Coordinate3D: [2.6061,-10.41,0]
+HasInitValue: true
+InitValue: 0
+Name: V_num_of_Orders_finish
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: f1c8722e-c3c3-4b46-9035-6c240fc2062c
+$SequenceNumber: 20
+$DataType: integer

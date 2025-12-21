@@ -1,0 +1,30 @@
+InternalClassType: Method
+Coordinate3D: [18.198699999999995,-6.6375,0]
+Name: M_nextDestination
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ -- next Destination
+ var _T_Santa : object := .UserObjects.Santa.T_Santa
+ var _current_ID : integer := self.~.&V_santaLastPosition_ID.value
+ --print "*** + id -> " + to_str(_current_ID)
+ var _next_current_ID : integer := when ( _current_ID = _T_Santa.ydim ) then 1 else _current_ID+1
+ --what is current position
+ if self.~.&V_santaLastPosition_ID.value = 0 then
+ 	debug
+ end
+ 
+ --it exist only two marker -> marker on current_ID exist
+ if _T_Santa[5,_next_current_ID] = VOID
+ 	var _obj_toMove_AGVMarker : object := _T_Santa[5,when _current_ID = 1 then _T_Santa.ydim else _current_ID - 1]
+ 	if _obj_toMove_AGVMarker = VOID
+ 		debug --something wront
+ 	end
+ 	--change position of marker
+ 	self.~.M_moveAGVMarker_ToPosition(_obj_toMove_AGVMarker, _next_current_ID)
+ end
+ --init slite next position
+ self.~.V_AGV.setRoute([_T_Santa[5,_current_ID], _T_Santa[5,_next_current_ID]])
+ --stopuntil agv.DestinationWasReached
+RandomSeed: 3011
+UUID: b3ffed8f-1431-4dbc-a430-0535914c3921
+$SequenceNumber: 11

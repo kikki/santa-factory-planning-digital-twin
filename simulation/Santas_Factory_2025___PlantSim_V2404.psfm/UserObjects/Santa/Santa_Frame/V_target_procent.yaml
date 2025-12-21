@@ -1,0 +1,10 @@
+InternalClassType: Variable
+Coordinate3D: [2.7059,-11.1135,0]
+DataType: real
+HasInitValue: true
+InitValue: 0
+Name: V_target_procent
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: de202a2f-d13a-428f-8ad8-4e87c7ce5313
+$SequenceNumber: 21
+Value: 0

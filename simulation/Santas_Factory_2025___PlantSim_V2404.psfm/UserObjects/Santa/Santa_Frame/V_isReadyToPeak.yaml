@@ -1,0 +1,10 @@
+InternalClassType: Variable
+Coordinate3D: [-1.9612,-5.5917,0]
+DataType: boolean
+HasInitValue: true
+InitValue: true
+Name: V_isReadyToPeak
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: 166c04ac-95b0-4be5-a0af-3abdd9d37abc
+$SequenceNumber: 3
+Value: true

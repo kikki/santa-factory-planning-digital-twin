@@ -1,0 +1,32 @@
+InternalClassType: Method
+Coordinate3D: [14.5323,-10.221,0]
+Name: M_check_Gift_Count
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ -- return true if can fly
+ -> boolean
+ var STATIC_MIN_GATE : integer := 10
+ if (Store.Capacity < STATIC_MIN_GATE) then DEBUG; end -- increase Store size!
+ 
+ var _getFactor : integer := Attr_Obj_ProductionValue.V_Factor
+ 
+ --check count
+ if V_Gift_Count >= STATIC_MIN_GATE
+ 	 --santa can fly
+ 	Store.deleteMovables
+ 
+ 	--regestry finish order
+ 	V_num_of_Orders_finish += V_Gift_Count * _getFactor
+ 	V_Gift_Count := 0
+ 
+ 	--calculate procent
+ 	V_target_procent := 100 * V_num_of_Orders_finish /
+ 		(Attr_Obj_ProductionValue.Attr_int_currentWorldChildCount * Attr_Obj_ProductionValue.V_good_child_percent / 100)
+ 
+ 	return true
+ end
+ 
+ return false
+RandomSeed: 5049
+UUID: 706ae848-e6df-413b-a25e-1b84374ad616
+$SequenceNumber: 18

@@ -1,0 +1,8 @@
+InternalClassType: Variable
+Coordinate3D: [9.6769,-4.8509,0]
+DataType: boolean
+Name: V_is_to_create_All_marker_by_init
+Origin: 0832d289-d67c-453d-a68b-5cf7cbfc444b
+UUID: c3c1b536-1172-4471-a937-5cfa9a14e96c
+$SequenceNumber: 9
+Value: false

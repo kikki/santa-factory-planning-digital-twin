@@ -1,0 +1,40 @@
+InternalClassType: Store
+Coordinate3D: [-7,1,-0.1]
+EntranceCtrl: "self.OnEntrance"
+Origin: 39c63738-02d2-4924-9a6e-50c87d836320
+RandomSeed: 5051
+UUID: 9d897e72-7b8b-4d22-8b1f-0d3adb058acd
+XDim: 4
+YDim: 4
+$SequenceNumber: 19
+3D:
+ Dimensions: [1.2,1.2,0.01]
+ ExcludeFromShowContentOfLocation: false
+ FloorThickness:
+ Gap: 0.05
+ GroundClearance:
+ OriginX: "Center"
+ OriginY: "Center"
+ PostMaterialActive: true
+ PostMaterialAmbientColor: 13395507
+ PostMaterialDiffuseColor: 13395507
+ PostMaterialEmissiveColor: 0
+ PostMaterialShininess: 0.267
+ PostMaterialSpecularColor: 5855577
+ PostMaterialTransparency: 0
+ ShowContent: true
+ StorageAreaMaterialActive: true
+ StorageAreaMaterialAmbientColor: 9670004
+ StorageAreaMaterialDiffuseColor: 8946281
+ StorageAreaMaterialEmissiveColor: 0
+ StorageAreaMaterialShininess: 0.247
+ StorageAreaMaterialSpecularColor: 5855577
+ StorageAreaMaterialTransparency: 0
+ StoreType: "Floorspace (dynamic)"
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 266047730
+ DataType: method
+ RandomSeed: 5053
+ Value: "self.~.~.V_Gift_Count += @.numMU"

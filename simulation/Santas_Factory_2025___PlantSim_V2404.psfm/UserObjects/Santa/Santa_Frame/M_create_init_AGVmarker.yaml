@@ -1,0 +1,33 @@
+InternalClassType: Method
+Coordinate3D: [7.0094,-2.8131,0]
+Name: M_create_init_AGVmarker
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ -- start create count of marker
+ param all : boolean := true
+ var _T_Santa : object := .userObjects.santa.T_Santa
+ 
+ var _obj_class_reference : object := .UserObjects.santa.Marker_sleigh
+ var _position_ID : integer := self.~.&V_santaLastPosition_ID.value
+ 
+ if all
+ 	for var j := 1 to (_T_Santa.ydim) loop
+ 
+ 		self.~.M_create_AGVmarker(j,true)
+ 		if j = _position_ID
+ 			_T_Santa[5,j].ArrivalCtrl := VOID
+ 		end
+ 	next
+ else
+ 
+ 	var _start := _position_ID
+ 	var _next := when _position_ID = _T_Santa.ydim then 1 else _start + 1
+ 	-- marker A
+ 	self.~.M_create_AGVmarker(_start,true)
+ 	_T_Santa[5,_start].ArrivalCtrl := VOID
+ 	-- marker B
+ 	self.~.M_create_AGVmarker(_next,true)
+ end
+RandomSeed: 3005
+UUID: 9213c4cd-2f87-41e4-994c-1b0c52d3f3bc
+$SequenceNumber: 7

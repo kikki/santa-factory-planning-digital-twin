@@ -1,0 +1,32 @@
+InternalClassType: Method
+Coordinate3D: [18.075799999999997,-3.9104,0]
+Name: M_moveAGVMarker_ToPosition
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ --move to right position ** only if two marker
+ param marker: object, Index_ID:integer:= 1  -> boolean
+ 
+ if marker = void
+ 	debug
+ 	return false
+ end
+ 
+ var _T_Santa : object := .UserObjects.Santa.T_Santa
+ --first check that thi marker are not into table
+ _T_Santa.setCursor(0,0)
+ while _T_Santa.find({5,0}..{5,*}, marker) loop
+ 	_T_Santa[5, _T_Santa.CursorY] := VOID
+ end
+ 
+ --now set position
+ marker._3D.position := [_T_Santa[1,Index_ID], _T_Santa[2,Index_ID], _T_Santa[3,Index_ID]]
+ self.~.M_set_AGVmarker_Property(marker,Index_ID)
+ 
+ if marker.ArrivalCtrl = VOID then marker.ArrivalCtrl := marker.&OnArrival end
+ --and insert Marker into table
+ _T_Santa[5, Index_ID]:= marker
+ 
+ return true
+RandomSeed: 3012
+UUID: 8dc7e654-29a1-48a2-b394-1d08240e2648
+$SequenceNumber: 13

@@ -1,0 +1,34 @@
+InternalClassType: WorkerPool
+BrokerPath:
+Coordinate3D: [14.9618,-1.1341,0]
+EntranceCtrl: "self.OnEntrance"
+Origin: dd5d6d0e-a347-49ed-81dc-6168fb257993
+RandomSeed: 3000
+UUID: 257a285b-cf28-4bda-9b66-823f1c9c9027
+$SequenceNumber: 1
+3D:
+ GraphicGroupNames: ["default","graphic"]
+ LockedGraphicGroups: []
+ ShowContent: false
+ StatesForColoring: 0xffffffff
+ StatesOrientation: "(Off)"
+ VisibleGraphicGroups: ["default"]
+ $StatesTransformations:
+  HorizontalStatesPosition: [-0.345,0.115,2.1]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [0,0,2]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: false
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1372730552
+ DataType: method
+ RandomSeed: 4466
+ Value: |+1
+  --
+  --wait 10
+  V_isReadyToPeak :=false
+$WorkersToCreate:
+- [dde28e95-1a53-455a-b6c7-59f32e7f1f83,1,~,-1,-1,"",[]]

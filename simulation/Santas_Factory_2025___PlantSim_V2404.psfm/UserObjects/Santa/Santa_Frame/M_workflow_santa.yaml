@@ -1,0 +1,23 @@
+InternalClassType: Method
+Coordinate3D: [6.4556,-1.0035,0]
+Name: M_workflow_santa
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ -- start loop after init or pause
+ self.~.M_create_init_AGVmarker(self.~.V_is_to_create_All_marker_by_init)
+ 
+ var current_ID : integer := self.~.&V_santaLastPosition_ID.value
+ var _STATIC_OFFSET : length := 1 --m
+ var _T_Santa : object := .userObjects.santa.T_Santa
+ -- activate AGV loop
+ 
+ waituntil AGVPool.NumIdleAGVs > 0
+ 
+ self.~.V_AGV := AGVPool.getIdleAGV
+ --position Pool to position -1 m
+ AGVPool._3D.position = [_T_Santa[1,current_ID] - _STATIC_OFFSET, _T_Santa[2,current_ID], _T_Santa[3,current_ID]]
+ 
+ self.~.&M_nextDestination.executein(0)
+RandomSeed: 3006
+UUID: b0b4c231-a995-4f18-81a4-64db2e32c3bc
+$SequenceNumber: 8

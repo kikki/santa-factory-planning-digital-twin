@@ -1,0 +1,22 @@
+InternalClassType: Method
+Coordinate3D: [7.149,-1.9391,0]
+Name: M_delete_all_AGVmarker
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ --delete all marker
+ var _obj_class_reference : object := .UserObjects.santa.Marker_sleigh
+ var _obj_class : object
+ var _T_Santa : object := .userObjects.santa.T_Santa
+ 
+ -- delete marker
+ for var i := self.~.NumNodes downto 1 loop
+ 	_obj_class  := self.~.node(i).Class
+ 	if  (_obj_class = _obj_class_reference )  then
+ 		self.~.node(i).deleteObject
+ 	end
+ next
+ 
+ _T_Santa.delete({5,1}..{5,*})
+RandomSeed: 3003
+UUID: c4ce5451-4c89-4b4b-afff-de332f3556a1
+$SequenceNumber: 5

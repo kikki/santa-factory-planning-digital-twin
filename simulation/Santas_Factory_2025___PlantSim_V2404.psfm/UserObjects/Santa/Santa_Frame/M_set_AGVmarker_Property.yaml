@@ -1,0 +1,14 @@
+InternalClassType: Method
+Coordinate3D: [26.6037,-3.3163,0]
+Name: M_set_AGVmarker_Property
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ param marker: object , Index_ID : integer
+ var _T_Santa : object := .UserObjects.santa.T_santa
+ marker.Attr_speed := _T_Santa[4,index_ID]
+ marker.Attr_targetProcess := when not (_T_Santa[6,Index_ID] = VOID) then _T_Santa[6,Index_ID] else VOID
+ 
+ marker.Attr_timeWait := when (_T_Santa[7,Index_ID] > 0) then _T_Santa[7,Index_ID] else 0
+RandomSeed: 4043
+UUID: 767faa8c-1918-4299-bfab-05229adf7b3d
+$SequenceNumber: 16

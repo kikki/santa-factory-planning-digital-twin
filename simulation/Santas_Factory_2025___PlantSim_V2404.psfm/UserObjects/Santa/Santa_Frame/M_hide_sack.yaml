@@ -1,0 +1,11 @@
+InternalClassType: Method
+Coordinate3D: [8.267,-15.1811,0]
+Name: M_hide_sack
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ --debug
+ ?.location.V_AGV._3D.getGraphic("sack").visible := false
+ self.~.&M_nextDestination.executein(0)
+RandomSeed: 19847
+UUID: 5673e7ce-c04a-4397-b6b2-f35681b16b8a
+$SequenceNumber: 26

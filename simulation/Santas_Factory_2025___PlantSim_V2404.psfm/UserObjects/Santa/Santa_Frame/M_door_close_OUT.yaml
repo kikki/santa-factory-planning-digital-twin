@@ -1,0 +1,12 @@
+InternalClassType: Method
+Coordinate3D: [13.2031,-13.6959,0]
+Name: M_door_close_OUT
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ 
+ 	--not wait
+ 	self.~.&M_nextDestination.executein(0)
+ 	.models.Santa.&Attr_M_Animation_Door.executein(0,"toor22")
+RandomSeed: 12003
+UUID: 52dcbc32-ecc1-4eeb-a8ce-4bc216ac1995
+$SequenceNumber: 24

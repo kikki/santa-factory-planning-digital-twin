@@ -1,0 +1,162 @@
+InternalClassType: Transporter
+BookPntHRelative: 0.003461
+BookPntLRelative: 0.895766
+BookPntWRelative: 0.390073
+Coordinate3D: [-2,-4,0]
+MUHeight: 3.29641
+MULength: 15.3578
+MUWidth: 4.785
+Name: Christmas_sleigh
+Origin: ed156e76-f01d-4607-a12b-e023ae5203ed
+RandomSeed: 110
+UUID: 9ad9ee8f-e809-4772-a1dc-075302b6c122
+XDim: 1
+YDim: 1
+$SequenceNumber: 3
+3D:
+ GraphicGroupNames: ["default","stand_1","run_1","stand_2","run_2","santa","sack"]
+ LockedGraphicGroups: []
+ MUAnimationAreaAbsoluteCenter: [-1,0,1.6]
+ MUAnimationAreaAbsoluteSize: [1.2,0.7]
+ MUAnimationAreaEnabled: true
+ MUAnimationAreaMURotation: [0,0,0,-1]
+ MUAnimationAreaOrientation: "XY plane"
+ MUAnimationAreaShowMUsAsCuboids: false
+ ScaleAutomatically: false
+ StatesForColoring: 0xffffffff
+ StatesOrientation: "Vertical"
+ VisibleGraphicGroups: ["run_1","default","santa","sack","stand_1"]
+ $StatesTransformations:
+  HorizontalStatesPosition: [0.68,0.26,0.1]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [0,0,0]
+  VerticalStatesScale: [1,1,0.6]
+  VerticalStatesScaleWithObject: true
+$CustomAttributes:
+-
+ Name: Attr_M_Animation_fly
+ ID: 2558082025
+ DataType: method
+ RandomSeed: 3516
+ Value: |+1
+  var _Attr_T_pos_fly : table := self.~.Attr_T_pos_fly
+  --print "**animation"
+  waituntil self.~.Attr_V_isAnimation_Fly
+  --deactivate all pose
+  var _array_GraphicGroupNames := self.~._3D.GraphicGroupNames
+  var _str_graphicName : string := self.~.Attr_T_pos_fly[1,_attr_T_pos_fly.cursorY]
+  for var i:= 1 to _array_GraphicGroupNames.dim
+  
+  	switch _array_GraphicGroupNames[i]
+  	case "default", "santa"
+  		--self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = true
+  		--do nothing
+  	else
+  		if _array_GraphicGroupNames[i] =  _str_graphicName
+  			self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = true
+  		else
+  			self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = false
+  		end
+  	end
+  next
+  
+  
+  -- pos
+  _attr_T_pos_fly.cursorY := when _attr_T_pos_fly.cursorY + 1 > _attr_T_pos_fly.ydim then 1 else _attr_T_pos_fly.cursorY + 1
+  --self.~.Attr_T_pos_fly[1,_attr_T_pos_fly.cursorY]
+  --print "**animaiton cursor: " + to_str(_attr_T_pos_fly.cursorY)
+  
+  wait 5
+  
+  self.~.&Attr_M_Animation_fly.executein(0)
+-
+ Name: Attr_V_isAnimation_Fly
+ ID: 3140559330
+ DataType: boolean
+ Value: true
+ HasInitValue: true
+ InitValue: false
+-
+ Name: Attr_T_pos_fly
+ ID: 1057655182
+ DataType: table
+ Value:
+  Comment: ~
+  CommonFormat: false
+  ListFormat:
+   ColumnWidth: 20
+   DataType: string
+   MaxXDim: 1
+   ShowDataType: true
+  Columns:
+  - [1,string,4,"run_1","run_2","stand_2","run_1"]
+-
+ Name: init
+ ID: 838997504
+ DataType: method
+ RandomSeed: 4465
+ Value: |+1
+  var _array_GraphicGroupNames := self.~._3D.GraphicGroupNames
+  for var i:= 1 to _array_GraphicGroupNames.dim
+  	switch _array_GraphicGroupNames[i]
+  	case "default", "santa", "stand_2"
+  		self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = true
+  	else
+  		self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = false
+  	end
+  next
+-
+ Name: Attr_M_Animation_stand
+ ID: 2362826258
+ DataType: method
+ RandomSeed: 21857
+ Value: |+1
+  var _Attr_T_pos_stand : table := self.~.Attr_T_pos_stand
+  --print "**animation"
+  waituntil NOT self.~.Attr_V_isAnimation_Fly
+  --deactivate all pose
+  var _array_GraphicGroupNames := self.~._3D.GraphicGroupNames
+  var _str_graphicName : string := self.~.Attr_T_pos_fly[1,_attr_T_pos_stand.cursorY]
+  for var i:= 1 to _array_GraphicGroupNames.dim
+  
+  	switch _array_GraphicGroupNames[i]
+  	case "default", "santa"
+  		--self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = true
+  		--do nothing
+  	else
+  		if _array_GraphicGroupNames[i] =  _str_graphicName
+  			self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = true
+  		else
+  			self.~._3D.getGraphic(_array_GraphicGroupNames[i]).Visible = false
+  		end
+  	end
+  next
+  
+  
+  -- pos
+  _attr_T_pos_stand.cursorY := when _attr_T_pos_stand.cursorY + 1 > _attr_T_pos_stand.ydim then 1 else _attr_T_pos_stand.cursorY + 1
+  --self.~.Attr_T_pos_fly[1,_attr_T_pos_fly.cursorY]
+  --print "**animaiton cursor: " + to_str(_attr_T_pos_fly.cursorY)
+  
+  wait 5
+  
+  self.~.&Attr_M_Animation_stand.executein(0)
+-
+ Name: Attr_T_pos_stand
+ ID: 2726986355
+ DataType: table
+ Value:
+  Comment: ~
+  CommonFormat: false
+  ListFormat:
+   ColumnWidth: 20
+   DataType: string
+   MaxXDim: 1
+   ShowDataType: true
+   ColumnFormat:
+   -
+    Index: 1
+    Width: 22
+  Columns:
+  - [1,string,6,"stand_2","stand_1","stand_2","stand_1","stand_2","stand_1"]

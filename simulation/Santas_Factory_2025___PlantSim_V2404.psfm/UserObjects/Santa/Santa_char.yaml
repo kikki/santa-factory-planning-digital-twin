@@ -1,0 +1,38 @@
+InternalClassType: Worker
+AutomaticMediation: true
+Coordinate3D: [4,-4,0]
+Name: Santa_char
+Origin: 3f5d59b7-118c-416b-b728-f51393f1b284
+RandomSeed: 109
+UUID: dde28e95-1a53-455a-b6c7-59f32e7f1f83
+$SequenceNumber: 2
+3D:
+ GraphicGroupNames: ["default","carrying0","relaxed8","carrying8","relaxed16","carrying16","relaxed23","carrying23","relaxed31","carrying31","relaxed39","carrying39","sitting"]
+ LockedGraphicGroups: []
+ MUAnimationAreaAbsoluteCenter: [-1.7,0,0.6]
+ MUAnimationAreaAbsoluteSize: [0.25,0.75]
+ MUAnimationAreaEnabled: true
+ MUAnimationAreaMURotation: [0,0,0,-1]
+ MUAnimationAreaOrientation: "XY plane"
+ MUAnimationAreaShowMUsAsCuboids: false
+ VisibleGraphicGroups: ["default"]
+$CustomAttributes:
+-
+ Name: Attr_M_Animation_Wait
+ ID: 3039543144
+ DataType: method
+ RandomSeed: 4434
+ Value: ""
+-
+ Name: Attr_T_target
+ ID: 480559000
+ DataType: list
+ Value:
+  Comment: ~
+  CommonFormat: false
+  ListFormat:
+   ColumnWidth: 20
+   DataType: object
+   MaxXDim: 1
+   ShowDataType: true
+  Column:

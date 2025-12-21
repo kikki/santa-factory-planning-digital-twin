@@ -1,0 +1,26 @@
+InternalClassType: AGVPool
+AGV: ".UserObjects.Santa.Christmas_sleigh"
+Coordinate3D: [-0.266,-2.7844,0]
+Origin: 6b931c1d-4e92-4f93-b1f0-26c50d3c1775
+RandomSeed: 3001
+UUID: 35d70f01-c2a6-4ca9-aa5f-f9806a1c173c
+$SequenceNumber: 2
+3D:
+ ExcludeFromShowContentOfLocation: false
+ GraphicGroupNames: ["default","graphic"]
+ LockedGraphicGroups: []
+ NameLabelEnabled: true
+ NameLabelPosition: [-1,-1,0]
+ NameLabelRotation: [0,0,0,-1]
+ NameLabelScale: [1,1,1]
+ ShowContent: true
+ StatesForColoring: 0xffffffff
+ StatesOrientation: "(Off)"
+ VisibleGraphicGroups: ["default"]
+ $StatesTransformations:
+  HorizontalStatesPosition: [-1,1,2]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [0,0,0]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: false

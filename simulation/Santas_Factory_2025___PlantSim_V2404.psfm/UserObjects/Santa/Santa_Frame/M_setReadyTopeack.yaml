@@ -1,0 +1,58 @@
+InternalClassType: Method
+Coordinate3D: [8.1904,-10.3191,0]
+Name: M_setReadyTopeack
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ 
+ -- move workerpool to write position
+ var _T_Santa : object := .UserObjects.santa.T_santa
+ var _index_ID : integer := V_santaLastPosition_ID
+ if  NOT (WorkerPool._3D.Position.X ~= _T_Santa[1,_index_ID]) OR
+ 	NOT (WorkerPool._3D.Position.Y ~= _T_Santa[2,_index_ID]) then
+ 
+ 	WorkerPool._3D.position := [_T_Santa[1,_index_ID], _T_Santa[2,_index_ID], 0]
+ end
+ 
+ wait 10
+ --print "*** wait test"
+ var _santa_char : object := WorkerPool.getAssignedWorkersTable[1]
+ 
+ --set List to peak
+ if (_santa_char.Attr_T_target.Dim = 0) then
+ 	for var i := 1 to .UserObjects.Main_Process.NumChildren loop
+ 		var _process := .UserObjects.Main_Process.childNo(i)
+ 		if (_process.RootFrame = root) and (_process.Attr_id_grafic_active = .UserObjects.T_Process.YDimIndex) then
+ 			--that write this process into list
+ 			_santa_char.Attr_T_target.append(_process)
+ 		end
+ 	next
+ end
+ 
+ if _santa_char.Attr_T_target.dim > 0
+ 	_santa_char.goto(_santa_char.Attr_T_target[1].Outfeed.Workplace)
+ 	root.FootPath_toor211.&_mObserveSantaLocation.executeNewCallchain(_santa_char)
+ 
+ 	-- grafic santa on sleight set off
+ 	V_AGV._3D.getGraphic("santa").Visible := false
+ 
+ 	V_isReadyToPeak := true
+ 	waituntil not V_isReadyToPeak --> WorkerPool.OnEntrance
+ 
+ 	V_AGV._3D.getGraphic("santa").Visible := true
+ 
+ 	if M_check_Gift_Count
+ 		V_AGV._3D.getGraphic("sack").Visible := true
+ 	else
+ 		self.executein(20)
+ 		return
+ 	end
+ end
+ --todo registration count present
+ 
+ --V_isReadyToPeak := false
+ 
+ 
+ &M_nextDestination.executein(0)
+RandomSeed: 3004
+UUID: 47866726-0fa9-401c-be73-2f6000123d77
+$SequenceNumber: 6

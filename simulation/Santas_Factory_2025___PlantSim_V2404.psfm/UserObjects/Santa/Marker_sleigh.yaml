@@ -1,0 +1,154 @@
+InternalClassType: Marker
+ArrivalCtrl: "self.OnArrival"
+ChangePathCtrl:
+ConnectCtrl:
+ConstructorCtrl:
+Coordinate3D: [-5,2,0]
+CreateIn3D: true
+DestructorCtrl:
+DragDropCtrl:
+InitCtrl:
+Label: ""
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: Marker_sleigh
+OpenCtrl:
+PlausibilityCtrl:
+RelabelCtrl:
+RenameCtrl:
+UseRotationOfMarker: false
+UUID: 123caf0a-3610-4e3c-a82e-6b811a41f8b5
+$SequenceNumber: 4
+3D:
+ ExcludeFromShowContentOfLocation: false
+ GraphicGroupNames: ["default","directed"]
+ LockedGraphicGroups: []
+ Mirror: [false,false,false]
+ NameLabelEnabled: false
+ NameLabelPosition: [0.2,0.19,0]
+ NameLabelRotation: [0,0,0,-1]
+ NameLabelScale: [0.542857142857143,0.542857142857143,1]
+ Rotation: [0,0,0,-1]
+ Scale: [3,3,3]
+ VisibleGraphicGroups: ["default"]
+$IconArray:
+-
+ Name: "Default"
+ Transparent: true
+ Size: [23,23]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAu+D/dsL/LqH/DpP/LqH/dsL/u+D/gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAu+D/DpP/DpP/DpP/DpP/DpP/DpP/DpP/DpP/DpP/u+D/gIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAdsL/DpP/DpP/LqH/stz/////////////stz/LqH/DpP/DpP/dsL/gIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAdsL/DpP/DpP/stz/////////////////////////////stz/DpP/DpP/dsL/gIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAu+D/DpP/DpP/////////////u+D/LqH/DpP/LqH/u+D/////////////DpP/DpP/u+D/gIAAgIAAgIAA
+ - gIAAgIAAgIAADpP/DpP/stz/////////DpP/DpP/DpP/DpP/DpP/DpP/DpP/////////stz/DpP/DpP/gIAAgIAAgIAA
+ - gIAAgIAAu+D/DpP/LqH/////////DpP/DpP/dsL/u+D/////u+D/dsL/DpP/DpP/////////LqH/DpP/u+D/gIAAgIAA
+ - gIAAgIAAdsL/DpP/stz/////u+D/DpP/dsL/////////////////////dsL/DpP/u+D/////stz/DpP/dsL/gIAAgIAA
+ - gIAAgIAALqH/DpP/////////LqH/DpP/u+D/////yMjIAAAAyMjI////u+D/DpP/LqH/////////DpP/LqH/gIAAgIAA
+ - gIAAgIAADpP/DpP/////////DpP/DpP/////////AAAAAAAAAAAA////////DpP/DpP/////////DpP/DpP/gIAAgIAA
+ - gIAAgIAALqH/DpP/////////LqH/DpP/u+D/////yMjIAAAAyMjI////u+D/DpP/LqH/////////DpP/LqH/gIAAgIAA
+ - gIAAgIAAdsL/DpP/stz/////u+D/DpP/dsL/////////////////////dsL/DpP/u+D/////stz/DpP/dsL/gIAAgIAA
+ - gIAAgIAAu+D/DpP/LqH/////////DpP/DpP/dsL/u+D/////u+D/dsL/DpP/DpP/////////LqH/DpP/u+D/gIAAgIAA
+ - gIAAgIAAgIAADpP/DpP/stz/////////DpP/DpP/DpP/DpP/DpP/DpP/DpP/////////stz/DpP/DpP/gIAAgIAAgIAA
+ - gIAAgIAAgIAAu+D/DpP/DpP/////////////u+D/LqH/DpP/LqH/u+D/////////////DpP/DpP/u+D/gIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAdsL/DpP/DpP/stz/////////////////////////////stz/DpP/DpP/dsL/gIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAdsL/DpP/DpP/LqH/stz/////////////stz/LqH/DpP/DpP/dsL/gIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAu+D/DpP/DpP/DpP/DpP/DpP/DpP/DpP/DpP/DpP/u+D/gIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAu+D/dsL/LqH/DpP/LqH/dsL/u+D/gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+-
+ Name: "directed"
+ Transparent: true
+ Size: [23,23]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAKp//gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAKp//gIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAKp//Kp//gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAKp//Kp//gIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAKp//DpP/Kp//gIAAgIAAgIAAgIAA0tLSlpaW0tLSgIAAgIAAgIAAgIAAKp//DpP/Kp//gIAAgIAAgIAA
+ - gIAAgIAAKp//DpP/DpP/Kp//Kp//Kp//Kp//AHzhADFZAAAAADFZAHzhKp//Kp//Kp//Kp//DpP/DpP/Kp//gIAAgIAA
+ - gIAAKp//DpP/DpP/DpP/DpP/DpP/DpP/DpP/AGm/AAAAAAAAAAAAAGm/DpP/DpP/DpP/DpP/DpP/DpP/DpP/Kp//gIAA
+ - gIAAgIAAKp//DpP/DpP/Kp//Kp//Kp//Kp//AHzhADFZAAAAADFZAHzhKp//Kp//Kp//Kp//DpP/DpP/Kp//gIAAgIAA
+ - gIAAgIAAgIAAKp//DpP/Kp//gIAAgIAAgIAAgIAA0tLSlpaW0tLSgIAAgIAAgIAAgIAAKp//DpP/Kp//gIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAKp//Kp//gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAKp//Kp//gIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAKp//gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAKp//gIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+$CustomAttributes:
+-
+ Name: Attr_speed
+ ID: 3874085080
+ DataType: real
+ Value: 0
+-
+ Name: Attr_M_nextDestination
+ ID: 2005270075
+ DataType: method
+ RandomSeed: 1843
+ Value: |+1
+  -- check of rule of handling
+  --set current pos
+  --print "Attr_M_nextDestination in AGVMarker is activate"
+  var _position_ID : integer := self.~.~.&V_santaLastPosition_ID.value
+  var _T_Santa : object := .userObjects.santa.T_Santa
+  self.~.~.V_santaLastPosition_ID := when _position_ID >= _T_santa.ydim then 1 else _position_ID + 1
+  
+  -- if waittime than wait
+  if self.~.Attr_timeWait > 0 then
+  	wait(self.~.Attr_timeWait)
+  	--print " wait time" + to_str(self.~.Attr_timeWait)
+  end
+  
+  -- if targetProcess activate
+  if not (self.~.&Attr_targetProcess = VOID)
+  	self.~.Attr_targetProcess.executein(0)
+  	--print "prozess exist " + self.~.&Attr_targetProcess.name
+  	--do nothing next call start the process self after finish
+  else
+  	--activate next stepp
+  	self.~.~.&M_nextDestination.executein(0)
+  	--print "next target " + to_str(self.~.~.V_santaLastPosition_ID)
+  end
+-
+ Name: Attr_next
+ ID: 1425671328
+ DataType: object
+ Value: ""
+-
+ Name: Attr_timeWait
+ ID: 4074632725
+ DataType: time
+ Value: 0
+-
+ Name: Attr_targetProcess
+ ID: 929365791
+ DataType: object
+ Value: ""
+-
+ Name: OnArrival
+ ID: 1812316122
+ DataType: method
+ RandomSeed: 2998
+ Value: |+1
+  --print "OnArrival in AGVMarker is activated"
+  --debug
+  --set speed
+  @.speed := self.~.Attr_speed
+  
+  
+  
+  self.~.&Attr_M_nextDestination.executein(0)

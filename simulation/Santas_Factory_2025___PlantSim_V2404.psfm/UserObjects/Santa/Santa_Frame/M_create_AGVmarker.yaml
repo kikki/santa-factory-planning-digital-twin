@@ -1,0 +1,38 @@
+InternalClassType: Method
+Coordinate3D: [18.115699999999997,-2.7992,0]
+Name: M_create_AGVmarker
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ --create a marker
+ param index_ID :integer := 1 , setPosition: boolean := false-> object
+ 
+ if self.~.location = void
+ 	print "insert into root"
+ 	debug
+ 	return VOID
+ end
+ 
+ 
+ var _T_Santa : object := .userObjects.santa.T_Santa
+ 
+ var _obj_class_reference : object := .UserObjects.santa.Marker_sleigh
+ 
+ 
+ 
+ _T_Santa[5,index_ID]:= _obj_class_reference.duplicate(self.~)
+ 
+ if setPosition
+ --set position
+ 	_T_Santa[5,index_ID]._3D.position := [_T_Santa[1,index_ID], _T_Santa[2,index_ID], _T_Santa[3,index_ID]]
+ else
+ 	_T_Santa[5,index_ID].name := "A_" + to_str(index_ID) --index is 1 and 2
+ end
+ 
+ 
+ 
+ self.~.M_set_AGVmarker_Property(_T_Santa[5,index_ID],Index_ID)
+ 
+ return _T_Santa[5,index_ID]
+RandomSeed: 3013
+UUID: 5c222bf1-712f-492b-985b-e8a12915795f
+$SequenceNumber: 14

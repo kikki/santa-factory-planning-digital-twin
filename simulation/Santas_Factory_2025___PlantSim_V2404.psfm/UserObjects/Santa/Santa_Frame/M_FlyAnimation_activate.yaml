@@ -1,0 +1,15 @@
+InternalClassType: Method
+Coordinate3D: [8.1892,-11.2334,0]
+Name: M_FlyAnimation_activate
+Origin: ef1f9f23-b228-427d-89a9-d4ac99a7cb14
+Program: |+1
+ self.~.V_AGV.Attr_V_isAnimation_Fly := not self.~.V_AGV.Attr_V_isAnimation_Fly
+ if self.~.V_AGV.Attr_V_isAnimation_Fly
+ 	self.~.V_AGV.&Attr_M_Animation_fly.executein(0)
+ else
+ 	self.~.V_AGV.&Attr_M_Animation_stand.executein(0)
+ end
+ self.~.&M_nextDestination.executein(0)
+RandomSeed: 3517
+UUID: 54ed42a3-6663-4c16-a9ff-e28f2257782f
+$SequenceNumber: 15
