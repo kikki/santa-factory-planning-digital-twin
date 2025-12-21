@@ -1,0 +1,177 @@
+---
+InternalClassType: Frame
+Coordinate3D: [46.8828,-92.7722,5.8999999999999986]
+LockStructure: true
+Origin: 6674f9e5-738e-4cb4-b946-3d53b41fc8ad
+UUID: 2de8ec9f-ba13-41a7-81b0-c2f75f69c81d
+$SequenceNumber: 23
+3D:
+ Rotation: [5,1,0,0]
+---
+$ObjectName: Comment
+InternalClassType: Comment
+Origin: 6766bc17-ee1b-4c49-a5bf-d06a1374cc32
+UUID: 65a1d8b8-7cfd-4510-ba07-63af66a2bea0
+$SequenceNumber: 1
+---
+$ObjectName: ButtonAdd
+InternalClassType: Button
+Origin: 340ad2c0-8125-495f-9785-0cb79586cff4
+UUID: bdb37402-ddef-4b71-b89b-6c17b2bbd243
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 99782485
+ $DataType: method
+ RandomSeed: 5521
+---
+$ObjectName: Comment1
+InternalClassType: Comment
+Origin: a92b665b-dbea-4e41-b6cc-8a2c926b9a42
+UUID: 9d5fc010-856a-4a87-b3f8-2914cfa47dc0
+$SequenceNumber: 3
+---
+$ObjectName: Comment11
+InternalClassType: Comment
+Origin: dc7ba738-ed0f-4bb3-b4db-0e29251d0627
+UUID: f1811644-e1a5-48a7-91bb-30c3b16534c1
+$SequenceNumber: 4
+---
+$ObjectName: MoverButton
+InternalClassType: Button
+Origin: d2643e4d-54c1-4563-a976-ca4a076c9661
+UUID: d8d3ef3f-324f-46db-9e76-d1b6881ea4da
+$SequenceNumber: 5
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5523
+---
+$ObjectName: MoverButton1
+InternalClassType: Button
+Origin: 3b48db8f-5bc2-4a5b-a46e-aadfef27d17f
+UUID: 5e6fbb8f-e262-4a88-a4c4-ad26ec459ef6
+$SequenceNumber: 6
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5525
+---
+$ObjectName: MoverButton11
+InternalClassType: Button
+Origin: a766b8cc-2690-4d10-a501-4f8d250a23a7
+UUID: a3431032-63e2-422c-ae83-b7c6014a8e4a
+$SequenceNumber: 7
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5527
+---
+$ObjectName: MoverButton2
+InternalClassType: Button
+Origin: f90572de-311c-46dd-bfca-55146b59e155
+UUID: 88391f67-8664-47b7-9d7b-28fb4f31a613
+$SequenceNumber: 8
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5529
+---
+$ObjectName: MoverButton3
+InternalClassType: Button
+Origin: a49fe363-7dbf-4ae4-96ba-9799e76c7723
+UUID: 41634cfc-a10c-4e5f-8500-edd0b95202ec
+$SequenceNumber: 9
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5531
+---
+$ObjectName: MoverButton31
+InternalClassType: Button
+Origin: fccc4128-3ad6-4c01-a8c6-7d08f9c0f273
+UUID: 9b7f1b45-b90b-4ca8-bc78-ca1a78b3628e
+$SequenceNumber: 10
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5533
+---
+$ObjectName: MoverButton311
+InternalClassType: Button
+Origin: dc3bc589-10dc-4f70-9f0a-57bef1bacbbd
+UUID: ea5be6ff-1e63-4f6c-b47e-c9937bdd5b3d
+$SequenceNumber: 11
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5535
+---
+$ObjectName: MoverButton3111
+InternalClassType: Button
+Origin: 00b4bc5d-aea4-454c-aad5-0858080d5072
+UUID: 7683982d-4fee-47a3-8da4-46282dd9a411
+$SequenceNumber: 12
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 157933259
+ $DataType: method
+ RandomSeed: 5537
+---
+$ObjectName: RotateButton
+InternalClassType: Button
+Origin: 027b238d-ae33-4f76-a434-1b5a0a95a87d
+UUID: 9042f6de-7dae-49c0-a0f2-d872b9bcd2be
+$SequenceNumber: 13
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3016400514
+ $DataType: method
+ RandomSeed: 5539
+---
+$ObjectName: RotateButton1
+InternalClassType: Button
+Origin: ed9b3b1f-a165-404e-b554-459f9366f1e3
+UUID: 354d2f62-584c-4848-88bd-7a884d9dc842
+$SequenceNumber: 14
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3016400514
+ $DataType: method
+ RandomSeed: 5541
+---
+$ObjectName: Comment2
+InternalClassType: Comment
+Origin: acff49df-687a-47eb-b023-19f96f0a6795
+UUID: 71880944-669b-4d17-8898-1fcdbf8587c2
+$SequenceNumber: 15
+---
+$ObjectName: ButtonDelete
+InternalClassType: Button
+Origin: 597e2aa7-8a66-4ea5-a4d4-00719d030cf7
+UUID: eb3ab67b-9743-4830-a0f6-17cf5e737f78
+$SequenceNumber: 16
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4164592985
+ $DataType: method
+ RandomSeed: 134048

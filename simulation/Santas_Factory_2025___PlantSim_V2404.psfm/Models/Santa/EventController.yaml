@@ -1,0 +1,74 @@
+InternalClassType: EventController
+AbsTimeFormat: true
+Coordinate3D: [-44,-18,10]
+Date: 2025-12-1 6:00:00
+End: 23D12H
+LongEventInterval: 10
+Origin: 7df7c7a7-3e5e-4869-9787-1d92c2960d1e
+RandomNumbersVariant: 1
+Realtime: true
+RealtimeScale: 100
+SkipLongEventIntervals: true
+UUID: ceed515a-8d17-4e97-983b-046696c7d51f
+$SequenceNumber: 1
+3D:
+ GraphicGroupNames: ["default"]
+ LockedGraphicGroups: []
+ Rotation: [50,1,0,0]
+ Scale: [7,7,7]
+ $Objects:
+ -
+  AniRotationAxis: [0,-4,-4]
+  AniRotationCenter: [0,0,0]
+  AniTranslationDirection: [0,0,1]
+  GraphicGroupNames: ["default"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimitActive: false
+  JointType: "Revolute Joint"
+  JointUpperLimitActive: false
+  JointVelocity: 1
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 0
+  MaterialDiffuseColor: 16777215
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.2
+  MaterialSpecularColor: 0
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: default
+  Position: [0,2.38,0.49]
+  Rotation: [0,0,0,-1]
+  Scale: [1,1,1]
+  SelfAnimations:
+  UUID: fa609e85-162c-46cc-baed-2f2399f118e0
+  VisibleGraphicGroups: ["default"]
+ -
+  AniRotationAxis: [0,0,1]
+  AniRotationCenter: [0.22,-15.33,0.1]
+  AniTranslationDirection: [1,0,0]
+  GraphicGroupNames: ["default"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimit: 0
+  JointLowerLimitActive: true
+  JointType: "Revolute Joint"
+  JointUpperLimitActive: false
+  JointVelocity: 2
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 0
+  MaterialDiffuseColor: 3937500
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.2
+  MaterialSpecularColor: 0
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: time
+  Position: [-0.0388,2.1615,0.693]
+  Rotation: [0,0,0,-1]
+  Scale: [1,1,1]
+  SelfAnimations:
+  UUID: 6dc0b364-ac59-42b0-951d-df1c31831e63
+  VisibleGraphicGroups: ["default"]

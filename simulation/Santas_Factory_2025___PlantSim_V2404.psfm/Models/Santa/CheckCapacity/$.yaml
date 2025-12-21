@@ -1,0 +1,68 @@
+---
+InternalClassType: Frame
+Coordinate3D: [-7.452,-109.48249999999999,4.0000000000000027]
+LockStructure: true
+Origin: f9a07e63-ef87-4a18-a621-3ff917593ff0
+UUID: 8c413a18-f6e8-45b9-a3af-1eb7fbd0af94
+$SequenceNumber: 12
+3D:
+ Rotation: [14.999999999999998,1,0,0]
+ Scale: [1,1,1]
+$CustomAttributes:
+-
+ Name: Attr_M_checkIfAllProces_exist
+ ID: 737682883
+ $DataType: method
+ RandomSeed: 5746
+-
+ Name: Attr_M_getStaticOverview
+ ID: 3457412074
+ $DataType: method
+ RandomSeed: 5749
+-
+ Name: Attr_M_Utilization_Rate
+ ID: 3860202216
+ $DataType: method
+ RandomSeed: 5752
+-
+ Name: Attr_M_checkcapacity
+ ID: 1772997825
+ $DataType: method
+ RandomSeed: 5755
+-
+ Name: Attr_M_workflow_checkcapacity
+ ID: 2459954327
+ $DataType: method
+ RandomSeed: 5758
+---
+$ObjectName: Button
+InternalClassType: Button
+Origin: 87a8c298-612b-4e0c-b5fc-a46e874cf126
+UUID: ce0a2c66-b768-4ebe-8462-2745fa99da00
+$SequenceNumber: 1
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3003691855
+ $DataType: method
+ RandomSeed: 1839
+---
+$ObjectName: Comment
+InternalClassType: Comment
+Color: 255
+Origin: 50b459cd-14c2-48e7-9c0f-e94439b694ef
+Text: "-"
+UUID: d3f2ef60-be86-431f-9d80-5c0824873903
+$SequenceNumber: 2
+---
+$ObjectName: Chart
+InternalClassType: Chart
+DataTable: "~.~.~.UserObjects.CheckCapacityTool.CapacityCheck"
+Origin: ad0b42cd-6792-4ecb-98bf-dab17ac8bff4
+Title: "-"
+UUID: 9ab355b8-dbcb-4103-8f48-80c7accfef6c
+$SequenceNumber: 3
+3D:
+ ExcludeFromShowContentOfLocation: false
+ VisibleGraphicGroups: ["default"]
+$WindowRect: [0,16000,1410,470]

@@ -1,0 +1,36 @@
+InternalClassType: Store
+Coordinate3D: [27.2733,-6.0812,0]
+Origin: 39c63738-02d2-4924-9a6e-50c87d836320
+RandomSeed: 5350
+UUID: f84761ce-8329-46c2-a139-5849a7454507
+XDim: 13
+YDim: 2
+ZDim: 2
+$SequenceNumber: 14
+3D:
+ Dimensions: [13.8,1,3.95]
+ ExcludeFromShowContentOfLocation: true
+ FloorThickness:
+ Gap: 0.05
+ GroundClearance:
+ MUAnimationAreaEnabled: true
+ MUAnimationAreaMURotation: [0,0,0,-1]
+ MUAnimationAreaOrientation: "XZ plane"
+ MUAnimationAreaRelativeCenter: [0,0,0.563291]
+ MUAnimationAreaRelativeSize: [1,1.316456]
+ MUAnimationAreaShowMUsAsCuboids: false
+ OriginX: "Center"
+ OriginY: "Center"
+ PostMaterialActive: false
+ Rotation: [90,0,0,-1]
+ StorageAreaMaterialActive: true
+ StorageAreaMaterialAmbientColor: 9670004
+ StorageAreaMaterialDiffuseColor: 8946281
+ StorageAreaMaterialEmissiveColor: 0
+ StorageAreaMaterialShininess: 0.247
+ StorageAreaMaterialSpecularColor: 5855577
+ StorageAreaMaterialTransparency: 0
+ StoreType: "Rack with round posts"
+ VisibleGraphicGroups: ["default"]
+$Predecessors:
+- 5e211c69-d6aa-4724-ac3e-15da7e0f9f99

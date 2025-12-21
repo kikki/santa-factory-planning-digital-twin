@@ -1,0 +1,109 @@
+---
+InternalClassType: Frame
+Coordinate3D: [45.3941,-3.1625000000000085,0]
+LockStructure: true
+Name: Main_Process_P2
+Origin: 7a3db264-66d9-4bf1-a4a9-83ad06786854
+UUID: 306065a2-65fd-4806-b04d-dff60e77e4f5
+$SequenceNumber: 3
+3D:
+ VisibleGraphicGroups: ["M2"]
+$CustomAttributes:
+-
+ Name: Attr_id_grafic_active
+ ID: 4058320425
+ $DataType: integer
+ Value: 2
+ Scale: [1,1,1]
+-
+ Name: OnAttr_id_grafic_activeChanged
+ ID: 3694841407
+ $DataType: method
+ RandomSeed: 367
+ Scale: [1,1,1]
+-
+ Name: Attr_M_setGrafic
+ ID: 2115186641
+ $DataType: method
+ RandomSeed: 369
+ Scale: [1,1,1]
+$BlockedOrigins:
+- 1606b3b9-0e93-4b93-af3b-b501277692e4
+- 8a249cf2-2fae-41ba-ba14-87471bc97896
+- bfd2f47b-8cb9-4410-9d74-3e39c119eefc
+- d0c1dfc3-f56b-439f-9377-e523805b84cf
+---
+$ObjectName: init
+InternalClassType: Method
+Origin: a9c6b99c-0117-46a3-b2f3-2e84edd2b352
+RandomSeed: 371
+UUID: 8ba1a72d-9e32-49dc-9512-8a432fd190d5
+$SequenceNumber: 1
+---
+$ObjectName: reset
+InternalClassType: Method
+Origin: 52988b65-19f0-4e34-bf65-795f1aefa823
+RandomSeed: 372
+UUID: 821dad12-c14e-4fb9-b214-e1476841fccc
+$SequenceNumber: 2
+---
+$ObjectName: Station
+InternalClassType: Station
+Origin: 8dad61ea-f35d-4e4a-9f52-72f9534999f2
+ProcTime: [Negexp,2:10]
+RandomSeed: 373
+UUID: 3cf32f3f-98f4-46ca-a1ee-a2854d715360
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: OnExit
+ ID: 2300026890
+ $DataType: method
+ RandomSeed: 1459
+$Predecessors:
+- cc7f45ea-a2ae-40cf-9a6c-baaa2de56771
+---
+$ObjectName: DropDownList
+InternalClassType: DropDownList
+Coordinate3D: [-2.5,0,6]
+Origin: b8bf0b40-84f1-4022-b7a8-1e9d3a01c6d6
+UUID: dd5c06cd-a2e7-4aa7-8500-795e5d438131
+Value: 2
+$SequenceNumber: 4
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4032346927
+ $DataType: method
+ RandomSeed: 375
+ Rotation: [0,0,0,-1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+---
+$ObjectName: Entry
+InternalClassType: Interface
+Origin: c59b4e78-07eb-4a54-a699-280396574d6c
+RandomSeed: 684
+UUID: df4f27f0-9298-4c2e-b59d-13b26dc153c4
+$SequenceNumber: 8
+3D:
+ VisibleGraphicGroups: ["default"]
+$Successors:
+-
+ $Succ: b98a4e49-0fda-493a-b568-f844adcd9937
+ Origin: 5d560246-b6b0-4426-bcfb-63a9c510b8b2
+ UUID: 7b233c9f-db20-4bc2-b6c5-da4747b6afd7
+ $SequenceNumber: 9
+---
+$ObjectName: Exit
+InternalClassType: Interface
+Origin: 0a8a34ba-b024-491b-9f6c-4c5bd3489554
+RandomSeed: 694
+UUID: 37d5857a-20bc-4513-9542-dcb9dea45967
+$SequenceNumber: 10
+3D:
+ VisibleGraphicGroups: ["default"]
+$Predecessors:
+- b3b0dad7-c245-4bef-8899-34f64fe78de2

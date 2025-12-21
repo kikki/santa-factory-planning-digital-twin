@@ -1,0 +1,125 @@
+---
+InternalClassType: Frame
+Coordinate3D: [36.5958,-33.4398,0]
+LockStructure: true
+Name: Main_Process_P5
+Origin: 7a3db264-66d9-4bf1-a4a9-83ad06786854
+UUID: 008f431d-1846-488c-b5fb-b5fed8af6442
+$SequenceNumber: 5
+3D:
+ VisibleGraphicGroups: ["M5"]
+$CustomAttributes:
+-
+ Name: Attr_id_grafic_active
+ ID: 4058320425
+ $DataType: integer
+ Value: 5
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+-
+ Name: OnAttr_id_grafic_activeChanged
+ ID: 3694841407
+ $DataType: method
+ RandomSeed: 407
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+-
+ Name: Attr_M_setGrafic
+ ID: 2115186641
+ $DataType: method
+ RandomSeed: 409
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+$BlockedOrigins:
+- 1606b3b9-0e93-4b93-af3b-b501277692e4
+- 8a249cf2-2fae-41ba-ba14-87471bc97896
+- bfd2f47b-8cb9-4410-9d74-3e39c119eefc
+- d0c1dfc3-f56b-439f-9377-e523805b84cf
+---
+$ObjectName: init
+InternalClassType: Method
+Origin: a9c6b99c-0117-46a3-b2f3-2e84edd2b352
+RandomSeed: 411
+UUID: b9d336ba-1a22-4ab7-8d06-c72c33b8b9f6
+$SequenceNumber: 1
+---
+$ObjectName: reset
+InternalClassType: Method
+Origin: 52988b65-19f0-4e34-bf65-795f1aefa823
+RandomSeed: 412
+UUID: cb94c7f6-7fbf-41ec-a10a-4ec33b0d5a20
+$SequenceNumber: 2
+---
+$ObjectName: Station
+InternalClassType: Station
+Origin: 8dad61ea-f35d-4e4a-9f52-72f9534999f2
+ProcTime: [Negexp,2:00]
+RandomSeed: 413
+UUID: 55368c16-041e-4302-b3dc-76490b47ace2
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: OnExit
+ ID: 2300026890
+ $DataType: method
+ RandomSeed: 1465
+$Predecessors:
+- 1b2fbee9-3aa5-48c0-a29d-65678bfa0ce5
+---
+$ObjectName: DropDownList
+InternalClassType: DropDownList
+Coordinate3D: [-2.5,0,5]
+Origin: b8bf0b40-84f1-4022-b7a8-1e9d3a01c6d6
+UUID: 0dac3c0a-2afd-4493-b687-3f178dd51b8c
+Value: 5
+$SequenceNumber: 4
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4032346927
+ $DataType: method
+ RandomSeed: 415
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+---
+$ObjectName: Entry
+InternalClassType: Interface
+Origin: c59b4e78-07eb-4a54-a699-280396574d6c
+RandomSeed: 688
+UUID: 496d7f3c-e2bb-4728-9f59-1afa73368bd1
+$SequenceNumber: 8
+3D:
+ VisibleGraphicGroups: ["default"]
+$Successors:
+-
+ $Succ: 52492c74-f913-4a00-bddf-4642cc499e63
+ Origin: 5d560246-b6b0-4426-bcfb-63a9c510b8b2
+ UUID: b5233480-ee99-4768-80db-8246bc413b79
+ $SequenceNumber: 9
+---
+$ObjectName: Exit
+InternalClassType: Interface
+Origin: 0a8a34ba-b024-491b-9f6c-4c5bd3489554
+RandomSeed: 698
+UUID: 2296ea6f-4099-44f6-a8db-83c20427ead5
+$SequenceNumber: 10
+3D:
+ VisibleGraphicGroups: ["default"]
+$Predecessors:
+- d5ddd70f-42b1-4e5e-ba61-ed3437847dca

@@ -1,0 +1,29 @@
+InternalClassType: Button
+Control: "self.OnClicked"
+Coordinate3D: [-30.6131,12.7606,15.48]
+Label: "Click me to make Santa’s factory harder to find in the winter landscape"
+Name: Button1
+ObjectWidth: 16
+Origin: 7cbbe6cc-7ecf-444a-941e-33aaff5372b8
+UUID: 5d092686-b5d1-496d-9191-3af305ebed40
+$SequenceNumber: 26
+3D:
+ Rotation: [40,1,0,0]
+ Scale: [7,7,7]
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 2628578928
+ DataType: method
+ RandomSeed: 5785
+ Value: |+1
+  var _text_2open : string := .UserObjects.Localization.getText("Label_ButtonFactoryRoof_Closed")
+  var _text_2close : string := .UserObjects.Localization.getText("Label_ButtonFactoryRoof_Opened")
+  
+  if root._3D.getGraphic("e2").visible
+  	root._3D.getGraphic("e2").visible := false	-- hide roof = opened factory
+  	self.~.Etikett := _text_2close
+  else
+  	root._3D.getGraphic("e2").visible := true	-- show roof = closed factory
+  	self.~.Etikett := _text_2open
+  end

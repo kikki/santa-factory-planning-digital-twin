@@ -1,0 +1,38 @@
+InternalClassType: Source
+Coordinate3D: [15.3903,0.6409,0.06]
+ExitCtrl: "self.OnExit"
+ExitCtrlFront: false
+ExitCtrlRear: true
+Origin: c62a4dde-62fd-44d8-8e6c-b383bcade442
+Path: ".UserObjects.Main_Product"
+RandomSeed: 5786
+UUID: 6af3ac69-5fb9-4f5e-b5c0-638978af24c3
+$SequenceNumber: 27
+$CustomAttributes:
+-
+ Name: OnExit
+ ID: 690529859
+ DataType: method
+ RandomSeed: 5787
+ Value: |+1
+  --@.move -- Remove this, if the exit control is rear triggered!
+  @.Attr_id_grafic_active := 5
+$Successors:
+-
+ $Succ: 18b57b1e-67b3-40b6-8682-829d2e11750f
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: 915a7049-efbd-49c0-bc2f-4edfcee91e25
+ $SequenceNumber: 28
+-
+ $Succ: bcd5817d-4ecd-4da2-8748-27fa6cd436fb
+ Color: 16777215
+ Name: Connector1
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: e2cc6f14-ac9a-4ac1-a324-ad3891dd0b5c
+ $SequenceNumber: 29
+-
+ $Succ: f84761ce-8329-46c2-a139-5849a7454507
+ Name: Connector2
+ Origin: 28fda261-3bd2-4954-99ff-31b571632148
+ UUID: 5e211c69-d6aa-4724-ac3e-15da7e0f9f99
+ $SequenceNumber: 30

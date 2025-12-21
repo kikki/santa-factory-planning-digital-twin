@@ -1,0 +1,16 @@
+InternalClassType: Display
+Active: true
+Color: 255
+Comment: "Thanks to your efforts, children were made happy: "
+Coordinate3D: [-97.776699999999991,-147.6464,2.0999999999999943]
+Font: 4
+Name: Display_HappyChildren
+Origin: 8b9a6c0b-3422-4195-95e5-ae25ed0aa23f
+Path: "Santa_Frame.V_num_of_Orders_finish"
+Sampler: false
+Transparent: true
+UUID: bb845a7d-cd99-46aa-9c76-d8c1b59e35c0
+$SequenceNumber: 25
+3D:
+ Rotation: [35,1,0,0]
+ Scale: [2.3,2.3,2.3]

@@ -1,0 +1,296 @@
+---
+InternalClassType: Frame
+Coordinate3D: [0,-19.93,0]
+LockStructure: true
+Origin: 4d1eca17-ab40-4456-a439-9506baf04018
+UUID: d1742282-5b33-4c17-a6ac-2bf2d61a9da7
+$SequenceNumber: 13
+3D:
+ Rotation: [0,0,0,-1]
+$CustomAttributes:
+-
+ Name: Attr_Obj_ProductionValue
+ ID: 3055405673
+ $DataType: object
+ Value: ".Models.Santa.ProductionValue"
+---
+$ObjectName: WorkerPool
+InternalClassType: WorkerPool
+Coordinate3D: [-7,-6,0]
+Origin: 257a285b-cf28-4bda-9b66-823f1c9c9027
+RandomSeed: 3014
+UUID: 41bfcb30-7faf-451b-b776-5b134e340c2b
+$SequenceNumber: 1
+3D:
+ StatesForColoring: 0xffffffff
+ StatesOrientation: "(Off)"
+ $StatesTransformations:
+  HorizontalStatesPosition: [-0.345,0.115,2.1]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [0,0,2]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: false
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 1372730552
+ $DataType: method
+ RandomSeed: 4467
+---
+$ObjectName: AGVPool
+InternalClassType: AGVPool
+Coordinate3D: [-8,35,13]
+Origin: 35d70f01-c2a6-4ca9-aa5f-f9806a1c173c
+RandomSeed: 3015
+UUID: 2340f733-ee01-489a-bafc-f1fbaf88b5f0
+$SequenceNumber: 2
+3D:
+ Rotation: [0,0,0,1]
+---
+$ObjectName: V_isReadyToPeak
+InternalClassType: Variable
+Origin: 166c04ac-95b0-4be5-a0af-3abdd9d37abc
+UUID: a4c5c475-0779-43a1-a7b3-ca8e25bd6085
+$SequenceNumber: 3
+$DataType: boolean
+Value: true
+---
+$ObjectName: init
+InternalClassType: Method
+Origin: 3028a0e5-d982-4735-8862-c129545ab0da
+RandomSeed: 3016
+UUID: 11a359bc-ef06-430a-a53b-bb1924e1a0c9
+$SequenceNumber: 4
+---
+$ObjectName: M_delete_all_AGVmarker
+InternalClassType: Method
+Origin: c4ce5451-4c89-4b4b-afff-de332f3556a1
+RandomSeed: 3017
+UUID: 70392538-245d-4f5d-a223-2d34b943078e
+$SequenceNumber: 5
+---
+$ObjectName: M_setReadyTopeack
+InternalClassType: Method
+Origin: 47866726-0fa9-401c-be73-2f6000123d77
+RandomSeed: 3018
+UUID: d505a617-09e5-4c33-9373-c168b51e588a
+$SequenceNumber: 6
+---
+$ObjectName: M_create_init_AGVmarker
+InternalClassType: Method
+Origin: 9213c4cd-2f87-41e4-994c-1b0c52d3f3bc
+RandomSeed: 3019
+UUID: 2755eef3-7312-4350-9cfe-75357a4b76a9
+$SequenceNumber: 7
+---
+$ObjectName: M_workflow_santa
+InternalClassType: Method
+Origin: b0b4c231-a995-4f18-81a4-64db2e32c3bc
+RandomSeed: 3020
+UUID: 783130c0-7aea-4f85-ab79-551e16959c2f
+$SequenceNumber: 8
+---
+$ObjectName: V_is_to_create_All_marker_by_init
+InternalClassType: Variable
+Origin: c3c1b536-1172-4471-a937-5cfa9a14e96c
+UUID: e3f06e88-a7a4-43e5-b3a7-a2c0a659e27f
+$SequenceNumber: 9
+---
+$ObjectName: V_santaLastPosition_ID
+InternalClassType: Variable
+Origin: 618e36d4-eeb6-4b69-85cf-068c187b3bf9
+UUID: bcd45aea-c95d-49c9-92ee-f530905fd9f7
+$SequenceNumber: 10
+$DataType: integer
+Value: 1
+---
+$ObjectName: M_nextDestination
+InternalClassType: Method
+Origin: b3ffed8f-1431-4dbc-a430-0535914c3921
+RandomSeed: 3025
+UUID: bbd82b54-78b8-4652-829e-b8bba35f3c64
+$SequenceNumber: 11
+---
+$ObjectName: V_AGV
+InternalClassType: Variable
+Origin: 6c908605-a86d-4583-b12e-aeed082faf0f
+UUID: e2edbb0f-7193-4bd2-a5c2-77ddc5be6e09
+$SequenceNumber: 12
+$DataType: object
+Value: ""
+---
+$ObjectName: M_moveAGVMarker_ToPosition
+InternalClassType: Method
+Origin: 8dc7e654-29a1-48a2-b394-1d08240e2648
+RandomSeed: 3026
+UUID: 61c749a0-8823-45c2-b673-4779ebb14477
+$SequenceNumber: 13
+---
+$ObjectName: M_create_AGVmarker
+InternalClassType: Method
+Origin: 5c222bf1-712f-492b-985b-e8a12915795f
+RandomSeed: 3027
+UUID: ceeff9e4-fa55-4803-96b1-2277dcd4bfcf
+$SequenceNumber: 14
+---
+$ObjectName: M_FlyAnimation_activate
+InternalClassType: Method
+Origin: 54ed42a3-6663-4c16-a9ff-e28f2257782f
+RandomSeed: 3518
+UUID: bd6bffa5-e878-4787-bced-7a8fa6d2b59c
+$SequenceNumber: 15
+---
+$ObjectName: M_set_AGVmarker_Property
+InternalClassType: Method
+Origin: 767faa8c-1918-4299-bfab-05229adf7b3d
+RandomSeed: 4044
+UUID: 7592eb81-1cb1-4325-b755-0c8bd602097e
+$SequenceNumber: 16
+---
+$ObjectName: V_Gift_Count
+InternalClassType: Variable
+Origin: a8f40ba1-88ad-439b-bdd9-8ad58a081fe0
+UUID: 71b60507-10f9-42a9-b064-b65c31f28872
+$SequenceNumber: 17
+$DataType: integer
+Value: 0
+---
+$ObjectName: M_check_Gift_Count
+InternalClassType: Method
+Origin: 706ae848-e6df-413b-a25e-1b84374ad616
+RandomSeed: 5050
+UUID: bea05c93-822c-41ab-9929-b7e21f8add5f
+$SequenceNumber: 18
+---
+$ObjectName: Store
+InternalClassType: Store
+Origin: 9d897e72-7b8b-4d22-8b1f-0d3adb058acd
+RandomSeed: 5052
+UUID: 0e2f1841-27ba-438b-88fa-dd034594d30c
+$SequenceNumber: 19
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 266047730
+ $DataType: method
+ RandomSeed: 5054
+---
+$ObjectName: V_num_of_Orders_finish
+InternalClassType: Variable
+Origin: f1c8722e-c3c3-4b46-9035-6c240fc2062c
+UUID: 26ffc0f2-cac7-4a75-ae90-36be76d14c7e
+$SequenceNumber: 20
+$DataType: integer
+Value: 0
+---
+$ObjectName: V_target_procent
+InternalClassType: Variable
+Origin: de202a2f-d13a-428f-8ad8-4e87c7ce5313
+UUID: a7ef9303-7c56-4458-871d-ff57106a633b
+$SequenceNumber: 21
+$DataType: real
+Value: 0
+---
+$ObjectName: M_door_open_IN
+InternalClassType: Method
+Origin: 144ae743-a6d3-4bfb-99af-ffdc9a53b541
+RandomSeed: 12000
+UUID: f930318f-5385-4af7-b679-e3486001d51b
+$SequenceNumber: 22
+---
+$ObjectName: M_door_close_IN
+InternalClassType: Method
+Origin: 2c5198e3-1939-44bd-ac6a-c8e8a104b646
+RandomSeed: 12002
+UUID: 4a50e0df-2502-47af-b068-9e108eaa7c30
+$SequenceNumber: 23
+---
+$ObjectName: M_door_close_OUT
+InternalClassType: Method
+Origin: 52dcbc32-ecc1-4eeb-a8ce-4bc216ac1995
+RandomSeed: 12005
+UUID: bd034a96-fc14-45d3-9e46-e45163880d52
+$SequenceNumber: 24
+---
+$ObjectName: M_door_open_OUT
+InternalClassType: Method
+Origin: cd654478-00c6-4115-beb8-e1f06c1ef6a0
+RandomSeed: 12006
+UUID: e6dfb98f-4368-4bfa-84b5-42f3cb1a6b07
+$SequenceNumber: 25
+---
+$ObjectName: M_hide_sack
+InternalClassType: Method
+Origin: 5673e7ce-c04a-4397-b6b2-f35681b16b8a
+RandomSeed: 19848
+UUID: 76121b53-d449-4752-a0d6-a06e478e56aa
+$SequenceNumber: 26
+---
+$ObjectName: Marker_sleigh
+InternalClassType: Marker
+ArrivalCtrl: ".Models.Santa.Santa_Frame.Marker_sleigh.OnArrival"
+Coordinate3D: [-7,-6,0]
+Origin: 123caf0a-3610-4e3c-a82e-6b811a41f8b5
+UUID: 40f5ee3d-9230-465a-93f0-96387476010d
+$SequenceNumber: 27
+$CustomAttributes:
+-
+ Name: Attr_speed
+ ID: 3874085080
+ $DataType: real
+ Value: 5
+-
+ Name: Attr_M_nextDestination
+ ID: 2005270075
+ $DataType: method
+ RandomSeed: 134066
+-
+ Name: Attr_timeWait
+ ID: 4074632725
+ $DataType: time
+ Value: 0
+-
+ Name: Attr_targetProcess
+ ID: 929365791
+ $DataType: object
+ Value: d505a617-09e5-4c33-9373-c168b51e588a
+-
+ Name: OnArrival
+ ID: 1812316122
+ $DataType: method
+ RandomSeed: 134068
+---
+$ObjectName: Marker_sleigh1
+InternalClassType: Marker
+Coordinate3D: [-7,14,3]
+Name: Marker_sleigh1
+Origin: 123caf0a-3610-4e3c-a82e-6b811a41f8b5
+UUID: 8580bf9a-a46e-400e-89a5-bcc5e05bf356
+$SequenceNumber: 28
+$CustomAttributes:
+-
+ Name: Attr_speed
+ ID: 3874085080
+ $DataType: real
+ Value: 8
+-
+ Name: Attr_M_nextDestination
+ ID: 2005270075
+ $DataType: method
+ RandomSeed: 134070
+-
+ Name: Attr_timeWait
+ ID: 4074632725
+ $DataType: time
+ Value: 0
+-
+ Name: Attr_targetProcess
+ ID: 929365791
+ $DataType: object
+ Value: 4a50e0df-2502-47af-b068-9e108eaa7c30
+-
+ Name: OnArrival
+ ID: 1812316122
+ $DataType: method
+ RandomSeed: 134072

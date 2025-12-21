@@ -1,0 +1,8 @@
+InternalClassType: WorkerPool
+Coordinate3D: [7.3936,-7.6409,0]
+Origin: dd5d6d0e-a347-49ed-81dc-6168fb257993
+RandomSeed: 447
+UUID: d2de88a2-8396-4eef-a0be-ce49644a0951
+$SequenceNumber: 8
+$WorkersToCreate:
+- [85ed53d0-bb3e-4647-b2d0-19bdcaeeabbd,5,~,-1,-1,"",[]]

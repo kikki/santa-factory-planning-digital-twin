@@ -1,0 +1,138 @@
+InternalClassType: Chart
+Accumulated: false
+Category: "Chart"
+ChartType: "100% Stacked Columns"
+Coordinate3D: [3.6443,-129.4099,0]
+DataInColumn: false
+DisplayInFrame: true
+GraphTable: "Graph"
+Height: 15
+InputChannels:
+ Comment: ~
+ CommonFormat: false
+ ListFormat:
+  ColumnIndex: true
+  ColumnWidth: 20
+  DataType: string
+  RowIndex: true
+  ShowDataType: true
+  RowFormat:
+  -
+   Index: 0
+   DataType: string
+ Columns:
+ - [0,string,9,"Working","Setting-up","Waiting","Blocked","PoweringUpDown","Failed","Stopped","Paused","Unplanned"]
+LegendLocation: "Right"
+Mode: "Sample"
+Name: ChartProcesses
+Origin: 1d934749-5220-4bc5-a25b-f8ff27244007
+Rotation: 0
+SizeInFrame: [10,6]
+StepCurve: false
+Subtitle: ""
+Title: "Ressourcenstatistik"
+UseInputChannels: true
+UUID: b99b1d5f-5583-4977-a574-de7cf8895380
+XLabel: "Station"
+YLabel: ""
+YScaleMax: 1.02
+YScaleMin: 0
+$SequenceNumber: 31
+3D:
+ NameLabelEnabled: false
+ NameLabelPosition: [-1,-1,0]
+ NameLabelRotation: [0,0,0,-1]
+ NameLabelScale: [1,1,1]
+ Scale: [3,3,3]
+ VisibleGraphicGroups: ["default"]
+$CustomAttributes:
+-
+ Name: reset
+ ID: 1916975300
+ DataType: method
+ RandomSeed: 60804
+ Value: |+1
+  var t : table := self.~.InputChannels
+  t.delete({1,0}..{*,*})
+  self.~.InputChannels := t
+-
+ Name: init
+ ID: 2355779287
+ DataType: method
+ RandomSeed: 60805
+ Value: |+1
+  var tInput : table := self.~.InputChannels
+  
+  for var i := 1 to .UserObjects.Main_Process.NumChildren loop
+  	var proc := .UserObjects.Main_Process.childNo(i)
+  	if (proc.RootFrame /= root) then CONTINUE; end
+  
+  	var procNr := proc.Attr_id_grafic_active	-- 1..6
+  
+  	if (tInput[procNr, 0] = "") then
+  		tInput[procNr, 0] := to_str("P", procNr, " x1")
+  
+  		tInput[procNr, 1] := makePathRelative(proc.Station) +".StatWorkingPortion"
+  		tInput[procNr, 2] := makePathRelative(proc.Station) +".StatSetupPortion"
+  		tInput[procNr, 3] := makePathRelative(proc.Station) +".StatWaitingPortion"
+  		tInput[procNr, 4] := makePathRelative(proc.Station) +".StatBlockingPortion"
+  		tInput[procNr, 5] := makePathRelative(proc.Station) +".StatPoweringUpDownPortion"
+  		tInput[procNr, 6] := makePathRelative(proc.Station) +".StatFailPortion"
+  		tInput[procNr, 7] := makePathRelative(proc.Station) +".StatStoppedPortion"
+  		tInput[procNr, 8] := makePathRelative(proc.Station) +".StatPausingPortion"
+  		tInput[procNr, 9] := makePathRelative(proc.Station) +".StatUnplannedPortion"
+  
+  	else
+  		var numProc : integer := str_to_num(strRcopy(tInput[procNr, 0], 1))	+1
+  		tInput[procNr, 0] := to_str("P", procNr, " x", numProc)
+  
+  		tInput[procNr, 1] += " +" +makePathRelative(proc.Station) +".StatWorkingPortion"
+  		tInput[procNr, 2] += " +" +makePathRelative(proc.Station) +".StatSetupPortion"
+  		tInput[procNr, 3] += " +" +makePathRelative(proc.Station) +".StatWaitingPortion"
+  		tInput[procNr, 4] += " +" +makePathRelative(proc.Station) +".StatBlockingPortion"
+  		tInput[procNr, 5] += " +" +makePathRelative(proc.Station) +".StatPoweringUpDownPortion"
+  		tInput[procNr, 6] += " +" +makePathRelative(proc.Station) +".StatFailPortion"
+  		tInput[procNr, 7] += " +" +makePathRelative(proc.Station) +".StatStoppedPortion"
+  		tInput[procNr, 8] += " +" +makePathRelative(proc.Station) +".StatPausingPortion"
+  		tInput[procNr, 9] += " +" +makePathRelative(proc.Station) +".StatUnplannedPortion"
+  
+  	end
+  next
+  
+  self.~.InputChannels := tInput
+$Colors:
+- 0xa0a0a0
+- 0xf4f4f4
+- 0xffffff
+- 0x0
+- [0x2a932a,5,3]
+- [0x2d85a8,5,5]
+- [0xbebebe,5,5]
+- [0xb9ff,5,7]
+- [0x7f68ad,5,6]
+- [0x1b1bbf,5,9]
+- [0xbeaaf0,5,8]
+- [0x9b780f,5,11]
+- [0xd7be50,5,10]
+- [0xacb27f,0,6]
+- [0x7d5500,0,8]
+- [0x2d85a8,0,10]
+- [0x403199,0,98]
+- [0x3f3932,0,94]
+- [0x3061aa,0,92]
+- [0x432d51,0,96]
+- [0x426647,0,99]
+- [0x7f68ad,0,93]
+- [0x4b5e70,0,97]
+- [0x737c4d,0,95]
+- [0xc1aa46,0,72]
+- [0x96d0ea,0,73]
+- [0xb9acea,0,0]
+- [0xbcb4aa,0,0]
+- [0xa3c2ef,0,0]
+- [0xa583ba,0,0]
+- [0x9ec6a5,0,0]
+- [0xd9cbef,0,0]
+- [0xa8bccc,0,0]
+- [0xd0d6b4,0,0]
+$WindowRect: [0,16000,578,346]

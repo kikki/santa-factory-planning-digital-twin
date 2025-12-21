@@ -1,0 +1,44 @@
+---
+InternalClassType: Frame
+Coordinate3D: [-59.7126,-113.2126,1]
+LockStructure: true
+Origin: 47090d22-c8a8-4afc-87ff-5ab905f8aebf
+UUID: 2f82831a-3fb2-401b-929a-86375cc882ac
+$SequenceNumber: 24
+3D:
+ Scale: [8,8,8]
+ VisibleGraphicGroups: ["M1"]
+$CustomAttributes:
+-
+ Name: onOpen
+ ID: 537283117
+ $DataType: method
+ RandomSeed: 5781
+-
+ Name: Attr_Process_ID
+ ID: 2850891915
+ $DataType: integer
+ Value: 1
+---
+$ObjectName: Comment
+InternalClassType: Comment
+Cont: |+1
+ In Programming_P1, the digital foundation for each individual plush toy is created. This process captures the initial order parameters for each child, including basic personalization attributes and play concepts. Based on this input, the logical and software-related structures are prepared for later design, behavior, and AI interaction.
+ The focus lies on structured parameterization: defining which functions the toy will have, which interaction patterns are intended, and which content boundaries apply to the
+Origin: 35794d31-ae1a-433c-8f1d-3f69f3e2f30e
+SaveAsRichedit: false
+UUID: c66d92c2-c579-47d6-b9dc-12ed1bfa034d
+$SequenceNumber: 1
+---
+$ObjectName: DropDownList
+InternalClassType: DropDownList
+Origin: c47d86b5-e775-46ad-b2f5-9be26e159599
+UUID: 8c8dd324-0ad4-4125-9eaf-a694b2715700
+Value: 1
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4030425857
+ $DataType: method
+ RandomSeed: 5783

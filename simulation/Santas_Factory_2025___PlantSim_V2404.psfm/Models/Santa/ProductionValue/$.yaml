@@ -1,0 +1,138 @@
+---
+InternalClassType: Frame
+Coordinate3D: [70.718900000000019,-98.0877,6.1200000000000037]
+LockStructure: true
+OpenCtrl:
+Origin: 24048e0e-d03e-45a5-9808-226a1ea00795
+UUID: 037e3a57-1f96-41b6-b08b-27a45e3c5a4b
+$SequenceNumber: 11
+3D:
+ Rotation: [14.999999999999998,1,0,0]
+$CustomAttributes:
+-
+ Name: Attr_M_getWorldChild
+ ID: 2732615194
+ $DataType: method
+ RandomSeed: 1682
+-
+ Name: Attr_int_currentWorldChildCount
+ ID: 4268286173
+ $DataType: integer
+ Value: 2013224063
+-
+ Name: Attr_M_setProductionProgram
+ ID: 2684147853
+ $DataType: method
+ RandomSeed: 1684
+-
+ Name: OnOpen
+ ID: 3831242300
+ DataType: method
+ RandomSeed: 1821
+ Value: |+1
+   param from3D, inLockedFolder: boolean
+  
+  -- @,?: the object to open
+  --debug
+  print "for save interval clicked event"
+-
+ Name: init
+ ID: 3978499297
+ DataType: method
+ RandomSeed: 1822
+ Value: |+1
+  self.~.Attr_M_getWorldChild
+  // Executein(0), so that Main_Process.init can run and create the SourceProduct instances
+  self.~.&Attr_M_setProductionProgram.executein(0)
+---
+$ObjectName: V_good_child_percent
+InternalClassType: Variable
+Origin: bda46242-634c-412e-b05e-543bdd484ea8
+UUID: 60f0c563-1d7a-406c-8e64-b5cabc06c9f3
+$SequenceNumber: 1
+$DataType: integer
+Value: 75
+---
+$ObjectName: ChangeValueButton
+InternalClassType: Button
+Origin: 3a7c3141-cc83-4f84-9927-fe938e0e4b75
+UUID: 30043757-485f-4551-afaa-3c91ed31c46e
+$SequenceNumber: 2
+3D:
+ ExcludeFromShowContentOfLocation: false
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 1942582834
+ $DataType: method
+ RandomSeed: 1686
+-
+ Name: OnAttr_bool_isPositiveChanged
+ ID: 460105935
+ $DataType: method
+ RandomSeed: 1688
+---
+$ObjectName: ChngeVaueButton1
+InternalClassType: Button
+Origin: a74728d3-9e28-4e97-86d2-03cb75d35372
+UUID: a66ea6e4-e49a-4ef1-b901-5efe8c8658f9
+$SequenceNumber: 3
+3D:
+ ExcludeFromShowContentOfLocation: false
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 1942582834
+ $DataType: method
+ RandomSeed: 1690
+-
+ Name: OnAttr_bool_isPositiveChanged
+ ID: 460105935
+ $DataType: method
+ RandomSeed: 1692
+---
+$ObjectName: Display1
+InternalClassType: Display
+Origin: 24a7149a-3236-49a6-95a9-7254d9f6df82
+UUID: 02d890c1-0adc-41cd-8800-48a2ec72320c
+$SequenceNumber: 4
+3D:
+ ExcludeFromShowContentOfLocation: false
+---
+$ObjectName: Comment
+InternalClassType: Comment
+Origin: 9d59400b-ebda-433e-af09-840dafd3ea71
+UUID: 2d2f4c07-a3a5-4bcb-87b6-6ee2ee87b67a
+$SequenceNumber: 5
+3D:
+ ExcludeFromShowContentOfLocation: false
+---
+$ObjectName: Py_getChild
+InternalClassType: PythonModule
+Origin: 0d35e516-dd90-483c-a186-8b475e31fd3a
+UUID: 58496079-bf7d-4250-a2c5-f05eeafcd77c
+$SequenceNumber: 6
+3D:
+ ExcludeFromShowContentOfLocation: true
+---
+$ObjectName: Display
+InternalClassType: Display
+Origin: 00fca2a6-b44a-448f-9568-3b5d06f991c7
+UUID: fb80ed3a-27ee-475d-bdea-913242066db6
+$SequenceNumber: 8
+3D:
+ ExcludeFromShowContentOfLocation: false
+---
+$ObjectName: V_Factor
+InternalClassType: Variable
+Origin: 70d76f75-83ed-4570-af35-ad7bf84e173c
+UUID: 9f176f01-f25f-4160-913c-dc3919ad9d43
+$SequenceNumber: 9
+$DataType: integer
+Value: 100000
+---
+$ObjectName: Comment1
+InternalClassType: Comment
+Origin: 6719a6f8-708f-411d-91d3-e7856213d1d8
+UUID: 2e9b740c-6fda-4198-9525-ffbd26b92f3d
+$SequenceNumber: 10

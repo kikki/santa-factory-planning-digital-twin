@@ -1,0 +1,38 @@
+---
+InternalClassType: Frame
+Coordinate3D: [7,0,0]
+LockStructure: true
+Origin: 2cd96efb-8923-483d-8030-734da9780848
+UUID: 70acdd22-a4c9-4f7d-945c-7e20bca8ea88
+$SequenceNumber: 7
+3D:
+ ExcludeFromShowContentOfLocation: false
+---
+$ObjectName: Buffer
+InternalClassType: Buffer
+Origin: 5b1d0e26-1c99-435e-a6f1-bfb5e8237f51
+RandomSeed: 1451
+UUID: 8310f33c-e132-403d-9e25-45691ce412e5
+$SequenceNumber: 1
+3D:
+ ExcludeFromShowContentOfLocation: true
+$Successors:
+-
+ $Location: ce3f76fb-d851-4a34-8bdc-7944324cb377
+ $Succ: 4aeb2c5c-2faa-4727-a825-3243756ad502
+ Origin: f29e9ca9-5c34-4086-bf23-5732bf235a50
+ UUID: 18d55ae0-8617-4d76-8549-ebe853167a27
+ $SequenceNumber: 11
+---
+$ObjectName: Workplace
+InternalClassType: Workplace
+Origin: 17e99189-4356-4d94-8d1a-e41bc1d8537c
+RandomSeed: 1452
+UUID: b38214ac-f49a-43ae-a446-6edac736bbf1
+$SequenceNumber: 2
+$CustomAttributes:
+-
+ Name: OnEntrance
+ ID: 3677491536
+ $DataType: method
+ RandomSeed: 4432

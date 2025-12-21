@@ -1,0 +1,13 @@
+InternalClassType: Button
+Control: "self.OnClicked"
+Coordinate3D: [88.9971,-33.0769,0]
+Origin: 7cbbe6cc-7ecf-444a-941e-33aaff5372b8
+UUID: 949b6f31-b20b-447e-8041-758095afe007
+$SequenceNumber: 10
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 3305513777
+ DataType: method
+ RandomSeed: 881
+ Value: "callEvery(root, \"Attr_M_setGrafic\", \"\")"

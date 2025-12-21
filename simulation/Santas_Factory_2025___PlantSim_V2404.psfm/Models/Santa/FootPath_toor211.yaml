@@ -1,0 +1,76 @@
+InternalClassType: FootPath
+Coordinate3D: [-2.7165,-23.0124,0]
+Length: 5
+Name: FootPath_toor211
+Origin: 0b0cbf4e-5e06-433b-b900-0a5727a1cd13
+UUID: c56cc4c5-0657-4f9b-99e6-026f16a64e5c
+$SequenceNumber: 15
+$CustomAttributes:
+-
+ Name: _mObserveSantaLocation
+ ID: 1384193783
+ DataType: method
+ RandomSeed: 37224
+ Value: |+1
+  param _santa : object
+  
+  // Skip this in simulation without animation
+  if NOT animation() then
+  	RETURN
+  end
+  
+  // Entrance/Exit is at both sides
+  var tSegments : table
+  self.~.getCurveSegments(tSegments)
+  
+  var EntryPoint1 : length[3]
+  var EntryPoint2 : length[3]
+  EntryPoint1.copyFromTable({7,1}..{9,1}, tSegments)
+  EntryPoint2.copyFromTable({7,2}..{9,2}, tSegments)
+  
+  var EntryVector1 : length[3]
+  var EntryVector2 : length[3]
+  
+  var ExitPoint : length[3]
+  
+  
+  // Door is closed. Observe (sample) santa location until he gets close to any entrance
+  repeat
+  	EntryVector1 := _santa._3D.getWorldCoordinate - EntryPoint1
+  	EntryVector2 := _santa._3D.getWorldCoordinate - EntryPoint2
+  
+  	if (EntryVector1.Magnitude < 1m) then
+  		ExitPoint := EntryPoint2
+  		EXITLOOP 1
+  	elseif (EntryVector2.Magnitude < 1m) then
+  		ExitPoint := EntryPoint1
+  		EXITLOOP 1
+  	end
+  
+  	wait 0.1s
+  until false
+  
+  
+  // Stop Santa, open door
+  _santa.Failed := true
+  wait _3D.getObject("toor211").moveTo(2.5m)
+  _santa.Failed := false
+  
+  
+  // Door is open. Observe (sample) santa location until he gets close to the exit
+  var ExitVector : length[3]
+  repeat
+  	ExitVector := _santa._3D.getWorldCoordinate - ExitPoint
+  
+  	if (ExitVector.Magnitude < 1m) then
+  		EXITLOOP 1
+  	end
+  
+  	wait 0.1s
+  until false
+  
+  // Close door
+  _3D.getObject("toor211").moveTo(0m)
+$CurveSegments:
+- 0
+- [0,5,0]

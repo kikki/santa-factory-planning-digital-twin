@@ -1,0 +1,128 @@
+---
+InternalClassType: Frame
+Coordinate3D: [33.2305,-46.3447,0]
+LockStructure: true
+Name: Main_Process_P4
+Origin: 7a3db264-66d9-4bf1-a4a9-83ad06786854
+UUID: 0f5c3c83-49a4-40d9-a4de-db6e0dec0243
+$SequenceNumber: 6
+3D:
+ VisibleGraphicGroups: ["M4"]
+$CustomAttributes:
+-
+ Name: Attr_id_grafic_active
+ ID: 4058320425
+ $DataType: integer
+ Value: 4
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+-
+ Name: OnAttr_id_grafic_activeChanged
+ ID: 3694841407
+ $DataType: method
+ RandomSeed: 417
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+-
+ Name: Attr_M_setGrafic
+ ID: 2115186641
+ $DataType: method
+ RandomSeed: 419
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+$BlockedOrigins:
+- 1606b3b9-0e93-4b93-af3b-b501277692e4
+- 8a249cf2-2fae-41ba-ba14-87471bc97896
+- bfd2f47b-8cb9-4410-9d74-3e39c119eefc
+- d0c1dfc3-f56b-439f-9377-e523805b84cf
+---
+$ObjectName: init
+InternalClassType: Method
+Origin: a9c6b99c-0117-46a3-b2f3-2e84edd2b352
+RandomSeed: 421
+UUID: 910664a9-6fbe-49f9-94bf-33f9aa46eb62
+$SequenceNumber: 1
+---
+$ObjectName: reset
+InternalClassType: Method
+Origin: 52988b65-19f0-4e34-bf65-795f1aefa823
+RandomSeed: 422
+UUID: e649450d-ea70-4fcf-8d70-9b7fb86fd280
+$SequenceNumber: 2
+---
+$ObjectName: Station
+InternalClassType: Station
+Origin: 8dad61ea-f35d-4e4a-9f52-72f9534999f2
+ProcTime: [Negexp,1:00]
+RandomSeed: 423
+UUID: 4df1f776-2ac9-444c-a570-e95b07cb43ed
+$SequenceNumber: 3
+$CustomAttributes:
+-
+ Name: OnExit
+ ID: 2300026890
+ $DataType: method
+ RandomSeed: 1468
+$Predecessors:
+- 9c73ed41-4323-4955-961e-2f2e0d58d88f
+---
+$ObjectName: DropDownList
+InternalClassType: DropDownList
+Coordinate3D: [-2.5,0,4]
+Origin: b8bf0b40-84f1-4022-b7a8-1e9d3a01c6d6
+UUID: 4ffcc20f-e016-430e-a489-cccb2e3563d1
+Value: 4
+$SequenceNumber: 4
+$CustomAttributes:
+-
+ Name: OnClicked
+ ID: 4032346927
+ $DataType: method
+ RandomSeed: 425
+ Position: [0,0,0]
+ Rotation: [0,0,0,-1]
+ Color: 8545330
+ BackgroundColor: 14474460
+ Font: 1
+ Alignment: "Left"
+---
+$ObjectName: Entry
+InternalClassType: Interface
+Origin: c59b4e78-07eb-4a54-a699-280396574d6c
+RandomSeed: 689
+UUID: 0800624f-1fbf-4280-b43d-0761fe9d0679
+$SequenceNumber: 8
+3D:
+ VisibleGraphicGroups: ["default"]
+$Successors:
+-
+ $Succ: 68a07af7-dcb8-430d-9329-a21fcee2e365
+ Origin: 5d560246-b6b0-4426-bcfb-63a9c510b8b2
+ UUID: 8e7f81b9-a8ea-4b42-97de-4ff0faab130e
+ $SequenceNumber: 9
+---
+$ObjectName: Exit
+InternalClassType: Interface
+Origin: 0a8a34ba-b024-491b-9f6c-4c5bd3489554
+RandomSeed: 699
+UUID: c94f820a-4c86-4020-bf94-7f2809f07b7a
+$SequenceNumber: 10
+3D:
+ VisibleGraphicGroups: ["default"]
+$Predecessors:
+- 8b00094e-23a5-430a-b2d7-44a8829ec3e4

@@ -1,0 +1,16 @@
+InternalClassType: Display
+Active: true
+Color: 255
+Comment: "That's the percentage of your order target: "
+Coordinate3D: [-97.147799999999989,-152.0187,2.0999999999999934]
+Font: 4
+Name: Display_ServiceLevel
+Origin: 8b9a6c0b-3422-4195-95e5-ae25ed0aa23f
+Path: "to_str(round(Santa_Frame.V_target_procent, 2), \"%\")"
+Sampler: true
+Transparent: true
+UUID: 12b06e38-58f3-4802-b914-506571c920bd
+$SequenceNumber: 32
+3D:
+ Rotation: [35,1,0,0]
+ Scale: [2.3,2.3,2.3]

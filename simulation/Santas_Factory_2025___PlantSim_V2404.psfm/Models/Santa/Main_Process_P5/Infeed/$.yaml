@@ -1,0 +1,34 @@
+---
+InternalClassType: Frame
+Coordinate3D: [-10,0,0]
+LockStructure: true
+Origin: 9e3eaff5-db6e-4c82-8313-3489abd23c59
+UUID: c7a1b7a4-843b-4777-93bc-b6b07940f197
+$SequenceNumber: 5
+3D:
+ ExcludeFromShowContentOfLocation: false
+---
+$ObjectName: Buffer
+InternalClassType: Buffer
+Origin: bd0b350f-8a3c-45b0-9d27-9eb13987edf3
+RandomSeed: 1433
+UUID: 52492c74-f913-4a00-bddf-4642cc499e63
+$SequenceNumber: 1
+$Successors:
+-
+ $Location: 008f431d-1846-488c-b5fb-b5fed8af6442
+ $Succ: 55368c16-041e-4302-b3dc-76490b47ace2
+ Origin: 91e2683b-5422-45d3-b0ae-eb0041fb9b8f
+ UUID: 1b2fbee9-3aa5-48c0-a29d-65678bfa0ce5
+ $SequenceNumber: 6
+$Predecessors:
+- b5233480-ee99-4768-80db-8246bc413b79
+---
+$ObjectName: Workplace
+InternalClassType: Workplace
+Origin: dbb50f48-be69-4cff-bfc1-bada03944dd6
+RandomSeed: 1434
+UUID: b2fc47f7-97f6-40ba-ae5a-c10709c60ffe
+WorkerStaysHere: true
+$SequenceNumber: 2
+$Capacity: 2

@@ -1,0 +1,333 @@
+InternalClassType: Frame
+ChangePathCtrl:
+CloseCtrl:
+ConnectCtrl:
+ConstructorCtrl:
+Coordinate3D: [-5,5,51]
+CreateIn3D: true
+DestructorCtrl:
+DragDropCtrl:
+FailCtrl:
+InitCtrl:
+Label: ""
+MoveInFrameCtrl:
+MoveToFolderCtrl:
+Name: Santa
+OpenCtrl:
+PauseCtrl:
+PermitDeleteCtrl:
+RelabelCtrl:
+RenameCtrl:
+ReplacementMode: "merge"
+ShiftcalendarObject:
+UnplannedCtrl:
+UUID: cae40103-9998-4f70-af7b-d7935177d93e
+$SequenceNumber: 1
+3D:
+ AniRotationAxis: [0,0,-1]
+ AniRotationCenter: [0,0,0]
+ BackgroundColor: -1
+ CameraAnimations:
+ ExcludeFromShowContentOfLocation: false
+ GraphicGroupNames: ["default","deco","aussen","PowerHouse","IT","TGA","e2","factory","stuetze","finish_grafic"]
+ InternalGraphicGroups: ["deco","aussen","PowerHouse","IT","TGA","e2","factory","stuetze","finish_grafic"]
+ LockedGraphicGroups: ["aussen","PowerHouse","IT","TGA","e2","stuetze"]
+ MaterialActive: true
+ MaterialAmbientColor: 2828837
+ MaterialDiffuseColor: 8617841
+ MaterialEmissiveColor: 0
+ MaterialShininess: 0.11
+ MaterialSpecularColor: 8355711
+ MaterialTransparency: 0
+ Mirror: [false,false,false]
+ MovementInterruptible: false
+ NameLabelEnabled: false
+ NameLabelPosition: [-1,-1,0]
+ NameLabelRotation: [0,0,0,-1]
+ NameLabelScale: [1,1,1]
+ ObstacleForWorker: "Visible graphics"
+ PlanningView: false
+ PointCloudPath: ""
+ PointCloudPosition: [0,0,0]
+ PointCloudRotation: [0,0,0,-1]
+ Poses:
+ Rotation: [0,0,0,-1]
+ Scale: [1,1,1]
+ SelfAnimations:
+ ShowBasePlate: false
+ ShowConnections: false
+ ShowContent: true
+ ShowExternalGraphics: false
+ ShowGrid: false
+ ShowLabels: true
+ ShowNames: true
+ ShowPointClouds: false
+ ShowShadows: false
+ ShowSky: false
+ ShowUserDefinedAttributes: true
+ StatesForColoring: 0xf0f
+ StatesOrientation: "(Off)"
+ SynchronizedJoints: true
+ VisibleGraphicGroups: ["stuetze","factory","aussen","PowerHouse","IT","TGA","finish_grafic"]
+ $StatesTransformations:
+  HorizontalStatesPosition: [-1,1,2]
+  HorizontalStatesScale: [1,1,1]
+  HorizontalStatesScaleWithObject: true
+  VerticalStatesPosition: [-0.96,0.96,2]
+  VerticalStatesScale: [1,1,1]
+  VerticalStatesScaleWithObject: true
+ $Objects:
+ -
+  AniRotationAxis: [0,1,0]
+  AniRotationCenter: [0,0,3.52]
+  AniTranslationDirection: [1,0,0]
+  GraphicGroupNames: ["default","deco"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimit: 0
+  JointLowerLimitActive: true
+  JointType: "Revolute Joint"
+  JointUpperLimit: 120
+  JointUpperLimitActive: true
+  JointVelocity: 24
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 2828837
+  MaterialDiffuseColor: 8617841
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.11
+  MaterialSpecularColor: 8355711
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: toor2
+  Position: [-6.58,2.62,-0.99]
+  Rotation: [-90,0,0,-1]
+  Scale: [1,1.1,1]
+  SelfAnimations:
+  UUID: 69925367-27d6-44a0-8720-7e287464ba1c
+  VisibleGraphicGroups: ["deco"]
+ -
+  AniRotationAxis: [0,1,0]
+  AniRotationCenter: [0,0,2]
+  AniTranslationDirection: [1,0,0]
+  GraphicGroupNames: ["default","deco"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimitActive: false
+  JointType: "Revolute Joint"
+  JointUpperLimitActive: false
+  JointVelocity: 1
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 2828837
+  MaterialDiffuseColor: 8617841
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.11
+  MaterialSpecularColor: 8355711
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: toor21
+  Position: [-0.46,-51.56,-0.96]
+  Rotation: [0,0,0,-1]
+  Scale: [1,1.1,1]
+  SelfAnimations:
+  UUID: 981b6743-fe31-42d5-848f-a85c324429b1
+  VisibleGraphicGroups: ["deco"]
+ -
+  AniRotationAxis: [0,1,0]
+  AniRotationCenter: [0,0,3.45]
+  AniTranslationDirection: [1,0,0]
+  GraphicGroupNames: ["default","deco"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimit: 0
+  JointLowerLimitActive: true
+  JointType: "Revolute Joint"
+  JointUpperLimit: 120
+  JointUpperLimitActive: true
+  JointVelocity: 24
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 2828837
+  MaterialDiffuseColor: 8617841
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.11
+  MaterialSpecularColor: 8355711
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: toor22
+  Position: [-6.5,-56.98,-0.96]
+  Rotation: [90,0,0,-1]
+  Scale: [1,1.1,1]
+  SelfAnimations:
+  UUID: d33a053f-edde-4011-a1a7-0065615f869d
+  VisibleGraphicGroups: ["deco"]
+ -
+  AniRotationAxis: [0,1,0]
+  AniRotationCenter: [0,0,2]
+  AniTranslationDirection: [0,0,1]
+  GraphicGroupNames: ["default","deco"]
+  JointAcceleration: 0
+  JointDeceleration: 0
+  JointLowerLimit: 0
+  JointLowerLimitActive: true
+  JointType: "Prismatic Joint"
+  JointUpperLimit: 3
+  JointUpperLimitActive: true
+  JointVelocity: 1
+  LockedGraphicGroups: []
+  MaterialActive: true
+  MaterialAmbientColor: 2828837
+  MaterialDiffuseColor: 8617841
+  MaterialEmissiveColor: 0
+  MaterialShininess: 0.11
+  MaterialSpecularColor: 8355711
+  MaterialTransparency: 0
+  Mirror: [false,false,false]
+  Name: toor211
+  Position: [-0.37,-23.34,-0.97]
+  Rotation: [0,0,0,-1]
+  Scale: [1,1.1,1]
+  SelfAnimations:
+  UUID: 68538039-ed7f-4b39-8e75-16a0a2b8b3ef
+  VisibleGraphicGroups: ["deco"]
+$IconArray:
+-
+ Name: "Default"
+ Transparent: true
+ Size: [40,40]
+ Pixels:
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCzpKCAQEB/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+AQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEB/v7+/v7+/v7+AQEBiIiI7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIAPAAAPAAAPAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIAPAAAPAAAPAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzsAQEB7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7OzsAA//AA//AA//AA//7Ozs7Ozs7Ozs7Ozs7Ozs/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+AA//AA//AA//AA//AQEBAQEBAQEBAQEBAQEB/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+AA//AA//AA//AA///v7+/v7+/v7+/v7+/v7+/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiI7Ozs7Ozs7Ozs7Ozs7OzsgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIAQEBAQEBAQEBAQEBAQEBAQEBgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiI7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiI7Ozs7Ozs/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs/wAA/wAA/wAA/wAA7Ozs7Ozs7Ozs7Ozs7Ozs/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB7Ozs7Ozs/wAA/wAA/wAA/v7+/v7+/v7+/v7+/v7+/v7+/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/wAA/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAA7OzsAQEB/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+/v7+AQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBAQEBiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIiIgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+ - gIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAAgIAA
+$CustomAttributes:
+-
+ Name: Attr_M_Animation_Door
+ ID: 3388906533
+ DataType: method
+ RandomSeed: 5743
+ Value: |+1
+  --animation door
+  param name_ani_obj : string   -> boolean
+  
+  --print "---- animation door ----"
+  
+  
+  var _3d_ani_object := root._3D.getObject(name_ani_obj)
+  
+  var _target_value : real
+  
+  if _3d_ani_object.JointCurrentValue > _3d_ani_object.JointLowerLimit
+  	--door close
+  	_target_value := _3d_ani_object.JointLowerLimit
+  
+  else
+  	--door open
+  	_target_value := _3d_ani_object.JointUpperLimit
+  
+  end
+  -- animation start
+  _3d_ani_object.moveTo(_target_value)
+  
+  --check if position is finish
+  var _isfinish : boolean := false
+  var _checkCount : integer := 0
+  var _STATIC_MAX_COUNT : integer := 2000
+  while not _isfinish loop
+  	wait 10
+  	if _3d_ani_object.JointCurrentValue ~= _target_value
+  		_isfinish := true
+  	end
+  	if _STATIC_MAX_COUNT < _checkCount
+  		debug
+  		print "something wrong"
+  	end
+  	_checkCount += 1
+  end
+  --print "---- animation door finish----"
+  return true
+-
+ Name: Attr_M_Animation_IT
+ ID: 1717238831
+ DataType: method
+ RandomSeed: 5744
+ Value: |+1
+  var _3d_ani_object := root._3D.getObject("key_IT")
+  _3d_ani_object.getGraphic("default").Visible := false
+  
+  waituntil root.Attr_isIT_HACK
+  
+  _3d_ani_object.getGraphic("default").Visible := true
+  var _target_value : real
+  
+  while Attr_isIT_HACK
+  	if _3d_ani_object.JointCurrentValue > _3d_ani_object.JointLowerLimit
+  		--key ++
+  		_target_value := _3d_ani_object.JointLowerLimit
+  
+  	else
+  		--key --
+  		_target_value := _3d_ani_object.JointUpperLimit
+  
+  	end
+  	-- animation start
+  	if _3d_ani_object.JointCurrentValue = _target_value
+  		_3d_ani_object.moveTo(_target_value)
+  	end
+  
+  	wait 10
+  end
+  
+  self.~.&Attr_M_Animation_IT.executein(0)
+-
+ Name: Attr_isIT_HACK
+ ID: 4159663426
+ DataType: boolean
+ Value: false
+ HasInitValue: true
+ InitValue: false
+-
+ Name: init
+ ID: 1957401833
+ DataType: method
+ RandomSeed: 5761
+ Value: |+1
+  self.~.&Attr_M_Animation_IT.executein(0)
+  root.EventController._3D.getObject("Time").moveTo(-4000000000)

@@ -1,0 +1,41 @@
+ApplicationVersion: "24.4.21.3343"
+ModelFormat: 1
+CompactFormat: true
+UUID: 1f42bad8-7a46-4a02-831a-861eef2936db
+ModelSettings:
+ Language: "English"
+ DateFormat: 1
+ ConnectorDrawing: true
+ AutoConnect: true
+ 3DOnlyModel: true
+ AccessToComputer: true
+ InterpStack: 5000
+ InterpChain: 10000
+ InterpSuspended: 5000
+ Epsilon: 1e-08
+ FPS: 30
+ DisplayPanelFPSDivider: 3
+ MaxSamples: 100
+ LoopTimeout: 0
+ UnitLU: 1
+ TimeScale: [1,24,60,60]
+ DayLight: [3,-1,0,2,10,-1,0,3]
+ BaseYear: 2024
+ Units: [1,1,1,0,0]
+ MoneyUnit: €
+ ScreenCoverageThreshold: 1
+ GridConfiguration:
+  AxisColor: 0xf0
+  BasePlateMaterial: [0xbfbebebe,0x0,0x0,0x0]
+  LineSets:
+  - [0.1,0xaaaaaa,true]
+  - [1,0x6e6e6e,true]
+  - [10,0x0,true]
+  GridSnapLineSet: 2
+  SnapMode: 0
+Animation: true
+$CameraMarks:
+- ["Everything Overview",.Models.Santa,[-47.795424880440258,49.774189315460092,-382.63945293647384],[-0.959931088596882,-0.1308996938995686]]
+- ["Factory Perspective",.Models.Santa,[-44.974009095647993,19.21130757807363,-148.88908700243246],[-1.0210176124166834,-0.1308996938995686]]
+- ["InformationProcess",.Models.Santa,[36.76674577465424,43.105958785000553,-159.56887857234969],[-1.0908307824964596,-0.0087266462599704855]]
+- ["endsim_result",.Models.Santa,[76.706755130665343,22.6914588655807,-231.11525788221573],[-1.3177235852557168,6.1443905519098507e-15]]

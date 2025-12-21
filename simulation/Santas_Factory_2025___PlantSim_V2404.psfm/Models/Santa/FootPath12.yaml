@@ -1,0 +1,10 @@
+InternalClassType: FootPath
+Coordinate3D: [-2.6601,-51.487,0]
+Length: 5
+Name: FootPath12
+Origin: 0b0cbf4e-5e06-433b-b900-0a5727a1cd13
+UUID: 6c9ce839-87aa-4a48-8b2c-7431762bac5c
+$SequenceNumber: 22
+$CurveSegments:
+- 0
+- [0,5,0]
