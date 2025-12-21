@@ -289,33 +289,33 @@ $CustomAttributes:
  DataType: method
  RandomSeed: 5744
  Value: |+1
-  var _3d_ani_object := root._3D.getObject("key_IT")
-  _3d_ani_object.getGraphic("default").Visible := false
+ -- var _3d_ani_object := root._3D.getObject("key_IT")
+ -- _3d_ani_object.getGraphic("default").Visible := false
   
-  waituntil root.Attr_isIT_HACK
+ -- waituntil root.Attr_isIT_HACK
   
-  _3d_ani_object.getGraphic("default").Visible := true
-  var _target_value : real
+ -- _3d_ani_object.getGraphic("default").Visible := true
+ -- var _target_value : real
   
-  while Attr_isIT_HACK
-  	if _3d_ani_object.JointCurrentValue > _3d_ani_object.JointLowerLimit
+ -- while Attr_isIT_HACK
+  --	if _3d_ani_object.JointCurrentValue > _3d_ani_object.JointLowerLimit
   		--key ++
-  		_target_value := _3d_ani_object.JointLowerLimit
+  		--_target_value := _3d_ani_object.JointLowerLimit
   
-  	else
+  	--else
   		--key --
-  		_target_value := _3d_ani_object.JointUpperLimit
+  		--_target_value := _3d_ani_object.JointUpperLimit
   
-  	end
+  	--end
   	-- animation start
-  	if _3d_ani_object.JointCurrentValue = _target_value
-  		_3d_ani_object.moveTo(_target_value)
-  	end
+  	--if _3d_ani_object.JointCurrentValue = _target_value
+  	--	_3d_ani_object.moveTo(_target_value)
+  	--end
   
-  	wait 10
-  end
+  	--wait 10
+  --end
   
-  self.~.&Attr_M_Animation_IT.executein(0)
+  --self.~.&Attr_M_Animation_IT.executein(0) 
 -
  Name: Attr_isIT_HACK
  ID: 4159663426
