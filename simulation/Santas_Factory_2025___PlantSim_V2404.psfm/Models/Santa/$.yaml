@@ -31,7 +31,7 @@ $SequenceNumber: 1
  ExcludeFromShowContentOfLocation: false
  GraphicGroupNames: ["default","deco","aussen","PowerHouse","IT","TGA","e2","factory","stuetze","finish_grafic"]
  InternalGraphicGroups: ["deco","aussen","PowerHouse","IT","TGA","e2","factory","stuetze","finish_grafic"]
- LockedGraphicGroups: ["aussen","PowerHouse","IT","TGA","e2","stuetze"]
+ LockedGraphicGroups: ["aussen","PowerHouse","IT","TGA","e2","factory","stuetze"]
  MaterialActive: true
  MaterialAmbientColor: 2828837
  MaterialDiffuseColor: 8617841

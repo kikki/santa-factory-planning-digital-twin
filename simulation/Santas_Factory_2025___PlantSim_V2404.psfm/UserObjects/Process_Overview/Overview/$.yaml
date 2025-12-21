@@ -13,7 +13,7 @@ Label: ""
 MoveInFrameCtrl:
 MoveToFolderCtrl:
 Name: Overview
-OpenCtrl: "OnOpen"
+OpenCtrl: "onOpen"
 PauseCtrl:
 PermitDeleteCtrl:
 RelabelCtrl:
