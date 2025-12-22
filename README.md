@@ -6,6 +6,8 @@
 [![Plant Simulation](https://img.shields.io/badge/Plant%20Simulation-V2404-blue)](https://www.plm.automation.siemens.com/plant-simulation)
 
 ---
+## 🎥 Video
+Watch the tutorial to get started:
 
 [![🎅🎄Santa's Factory Planning Challenge ](https://img.youtube.com/vi/XWHYWNA8Q2s/maxresdefault.jpg)](https://youtu.be/XWHYWNA8Q2s)
 
