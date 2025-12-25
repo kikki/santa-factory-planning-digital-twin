@@ -80,7 +80,7 @@ The project uses BIM terminology to classify information needs:
 - **LOI (Level of Information):** Alphanumeric information (LOI 100 – basic)
 
 ---
-
+## 📦 3D Models and Assets
 All assets used in this study come from online resources, prepared using a classical workflow including bone-based rigging where required.
 
 ### Equipment and Characters
