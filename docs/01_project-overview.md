@@ -81,6 +81,26 @@ The project uses BIM terminology to classify information needs:
 
 ---
 
+All assets used in this study come from online resources, prepared using a classical workflow including bone-based rigging where required.
+
+### Equipment and Characters
+- Process machines
+- Santa and reindeer characters with bone-based rigging
+
+### Factory Building (IFC Model)
+The factory building model was created and exported via IFC. The IFC model was directly imported with minor modifications (missing roof element and door animations). It includes:
+- Standard BIM families (walls, doors, gates, windows)
+- Freely available families (shelves, toilets)
+
+### Asset Sources
+- [CGTrader](https://www.cgtrader.com) – 3D models
+- [Free3D](https://free3d.com) – 3D models
+
+- [BIMobject](https://www.bimobject.com) – BIM objects and families
+- [MEPcontent](https://www.mepcontent.com) – MEP families and content
+
+---
+
 ## 📄 License and Usage
 
 **License:** Creative Commons Attribution–NonCommercial 4.0 International (CC BY-NC 4.0)
